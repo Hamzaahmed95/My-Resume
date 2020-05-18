@@ -1,0 +1,24 @@
+.Projects{
+    padding: 2.5%;
+   
+   
+}
+
+.Projectsheadings{
+    display: flex;
+}
+
+.name2{
+    font-size: 25px;
+    margin-bottom: auto;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.v1 {
+    padding-right: 20px;
+    margin-top: 15px;
+    border-left: 6px solid orange;
+    height: 30px;
+  }
+

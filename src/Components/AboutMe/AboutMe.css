@@ -1,0 +1,39 @@
+.AboutMe{
+    padding:0 2% 0% 2%;
+}
+.heading{
+    margin-top: 20%;
+    margin-bottom: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.intropara{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(223, 223, 223);
+    font-size: large;
+}
+.name_bold{
+    font-weight: bolder;
+    font-size: large;
+    color: rgb(255, 255, 255);
+}
+.icons{
+    display:flex;
+    justify-content: space-around;
+}
+.line{
+    height: 1px;
+    margin-top:10% ;
+    width: 75%;
+    background-color: white;
+    border: none;
+}
+.list{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.image1{
+    padding-top: 6%;
+    padding-right: 2%;
+}

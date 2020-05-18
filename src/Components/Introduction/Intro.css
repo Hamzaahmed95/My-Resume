@@ -1,0 +1,58 @@
+.Intro{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.Intro1{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.Intro1 >div{
+    flex:1
+}
+.Introduction{
+    padding-left: 5%;
+}
+.Image{
+   
+}
+.name{
+    font-size: 45px;
+    margin-bottom: auto;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.subname{
+    margin-top: 2%;
+    font-size: 25px;
+    color: #777b75;
+    font-family: 'Times New Roman', Times, serif;
+}
+.subgraph{
+    margin-top: 4%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.747);
+    
+}
+.rainbow{
+    color:orange;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.projects{
+    display: flex;
+    justify-content: space-around;
+}
+
+.button{
+    border: 2px solid orange;
+    margin-right: 5%;
+    padding-bottom: 5%;
+    font-size: large;
+    background: transparent;
+    color: white;
+}

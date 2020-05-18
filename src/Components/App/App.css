@@ -1,0 +1,20 @@
+.container {
+  border: 5px solid white;
+  display: flex;
+}
+.container > div{
+  flex:1
+}
+ .AboutMe {
+  background: #1D2532;
+  color:white;
+  align-content: center;
+}
+
+.container >.Intro {
+  flex:4;
+  
+  background: #11161E;
+  color:white;
+} 
+
