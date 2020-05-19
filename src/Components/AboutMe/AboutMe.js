@@ -35,7 +35,7 @@ export const AboutMe = (props) => {
     }
     if(blogs1){
         blogs1Style = {
-            color: 'orange'
+            color: 'orange',
         }
     }
 
