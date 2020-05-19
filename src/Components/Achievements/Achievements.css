@@ -27,3 +27,12 @@
 a{
     color:transparent
 }
+
+@media all and (max-width: 800px){
+    .achievementsPieces{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+    }
+
+}

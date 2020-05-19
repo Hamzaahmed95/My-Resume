@@ -15,15 +15,10 @@ export const Intro = (props) => {
             <div className="Intro1">
                 <div className="Introduction">
                     <h1 className="name">{NAME}</h1>
-                    <h4 className="subname">{OCCUPATION}</h4>
-                    <h4 className="subgraph">I'm a software engineer specialized in frontend and backend development with <span className="rainbow">React</span> and <span className="rainbow">Node/Python Django</span> respectively. I'm also working and writing in Android development with <span className="rainbow">Java/Kotlin.</span></h4>
-                    <div className="projects">
-                        <img src={AndroidIcon} width="75" height="75"/>
-                        <img src={ReactIcon} width="106" height="75"/>
-                        <img src={NodeIcon} width="75" height="75"/>
-                    </div>
+                    <p className="subgraph1">I'm a software engineer specialized in frontend and backend development with <span className="rainbow">React</span> and <span className="rainbow">Node/Python Django</span> respectively. I'm also working and writing in Android development with <span className="rainbow">Java/Kotlin.</span></p>
+                   
                 </div>
-                <div align="center" className="Image"><img src={Picture} width="300" height="357" /></div>
+                <div align="center" className="ProfileImage"><img src={Picture} width="300" height="357" /></div>
             </div>
             {props.projects?<div className="Projects">
                <Projects/>

@@ -6,36 +6,39 @@
 .Intro1{
     display: flex;
     justify-content: center;
-    
+    flex-wrap: nowrap;
 }
 
 .Intro1 >div{
     flex:1
 }
 .Introduction{
+    padding-top: 5%;
     padding-left: 5%;
 }
-.Image{
+.ProfileImage{
+    flex: 1 0 600px;
    
 }
 .name{
     font-size: 45px;
     margin-bottom: auto;
     font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:#b0b3b8;
+    font-family: 'Courier New', Courier, monospace;
 }
 .subname{
     margin-top: 2%;
     font-size: 25px;
-    color: #777b75;
+    color: #242526;
     font-family: 'Times New Roman', Times, serif;
 }
-.subgraph{
-    margin-top: 4%;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    color: rgba(255, 255, 255, 0.747);
+
+.subgraph1{
     
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(255, 255, 255, 0.747);
 }
 .rainbow{
     color:orange;
@@ -56,3 +59,19 @@
     background: transparent;
     color: white;
 }
+
+
+@media all and (max-width: 900px){
+    .ProfileImage{
+        display: none;
+    }
+}
+@media all and (max-width: 800px){
+    .subgraph1{
+        font-size: 18px;
+    }
+    .name{
+        text-align: center;
+    }
+}
+

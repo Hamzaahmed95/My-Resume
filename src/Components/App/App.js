@@ -43,7 +43,7 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-        <div className="AboutMe"><AboutMe projects={this.handleChangeProjects} achievements={this.handleChangeAchievements} blogs={this.handleChangeBlogs}/></div>
+        <div className="AboutMe"><AboutMe projects1={this.state.projects} blogs1={this.state.blogs}  achievements1={this.state.achievements} projects={this.handleChangeProjects} achievements={this.handleChangeAchievements} blogs={this.handleChangeBlogs}/></div>
         <div className="Intro"><Intro projects={this.state.projects} blogs={this.state.blogs}  achievements={this.state.achievements}/></div>
       </div>
     );

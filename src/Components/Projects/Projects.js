@@ -7,9 +7,9 @@ export const Projects = () => {
         <div className="Projects">
             <div className="Projectsheadings">
                 <div className="v1"></div>
-                <div className="v2"><h1 className="name2">WHAT I DO</h1></div>
+                <div className="v2"><h1 className="name2">What I do</h1></div>
             </div>
-            <h3 className="subgraph">{details} {details_2}</h3>
+            <p className="subgraph">{details} {details_2}</p>
         </div>
     )
 }

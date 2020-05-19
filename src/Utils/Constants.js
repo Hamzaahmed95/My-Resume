@@ -20,13 +20,12 @@ export const NAME = "Hamza Ahmed";
 export const ABOUT_ME = "About Me";
 export const ACHIEVEMENT = "Achievement";
 export const BLOGS = "Blogs";
+export const YOUTUBER = "Youtuber";
+export const TalentHunters = "Events";
 export const LINKEDIN_URL = "https://www.linkedin.com/in/hamzaahmed95/"
 export const MEDIUM_URL = "https://medium.com/@hamzzza.ahmed95"
 export const GITHUB_URL = "https://github.com/hamzaahmed95"
 export const TWITTER_URL = "https://twitter.com/hagab95"
-
-
-
 
 //INTRODUCTION
 
@@ -46,4 +45,4 @@ export const Achievement_3_Heading = "App head award in DevDay 2018"
 //MY PROJECTS
 
 export const details = "I have 2+ years experience in Full Stack Development as well as in Mobile Development. But I love Javascript and its magical functions due to many reasons."
-export const details_2 = "I also write in medium. I'm a youtuber and a head of TALENT HUNTERS (a team for spreading awareness)"
+export const details_2 = "I also write in medium. I'm a youtuber and a head of TALENT HUNTERS (a team for spreading education awareness)"

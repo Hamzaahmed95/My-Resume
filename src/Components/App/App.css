@@ -1,6 +1,8 @@
 .container {
   border: 5px solid white;
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 .container > div{
   flex:1
@@ -17,4 +19,14 @@
   background: #11161E;
   color:white;
 } 
+
+@media all and (max-width: 800px){
+  /* .profile_picture,.heading,.intropara{
+     display: none;
+  } */
+
+  .container {
+    flex-direction: column;
+  }
+}
 
