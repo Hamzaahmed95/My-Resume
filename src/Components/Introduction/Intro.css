@@ -68,10 +68,11 @@
 }
 @media all and (max-width: 800px){
     .subgraph1{
-        font-size: 18px;
+        font-size: 15px;
+        padding: 0%;
     }
     .name{
-        text-align: center;
+       display:none;
     }
 }
 

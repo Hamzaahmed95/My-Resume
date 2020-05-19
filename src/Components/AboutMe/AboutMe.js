@@ -46,6 +46,7 @@ export const AboutMe = (props) => {
             <p className="intropara2">
                 Hi, my name is <span className="name_bold">Hamza Ahmed</span> and I'm a software engineer. Welcome to my personal website!
             </p>
+            <p className="heading_hidden">{NAME}</p>
             <div className="icons">
                 <a href={TWITTER_URL} ><img className="each_icon" src={Twitter}  /></a>
                 <a href={GITHUB_URL} ><img className="each_icon" src={Github}  /></a>

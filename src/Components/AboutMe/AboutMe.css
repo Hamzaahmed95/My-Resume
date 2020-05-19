@@ -34,6 +34,9 @@
    
     flex-direction: row;
 }
+.heading_hidden{
+    display: none;
+}
 
 .image1{
     flex: 0;
@@ -59,13 +62,25 @@
         
         font-weight: bolder;
     }
-    
-    .intropara2{
-        display: none;
+    .heading_hidden{
+        margin-top: 0px;
+        font-weight: bolder;
+        font-size: x-large;
+        font-family: 'Courier New', Courier, monospace;
+        display: block;
     }
+    .intropara{
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(223, 223, 223);
+        font-size: small;
+    }
+    
+     .intropara2{
+        display: none;
+    } 
     .each_icon{
-        width: 45px;
-        height: 45px;
+        width: 35px;
+        height: 35px;
        
        
     }
