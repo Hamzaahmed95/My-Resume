@@ -70,6 +70,8 @@
     .subgraph1{
         font-size: 15px;
         padding: 0%;
+        margin-right: 3%;
+       
     }
     .name{
        display:none;
