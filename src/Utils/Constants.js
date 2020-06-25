@@ -55,3 +55,10 @@ export const video2_link ="https://www.youtube.com/watch?v=0XrHhoz3M24&t=120s"
 export const Video_1_Heading = "Disrupt 1.0"
 export const Video_2_Heading = "Education Awareness"
 export const Youtube_Main_Heading = "Videos"
+
+// EVENTS
+export const Event_1_Heading = "Presentation Battlefield"
+export const Event_2_Heading = "Disrupt 1.0"
+export const Event_3_Heading = "How to Think Like a Leader"
+export const Event_4_Heading = "Education Expo'18"
+export const Event_Main_Heading = "Events"

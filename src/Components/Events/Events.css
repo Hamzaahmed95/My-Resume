@@ -1,4 +1,4 @@
-.Achievements{
+.Blogs{
     padding: 2.5%; 
 }
 
@@ -8,31 +8,33 @@
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.achievementsPieces{
+.blogPieces{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; 
+    justify-content: left; 
 }
-.achievementsPieces > div > img{
-    width:200px;
-    height:356px;
+.blogPieces > div > img{
+    width:300px;
+    height:171px;
 }
 .blog1, .blog2, .blog3, .blog4,.blog5 {    
     margin:2% 2% 0% 0%;
     
 }
-.achievement_headings{
+.blog_headings{
     color:orange;
 }
 a{
     color:transparent
 }
 
-@media all and (max-width: 800px){
-    .achievementsPieces{
+@media all and (max-width: 700px){
+    .blogPieces{
         display: flex;
         flex-wrap: wrap;
         justify-content: center; 
     }
-
+    .name2{
+        text-align: center;
+    }
 }

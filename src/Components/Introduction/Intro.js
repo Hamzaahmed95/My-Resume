@@ -5,6 +5,7 @@ import {Projects }from '../Projects/Projects'
 import {Achievements }from '../Achievements/Achievements'
 import {Blogs }from '../Blogs/Blogs'
 import {Youtube }from '../Youtube/Youtube'
+import {Events }from '../Events/Events'
 import AndroidIcon from '../../images/android.png'
 import ReactIcon from '../../images/react.png'
 import NodeIcon from '../../images/node.png'
@@ -16,7 +17,7 @@ export const Intro = (props) => {
             <div className="Intro1">
                 <div className="Introduction">
                     <h1 className="name">{NAME}</h1>
-                    <p className="subgraph1">I'm a software engineer specialized in frontend and backend development with <span className="rainbow">React</span> and <span className="rainbow">Node/Python Django</span> respectively. I'm also working and writing in Android development with <span className="rainbow">Java/Kotlin.</span></p>
+                    <p className="subgraph1">I'm a software engineer specialized in frontend and backend development with <span className="rainbow">React</span>. I'm also working and writing in Android development with <span className="rainbow">Java/Kotlin.</span></p>
                    
                 </div>
                 <div align="center" className="ProfileImage"><img src={Picture} width="300" height="357" /></div>
@@ -32,6 +33,9 @@ export const Intro = (props) => {
             </div>:''}
             {props.youtube?<div className="Blogs">
                <Youtube/>
+            </div>:''}
+            {props.events?<div className="Blogs">
+               <Events/>
             </div>:''}
         </div>
     )

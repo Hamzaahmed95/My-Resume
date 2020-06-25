@@ -7,7 +7,7 @@ import LinkedIn from '../../images/linkedin.png'
 import Medium from '../../images/medium.png'
 import Aboutme from '../../images/aboutme.png'
 import Portfolio from '../../images/portfolio.png'
-import {NAME,ABOUT_ME,TalentHunters,YOUTUBER,ACHIEVEMENT,BLOGS,LINKEDIN_URL,MEDIUM_URL,GITHUB_URL,TWITTER_URL} from '../../Utils/Constants.js'
+import { NAME, ABOUT_ME, TalentHunters, YOUTUBER, ACHIEVEMENT, BLOGS, LINKEDIN_URL, MEDIUM_URL, GITHUB_URL, TWITTER_URL } from '../../Utils/Constants.js'
 
 export const AboutMe = (props) => {
 
@@ -15,35 +15,44 @@ export const AboutMe = (props) => {
     const achievements1 = props.achievements1
     const blogs1 = props.blogs1
     const youtube1 = props.youtube1
+    const events1 = props.events1
     let project1Style = {
-		color: '#dfdfdf'
+        color: '#dfdfdf'
     }
     let achievements1Style = {
-		color: '#dfdfdf'
+        color: '#dfdfdf'
     }
     let blogs1Style = {
-		color: '#dfdfdf'    
+        color: '#dfdfdf'
     }
     let youtube1Style = {
-		color: '#dfdfdf'    
-	}
-    if(project1){
+        color: '#dfdfdf'
+    }
+    let events1Style = {
+        color: '#dfdfdf'
+    }
+    if (project1) {
         project1Style = {
             color: 'orange'
         }
     }
-    if(achievements1){
+    if (achievements1) {
         achievements1Style = {
             color: 'orange'
         }
     }
-    if(blogs1){
+    if (blogs1) {
         blogs1Style = {
             color: 'orange',
         }
     }
-    if(youtube1){
+    if (youtube1) {
         youtube1Style = {
+            color: 'orange',
+        }
+    }
+    if (events1) {
+        events1Style = {
             color: 'orange',
         }
     }
@@ -57,34 +66,29 @@ export const AboutMe = (props) => {
             </p>
             <p className="heading_hidden">{NAME}</p>
             <div className="icons">
-                <a href={TWITTER_URL} ><img className="each_icon" src={Twitter}  /></a>
-                <a href={GITHUB_URL} ><img className="each_icon" src={Github}  /></a>
-                <a href={LINKEDIN_URL} ><img className="each_icon" src={LinkedIn}  /></a>
+                <a href={TWITTER_URL} ><img className="each_icon" src={Twitter} /></a>
+                <a href={GITHUB_URL} ><img className="each_icon" src={Github} /></a>
+                <a href={LINKEDIN_URL} ><img className="each_icon" src={LinkedIn} /></a>
                 <a href={MEDIUM_URL} ><img className="each_icon" src={Medium} /></a>
             </div>
             <hr className="line" />
 
-            <div  onClick={props.projects} className="list">
-                <img className="image1" src={Aboutme} width="20" height="20" />
+            <div onClick={props.projects} className="list">
                 <p style={project1Style} className="intropara" > {ABOUT_ME}</p>
             </div>
             <div onClick={props.achievements} className="list">
-                <img className="image1" src={Portfolio} width="20" height="20" />
                 <p style={achievements1Style} className="intropara" > {ACHIEVEMENT}</p>
             </div>
             <div onClick={props.blogs} className="list">
-                <img className="image1" src={Aboutme} width="20" height="20" />
                 <p style={blogs1Style} className="intropara" > {BLOGS}</p>
             </div>
             <div onClick={props.youtube} className="list">
-                <img className="image1" src={Aboutme} width="20" height="20" />
                 <p style={youtube1Style} className="intropara" > {YOUTUBER}</p>
             </div>
-            <div onClick={props.blogs} className="list">
-                <img className="image1" src={Aboutme} width="20" height="20" />
-                <p className="intropara" > {TalentHunters}</p>
+            <div onClick={props.events} className="list">
+                <p style={events1Style} > {TalentHunters}</p>
             </div>
-           
+
         </div>
     )
 }
