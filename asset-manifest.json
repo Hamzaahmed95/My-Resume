@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/My-Resume/static/css/main.0b5308d0.chunk.css",
-    "main.js": "/My-Resume/static/js/main.0ebb2826.chunk.js",
-    "main.js.map": "/My-Resume/static/js/main.0ebb2826.chunk.js.map",
+    "main.js": "/My-Resume/static/js/main.3f9ca6c8.chunk.js",
+    "main.js.map": "/My-Resume/static/js/main.3f9ca6c8.chunk.js.map",
     "runtime-main.js": "/My-Resume/static/js/runtime-main.f60d41eb.js",
     "runtime-main.js.map": "/My-Resume/static/js/runtime-main.f60d41eb.js.map",
     "static/js/2.c2566372.chunk.js": "/My-Resume/static/js/2.c2566372.chunk.js",
     "static/js/2.c2566372.chunk.js.map": "/My-Resume/static/js/2.c2566372.chunk.js.map",
     "index.html": "/My-Resume/index.html",
-    "precache-manifest.2946ff07e096798257b7a84b03183fc2.js": "/My-Resume/precache-manifest.2946ff07e096798257b7a84b03183fc2.js",
+    "precache-manifest.893acb353ce1c8676c27bd60826a7f0a.js": "/My-Resume/precache-manifest.893acb353ce1c8676c27bd60826a7f0a.js",
     "service-worker.js": "/My-Resume/service-worker.js",
     "static/css/main.0b5308d0.chunk.css.map": "/My-Resume/static/css/main.0b5308d0.chunk.css.map",
     "static/js/2.c2566372.chunk.js.LICENSE.txt": "/My-Resume/static/js/2.c2566372.chunk.js.LICENSE.txt",
@@ -24,10 +24,10 @@
     "static/media/blog44.png": "/My-Resume/static/media/blog44.a68c39fc.png",
     "static/media/blog55.png": "/My-Resume/static/media/blog55.8494811e.png",
     "static/media/disrupt.jpg": "/My-Resume/static/media/disrupt.f7c42b28.jpg",
-    "static/media/event.jpg": "/My-Resume/static/media/event.95b03224.jpg",
     "static/media/event1.jpg": "/My-Resume/static/media/event1.c5a59010.jpg",
-    "static/media/event2.jpg": "/My-Resume/static/media/event2.1eb737f0.jpg",
-    "static/media/event3.jpg": "/My-Resume/static/media/event3.9d64ba0d.jpg",
+    "static/media/event2.jpg": "/My-Resume/static/media/event2.7e8bd87f.jpg",
+    "static/media/event3.jpg": "/My-Resume/static/media/event3.300ac789.jpg",
+    "static/media/event4.jpg": "/My-Resume/static/media/event4.adfcfb3b.jpg",
     "static/media/github.png": "/My-Resume/static/media/github.1916d2e2.png",
     "static/media/linkedin.png": "/My-Resume/static/media/linkedin.590c5909.png",
     "static/media/medium.png": "/My-Resume/static/media/medium.293ca4e9.png",
@@ -42,6 +42,6 @@
     "static/js/runtime-main.f60d41eb.js",
     "static/js/2.c2566372.chunk.js",
     "static/css/main.0b5308d0.chunk.css",
-    "static/js/main.0ebb2826.chunk.js"
+    "static/js/main.3f9ca6c8.chunk.js"
   ]
 }
