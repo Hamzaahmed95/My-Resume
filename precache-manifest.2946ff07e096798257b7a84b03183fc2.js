@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "368b531aa814e745b6a0efe61c735ff1",
+    "revision": "16963419a837eeb3da108c96d97eb63e",
     "url": "/My-Resume/index.html"
   },
   {
-    "revision": "e95503b63925d0b52147",
-    "url": "/My-Resume/static/css/main.78f1b0dd.chunk.css"
+    "revision": "1ef964c89f12f1428d7c",
+    "url": "/My-Resume/static/css/main.0b5308d0.chunk.css"
   },
   {
-    "revision": "9db7bd92e0b19f4d1b7f",
-    "url": "/My-Resume/static/js/2.fbc49f4b.chunk.js"
+    "revision": "ab11c6853522c043af71",
+    "url": "/My-Resume/static/js/2.c2566372.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/My-Resume/static/js/2.fbc49f4b.chunk.js.LICENSE.txt"
+    "url": "/My-Resume/static/js/2.c2566372.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e95503b63925d0b52147",
-    "url": "/My-Resume/static/js/main.453a5aed.chunk.js"
+    "revision": "1ef964c89f12f1428d7c",
+    "url": "/My-Resume/static/js/main.0ebb2826.chunk.js"
   },
   {
     "revision": "333cd136558d15512c69",
     "url": "/My-Resume/static/js/runtime-main.f60d41eb.js"
+  },
+  {
+    "revision": "c626c5b892df111a34104d63b379d9b3",
+    "url": "/My-Resume/static/media/Ilmi_shaoor.c626c5b8.png"
   },
   {
     "revision": "8789f465f48f57b467f5f909d5e56ba6",
@@ -62,6 +66,26 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8494811ea7773d336d374b9af27f0c30",
     "url": "/My-Resume/static/media/blog55.8494811e.png"
+  },
+  {
+    "revision": "f7c42b286505732d27b4fdf4e9760a53",
+    "url": "/My-Resume/static/media/disrupt.f7c42b28.jpg"
+  },
+  {
+    "revision": "95b03224d25ced26897eba163753a7af",
+    "url": "/My-Resume/static/media/event.95b03224.jpg"
+  },
+  {
+    "revision": "c5a590103eb63da109a581aabeb1f938",
+    "url": "/My-Resume/static/media/event1.c5a59010.jpg"
+  },
+  {
+    "revision": "1eb737f05814aac480d169b08543a350",
+    "url": "/My-Resume/static/media/event2.1eb737f0.jpg"
+  },
+  {
+    "revision": "9d64ba0d1c9ae865778c94dbe29712eb",
+    "url": "/My-Resume/static/media/event3.9d64ba0d.jpg"
   },
   {
     "revision": "1916d2e269778ce10179cd5102041088",
