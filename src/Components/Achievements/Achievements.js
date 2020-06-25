@@ -8,7 +8,10 @@ import Achievement3 from '../../images/achievement3.jpeg'
 export const Achievements = () => {
     return (
         <div className="Achievements">
-            <h1 className="name2">{Achievements_Main_Heading}</h1>
+             <div className="Achievementsheadings">
+                <div className="v1"></div>
+                <div className="v2"><h1 className="name2">{Achievements_Main_Heading}</h1></div>
+            </div>
             <div className="achievementsPieces">
                 <div align="center" className="blog1">
                     <img src={Achievement1} />

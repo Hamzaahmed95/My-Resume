@@ -1,21 +1,33 @@
 .Youtube{
-    padding: 2.5%; 
+    padding: 2.5%;
+    
+}
+.Youtubesheadings{
+    display: flex; 
 }
 
 .name2{
     font-size: 25px;
-    margin-bottom: 5%;
+    color:#b0b3b8;
+    margin-bottom: auto;
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+.v1 {
+    padding-right: 20px;
+    margin-top: 15px;
+    border-left: 6px solid orange;
+    height: 30px;
+  }
 .youtubePieces{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; 
+    justify-content: left; 
 }
 .youtubePieces > div > a >img{
-    width:350px;
-    height:197px;
+    width:300px;
+    height:171px;
 }
 .blog1, .blog2, .blog3, .blog4,.blog5 {    
     margin:2% 2% 0% 0%;

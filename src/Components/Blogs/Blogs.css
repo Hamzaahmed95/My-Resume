@@ -8,6 +8,17 @@
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+.Blogsheadings{
+    display: flex;
+}
+
+.name2{
+    font-size: 25px;
+    color:#b0b3b8;
+    margin-bottom: auto;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 .blogPieces{
     display: flex;
     flex-wrap: wrap;

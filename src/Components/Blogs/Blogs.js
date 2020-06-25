@@ -10,7 +10,10 @@ import Blog5 from '../../images/blog55.png'
 export const Blogs = () => {
     return (
         <div className="Blogs">
-            <h1 className="name2">{Blogs_Main_Heading}</h1>
+             <div className="Blogsheadings">
+                <div className="v1"></div>
+                <div className="v2"><h1 className="name2">{Blogs_Main_Heading}</h1></div>
+            </div>
             <div className="blogPieces">
                 <div align="center" className="blog1">
                     <a target="blank" href={Blog_1_URL} >

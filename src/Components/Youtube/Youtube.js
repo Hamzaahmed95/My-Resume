@@ -1,6 +1,6 @@
 import React from 'react'
 import './Youtube.css'
-import {Youtube_Main_Heading,video1_link,video2_link,Blog_3_URL,Video_1_Heading,Video_2_Heading,Achievement_3_Heading,Blog_4_Heading,Blog_5_Heading} from '../../Utils/Constants.js'
+import { Youtube_Main_Heading, video1_link, video2_link, Blog_3_URL, Video_1_Heading, Video_2_Heading, Achievement_3_Heading, Blog_4_Heading, Blog_5_Heading } from '../../Utils/Constants.js'
 import Video1 from '../../images/disrupt.jpg'
 import Video2 from '../../images/Ilmi_shaoor.png'
 import Achievement3 from '../../images/achievement3.jpeg'
@@ -8,7 +8,11 @@ import Achievement3 from '../../images/achievement3.jpeg'
 export const Youtube = () => {
     return (
         <div className="Youtube">
-            <h1 className="name2">{Youtube_Main_Heading}</h1>
+            <div className="Youtubesheadings">
+                <div className="v1"></div>
+                <div className="v2"><h1 className="name2">{Youtube_Main_Heading}</h1></div>
+            </div>
+
             <div className="youtubePieces">
                 <div align="center" className="blog1">
                     <a target="blank" href={video1_link} >

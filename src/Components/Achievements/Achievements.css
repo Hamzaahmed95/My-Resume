@@ -1,17 +1,22 @@
 .Achievements{
     padding: 2.5%; 
 }
+.Achievementsheadings{
+    display: flex;
+}
 
 .name2{
     font-size: 25px;
-    margin-bottom: 5%;
+    color:#b0b3b8;
+    margin-bottom: auto;
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 .achievementsPieces{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; 
+    justify-content: left; 
 }
 .achievementsPieces > div > img{
     width:200px;

@@ -59,7 +59,6 @@ export const AboutMe = (props) => {
 
     return (
         <div align="center" className="AboutMe">
-            <h2 className="heading">{NAME}</h2>
             <img className="profile_picture" src={Profile} width="200" height="250" />
             <p className="intropara2">
                 Hi, my name is <span className="name_bold">Hamza Ahmed</span> and I'm a software engineer. Welcome to my personal website!

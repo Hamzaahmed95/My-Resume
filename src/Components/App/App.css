@@ -1,11 +1,14 @@
-.container {
-  border: 5px solid white;
+.container1 {
+  
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
 }
-.container > div{
+.container1 > div{
   flex:1
+}
+.container{
+  margin:auto;
 }
  .AboutMe {
   background: #1D2532;
@@ -13,7 +16,7 @@
   align-content: center;
 }
 
-.container >.Intro {
+.container1 >.Intro {
   flex:4;
   
   background: #11161E;
@@ -25,7 +28,7 @@
      display: none;
   } */
 
-  .container {
+  .container1 {
     flex-direction: column;
   }
 }
