@@ -1,7 +1,7 @@
 import React from 'react'
 import './Events.css'
 import { Event_Main_Heading, Blog_1_URL, Blog_2_URL, Blog_3_URL, Blog_4_URL, Blog_5_URL, Event_1_Heading, Event_2_Heading, Event_3_Heading, Event_4_Heading, Blog_4_Heading, Blog_5_Heading } from '../../Utils/Constants.js'
-import Event1 from '../../images/event.jpg'
+import Event1 from '../../images/event4.jpg'
 import Event2 from '../../images/event1.jpg'
 import Event3 from '../../images/event2.jpg'
 import Event4 from '../../images/event3.jpg'
