@@ -1,0 +1,38 @@
+.Youtube{
+    padding: 2.5%; 
+}
+
+.name2{
+    font-size: 25px;
+    margin-bottom: 5%;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.youtubePieces{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+.youtubePieces > div > a >img{
+    width:350px;
+    height:197px;
+}
+.blog1, .blog2, .blog3, .blog4,.blog5 {    
+    margin:2% 2% 0% 0%;
+    
+}
+.achievement_headings{
+    color:orange;
+}
+a{
+    color:transparent
+}
+
+@media all and (max-width: 800px){
+    .youtubePieces{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+    }
+
+}

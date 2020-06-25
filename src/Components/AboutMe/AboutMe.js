@@ -14,6 +14,7 @@ export const AboutMe = (props) => {
     const project1 = props.projects1
     const achievements1 = props.achievements1
     const blogs1 = props.blogs1
+    const youtube1 = props.youtube1
     let project1Style = {
 		color: '#dfdfdf'
     }
@@ -21,6 +22,9 @@ export const AboutMe = (props) => {
 		color: '#dfdfdf'
     }
     let blogs1Style = {
+		color: '#dfdfdf'    
+    }
+    let youtube1Style = {
 		color: '#dfdfdf'    
 	}
     if(project1){
@@ -35,6 +39,11 @@ export const AboutMe = (props) => {
     }
     if(blogs1){
         blogs1Style = {
+            color: 'orange',
+        }
+    }
+    if(youtube1){
+        youtube1Style = {
             color: 'orange',
         }
     }
@@ -67,9 +76,9 @@ export const AboutMe = (props) => {
                 <img className="image1" src={Aboutme} width="20" height="20" />
                 <p style={blogs1Style} className="intropara" > {BLOGS}</p>
             </div>
-            <div onClick={props.blogs} className="list">
+            <div onClick={props.youtube} className="list">
                 <img className="image1" src={Aboutme} width="20" height="20" />
-                <p className="intropara" > {YOUTUBER}</p>
+                <p style={youtube1Style} className="intropara" > {YOUTUBER}</p>
             </div>
             <div onClick={props.blogs} className="list">
                 <img className="image1" src={Aboutme} width="20" height="20" />

@@ -4,6 +4,7 @@ import Picture from '../../images/picture1.png'
 import {Projects }from '../Projects/Projects'
 import {Achievements }from '../Achievements/Achievements'
 import {Blogs }from '../Blogs/Blogs'
+import {Youtube }from '../Youtube/Youtube'
 import AndroidIcon from '../../images/android.png'
 import ReactIcon from '../../images/react.png'
 import NodeIcon from '../../images/node.png'
@@ -28,6 +29,9 @@ export const Intro = (props) => {
             </div>:''}
             {props.blogs?<div className="Blogs">
                <Blogs/>
+            </div>:''}
+            {props.youtube?<div className="Blogs">
+               <Youtube/>
             </div>:''}
         </div>
     )

@@ -46,3 +46,12 @@ export const Achievement_3_Heading = "App head award in DevDay 2018"
 
 export const details = "I have 2+ years experience in Full Stack Development as well as in Mobile Development. But I love Javascript and its magical functions due to many reasons."
 export const details_2 = "I also write in medium. I'm a youtuber and a head of TALENT HUNTERS (a team for spreading education awareness)"
+
+
+// YOUTUBE
+export const video1_link ="https://www.youtube.com/watch?v=q81IM0BSzuI"
+export const video2_link ="https://www.youtube.com/watch?v=0XrHhoz3M24&t=120s"
+
+export const Video_1_Heading = "Disrupt 1.0"
+export const Video_2_Heading = "Education Awareness"
+export const Youtube_Main_Heading = "Videos"
