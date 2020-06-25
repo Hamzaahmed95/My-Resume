@@ -44,7 +44,7 @@ export const Achievement_3_Heading = "App head award in DevDay 2018"
 
 //MY PROJECTS
 
-export const details = "I have 2+ years experience in Full Stack Development as well as in Mobile Development. But I love Javascript and its magical functions due to many reasons."
+export const details = "I have 2+ years experience in Full Stack Development as well as in Mobile Development. I love Javascript and its magical functions due to many reasons."
 export const details_2 = "I also write in medium. I'm a youtuber and a head of TALENT HUNTERS (a team for spreading education awareness)"
 
 
