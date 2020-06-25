@@ -18,7 +18,7 @@ export const Blog_5_URL= "https://medium.com/@hamzzza.ahmed95/designing-bar-char
 
 export const NAME = "Hamza Ahmed";
 export const ABOUT_ME = "About Me";
-export const ACHIEVEMENT = "Achievement";
+export const ACHIEVEMENT = "Achievements";
 export const BLOGS = "Blogs";
 export const YOUTUBER = "Youtuber";
 export const TalentHunters = "Events";
