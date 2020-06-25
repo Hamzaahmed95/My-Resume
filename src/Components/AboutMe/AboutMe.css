@@ -34,6 +34,9 @@
    
     flex-direction: row;
 }
+.list:hover{
+    background-color: #11161E;
+}
 .heading_hidden{
     display: none;
 }

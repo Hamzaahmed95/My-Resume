@@ -86,7 +86,7 @@ export const AboutMe = (props) => {
                 <p style={youtube1Style} className="intropara" > {YOUTUBER}</p>
             </div>
             <div onClick={props.events} className="list">
-                <p style={events1Style} > {TalentHunters}</p>
+                <p style={events1Style}  className="intropara"> {TalentHunters}</p>
             </div>
 
         </div>

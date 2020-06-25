@@ -27,7 +27,8 @@ class App extends Component {
       achievements:false,
       projects:true,
       blogs:false,
-      youtube:false
+      youtube:false,
+      events:false
     })
   }
   handleChangeAchievements(){

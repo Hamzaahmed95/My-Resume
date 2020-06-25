@@ -17,7 +17,7 @@ export const Intro = (props) => {
             <div className="Intro1">
                 <div className="Introduction">
                     <h1 className="name">{NAME}</h1>
-                    <p className="subgraph1">I'm a software engineer specialized in frontend and backend development with <span className="rainbow">React</span>. I'm also working and writing in Android development with <span className="rainbow">Java/Kotlin.</span></p>
+                    <p className="subgraph1">I'm a software engineer specialized in frontend and backend development with <span className="rainbow">React.</span> I'm also working and writing in Android development with <span className="rainbow">Java/Kotlin.</span></p>
                    
                 </div>
                 <div align="center" className="ProfileImage"><img src={Picture} width="300" height="357" /></div>
