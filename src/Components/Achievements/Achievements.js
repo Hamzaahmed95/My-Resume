@@ -23,15 +23,14 @@ export const Achievements = (props) => {
     if (toggle) {
 
         name2Style = {
-            color: '#FFA7C3',
+            color: '#D33668',
             fontFamily: 'Montserrat, sans-serif',
             fontWeight: '900'
         }
         subgraphStyle = {
-            color: '#FFA7C3',
+            color: '#D33668',
             fontFamily: 'Merriweather, Georgia, serif',
-            fontSize: '10',
-            fontWeight: '40'
+            borderBottom: '1px solid #D33668'
         }
     } else {
         name2Style = {
@@ -50,7 +49,6 @@ export const Achievements = (props) => {
     return (
         <div className="Achievements">
             <div className="Achievementsheadings">
-                <div className="v1"></div>
                 <div className="v2"><h1 style={name2Style} className="name2">{Achievements_Main_Heading}</h1></div>
             </div>
             <div className="achievementsPieces">

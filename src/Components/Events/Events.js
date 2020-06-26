@@ -27,16 +27,16 @@ export const Events = (props) => {
     if(toggle){
       
         name2Style = {
-            color:'#FFA7C3',
+            color:'#D33668',
             fontFamily:'Montserrat, sans-serif',
             fontWeight:'900'
         }
         subgraphStyle = {
-            color: '#FFA7C3',
+            color: '#D33668',
             fontFamily: 'Merriweather, Georgia, serif',
             fontSize: '10',
             fontWeight: '40',
-            borderBottom: '1px solid #FFA7C3',
+            borderBottom: '1px solid #D33668',
             marginLeft: '50px',
             marginRight: '50px'
         }
@@ -59,7 +59,6 @@ export const Events = (props) => {
     return (
         <div className="Events">
             <div className="Eventsheadings">
-                <div className="v1"></div>
                 <div className="v2"><h1 style={name2Style} className="name2">{Event_Main_Heading}</h1></div>
             </div>
             <div className="eventPieces">

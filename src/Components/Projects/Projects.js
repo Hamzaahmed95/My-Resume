@@ -26,7 +26,7 @@ export const Projects = (props) => {
             fontWeight:'40'
         }
         name2Style = {
-            color:'#FFA7C3',
+            color:'#D33668',
             fontFamily:'Montserrat, sans-serif',
             fontWeight:'900'
         }
@@ -46,7 +46,6 @@ export const Projects = (props) => {
     return (
         <div className="Projects">
             <div className="Projectsheadings">
-                <div className="v1"></div>
                 <div className="v2"><h1 style={name2Style} className="name2">What I do</h1></div>
             </div>
             <p style={subgraphStyle} className="subgraph">{details} {details_2}</p>

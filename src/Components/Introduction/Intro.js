@@ -1,6 +1,7 @@
 import React from 'react'
 import './Intro.css'
 import Picture from '../../images/picture1_1.png'
+import PictureLight from '../../images/picture1_v3.png'
 import { Projects } from '../Projects/Projects'
 import { Achievements } from '../Achievements/Achievements'
 import { Blogs } from '../Blogs/Blogs'
@@ -25,27 +26,26 @@ export const Intro = (props) => {
     let subgraphStyle = {
         color:'#ffffff',
         fontFamily:'Merriweather, Georgia, serif',
-        fontSize:'10',
-        fontWeight:'40'
+       
     }
     let rainbow1Style = {
         color:'#ffffff'
     }
     if(toggle){
         mainHeadingStyle = {
-            color:'#ffffff',
+            color:'#000000',
             fontFamily: 'Montserrat, sans-serif',
             fontWeight:'900',
             fontSize:'32'
         }
         subgraphStyle = {
-            color:'#ffffff',
+            color:'#000000',
             fontFamily:'Merriweather, Georgia, serif',
-            fontSize:'10',
-            fontWeight:'40'
+         
         }
         rainbow1Style ={
-            color:'#000000'
+            background:'#D33668',
+            color:'#ffffff'
         }
     }else{
         mainHeadingStyle = {
@@ -58,8 +58,7 @@ export const Intro = (props) => {
         subgraphStyle = {
             color:'#ffffff',
             fontFamily:'Merriweather, Georgia, serif',
-            fontSize:'25px',
-            fontWeight:'40'
+           
         }
         rainbow1Style ={
             background:'#FFA7C3'
@@ -74,7 +73,7 @@ export const Intro = (props) => {
                 </div>
     
                 <div align="center" className="ProfileImage">
-                    <img src={Picture} width="300" height="357" />
+                    {toggle?<img src={PictureLight} width="300" height="357" />:<img src={Picture} width="300" height="357" />}
                 </div>
             </div>
             {props.projects ? <div className="Projects">
