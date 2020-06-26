@@ -46,9 +46,18 @@ export const AboutMe = (props) => {
         color:'#000000',
         fontFamily:'Merriweather, Georgia, serif'
     }
+
+    let lineStyle = {
+        backgroundColor: '#D33668',
+        fontFamily:'Merriweather, Georgia, serif'
+    }
     
     
     if(toggle){
+        lineStyle = {
+            backgroundColor: '#D33668',
+            fontFamily:'Merriweather, Georgia, serif'
+        }
         intropara2Style = {
             color:'#000000',
             fontFamily:'Merriweather, Georgia, serif'
@@ -108,6 +117,10 @@ export const AboutMe = (props) => {
             }
         }
     }else{
+        lineStyle = {
+            backgroundColor: '#FFA7C3',
+            fontFamily:'Merriweather, Georgia, serif'
+        }
         intropara2Style = {
             color:'#e9e9e9',
             fontFamily:'Merriweather, Georgia, serif'
@@ -180,7 +193,7 @@ export const AboutMe = (props) => {
                 <a href={LINKEDIN_URL} >{toggle?<img className="each_icon" src={LinkedInLight} />:<img className="each_icon" src={LinkedIn}/>}</a>
                 <a href={MEDIUM_URL} >{toggle?<img className="each_icon" src={MediumLight} />:<img className="each_icon" src={Medium}/>}</a>
             </div>
-            <hr className="line" />
+            <hr style={lineStyle}className="line" />
 
             <div onClick={props.projects} className="list">
                 <p style={project1Style} className="intropara" > {ABOUT_ME}</p>
