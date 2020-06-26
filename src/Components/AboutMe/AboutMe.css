@@ -1,5 +1,6 @@
 .AboutMe{
     padding:0 2% 0% 2%;
+    background-color: transparent;
     flex-wrap: wrap;
 }
 .heading{
@@ -53,6 +54,10 @@
 .profile_picture{
     width:200px;
     height: 250px;
+}
+.toggle_button{
+    padding-bottom: 12%;
+    padding-top: 12%;
 }
 
 @media all and (max-width: 800px){
