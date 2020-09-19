@@ -2,11 +2,12 @@ import React from 'react'
 import './Intro.css'
 import Picture from '../../images/picture1_1.png'
 import PictureLight from '../../images/picture1_v3.png'
-import { Projects } from '../Projects/Projects'
+import { MyIntroduction } from '../MyIntroduction/MyIntroduction'
 import { Achievements } from '../Achievements/Achievements'
 import { Blogs } from '../Blogs/Blogs'
 import { Youtube } from '../Youtube/Youtube'
 import { Events } from '../Events/Events'
+import { Projects } from '../Projects/Projects'
 import AndroidIcon from '../../images/android.png'
 import ReactIcon from '../../images/react.png'
 import NodeIcon from '../../images/node.png'
@@ -76,8 +77,8 @@ export const Intro = (props) => {
                     {toggle?<img src={PictureLight} width="300" height="357" />:<img src={Picture} width="300" height="357" />}
                 </div>
             </div>
-            {props.projects ? <div className="Projects">
-                <Projects toggle={toggle}/>
+            {props.about_me ? <div className="Projects">
+                <MyIntroduction toggle={toggle}/>
             </div> : ''}
             {props.achievements ? <div className="Achievements">
                 <Achievements toggle={toggle}/>
@@ -90,6 +91,9 @@ export const Intro = (props) => {
             </div> : ''}
             {props.events ? <div className="Blogs">
                 <Events toggle={toggle}/>
+            </div> : ''}
+            {props.projects ? <div className="Blogs">
+                <Projects toggle={toggle}/>
             </div> : ''}
         </div>
     )

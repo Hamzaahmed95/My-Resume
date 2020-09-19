@@ -9,12 +9,14 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      projects: true,
+      about_me: true,
       achievements: false,
       blogs: false,
       youtube: false,
       events: false,
+      project:false,
       toggle: false,
+      projects: false,
       style: {
         background: '#373D49',
         color: '#e9e9e9'
@@ -24,50 +26,75 @@ class App extends Component {
         color: '#e9e9e9'
       }
     }
-    this.handleChangeProjects = this.handleChangeProjects.bind(this)
+    this.handleChangeAboutMe = this.handleChangeAboutMe.bind(this)
     this.handleChangeAchievements = this.handleChangeAchievements.bind(this)
     this.handleChangeBlogs = this.handleChangeBlogs.bind(this)
     this.handleChangeYoutube = this.handleChangeYoutube.bind(this)
     this.handleChangeEvents = this.handleChangeEvents.bind(this)
     this.handleChangeToggle = this.handleChangeToggle.bind(this)
+    this.handleChangeProjects = this.handleChangeProjects.bind(this)
 
   }
 
 
-  handleChangeProjects() {
+  handleChangeAboutMe() {
     this.setState({
       achievements: false,
-      projects: true,
+      about_me: true,
       blogs: false,
       youtube: false,
-      events: false
+      events: false,
+      projects:false
     })
   }
   handleChangeAchievements() {
     this.setState({
       achievements: true,
-      projects: false,
+      about_me: false,
       blogs: false,
       youtube: false,
-      events: false
+      events: false,
+      projects:false
     })
   }
   handleChangeBlogs() {
     this.setState({
       achievements: false,
-      projects: false,
+      about_me: false,
       youtube: false,
       blogs: true,
-      events: false
+      events: false,
+      projects:false
     })
   }
   handleChangeYoutube() {
     this.setState({
       achievements: false,
-      projects: false,
+      about_me: false,
       blogs: false,
       youtube: true,
-      events: false
+      events: false,
+      projects:false
+    })
+  }
+  handleChangeEvents() {
+    this.setState({
+      achievements: false,
+      about_me: false,
+      blogs: false,
+      youtube: false,
+      events: true,
+      projects:false
+    })
+  }
+  handleChangeProjects() {
+    this.setState({
+      achievements: false,
+      about_me: false,
+      blogs: false,
+      youtube: false,
+      events: false,
+      projects:true,
     })
   }
   handleChangeToggle() {
@@ -102,23 +129,15 @@ class App extends Component {
     }
     this.setState({ toggle: !this.state.toggle })
   }
-  handleChangeEvents() {
-    this.setState({
-      achievements: false,
-      projects: false,
-      blogs: false,
-      youtube: false,
-      events: true
-    })
-  }
+ 
 
 
   render() {
     console.log("hamza: " + this.state.style)
     return (
       <div className="container1">
-        <div style={this.state.style} className="AboutMe"><AboutMe projects1={this.state.projects} blogs1={this.state.blogs} achievements1={this.state.achievements} youtube1={this.state.youtube} events1={this.state.events} toggle1={this.state.toggle} projects={this.handleChangeProjects} achievements={this.handleChangeAchievements} blogs={this.handleChangeBlogs} youtube={this.handleChangeYoutube} events={this.handleChangeEvents} toggle={this.handleChangeToggle} /></div>
-        <div style={this.state.style2} className="Intro"><Intro projects={this.state.projects} blogs={this.state.blogs} achievements={this.state.achievements} youtube={this.state.youtube} events={this.state.events} toggle={this.state.toggle} /></div>
+        <div style={this.state.style} className="AboutMe"><AboutMe about_me1={this.state.about_me} blogs1={this.state.blogs} achievements1={this.state.achievements} youtube1={this.state.youtube} events1={this.state.events} toggle1={this.state.toggle} projects1={this.state.projects} about_me={this.handleChangeAboutMe} achievements={this.handleChangeAchievements} blogs={this.handleChangeBlogs} youtube={this.handleChangeYoutube} events={this.handleChangeEvents} toggle={this.handleChangeToggle} projects={this.handleChangeProjects} /></div>
+        <div style={this.state.style2} className="Intro"><Intro about_me={this.state.about_me} blogs={this.state.blogs} achievements={this.state.achievements} youtube={this.state.youtube} events={this.state.events} toggle={this.state.toggle} projects={this.state.projects}/></div>
       </div>
     );
   }

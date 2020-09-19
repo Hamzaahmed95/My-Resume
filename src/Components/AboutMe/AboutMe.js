@@ -11,17 +11,19 @@ import LinkedInLight from '../../images/linkedin_light.png'
 import MediumLight from '../../images/medium_light.png'
 import Aboutme from '../../images/aboutme.png'
 import Portfolio from '../../images/portfolio.png'
-import { NAME, ABOUT_ME, TalentHunters, YOUTUBER, ACHIEVEMENT, BLOGS, LINKEDIN_URL, MEDIUM_URL, GITHUB_URL, TWITTER_URL } from '../../Utils/Constants.js'
+import { PROJECTS,NAME, ABOUT_ME, TalentHunters, YOUTUBER, ACHIEVEMENT, BLOGS, LINKEDIN_URL, MEDIUM_URL, GITHUB_URL, TWITTER_URL } from '../../Utils/Constants.js'
 import 'typeface-merriweather'
 
 export const AboutMe = (props) => {
 
-    const project1 = props.projects1
+    const about_me = props.about_me1
     const achievements1 = props.achievements1
     const blogs1 = props.blogs1
     const youtube1 = props.youtube1
     const events1 = props.events1
     const toggle = props.toggle1
+    const projects1 = props.project1
+
     let project1Style = {
         color: '#dfdfdf',
         fontFamily:'Merriweather, Georgia, serif'
@@ -42,6 +44,12 @@ export const AboutMe = (props) => {
         color: '#dfdfdf',
         fontFamily:'Merriweather, Georgia, serif'
     }
+
+    let projects1Style = {
+        color: '#dfdfdf',
+        fontFamily:'Merriweather, Georgia, serif'
+    }
+
     let intropara2Style = {
         color:'#000000',
         fontFamily:'Merriweather, Georgia, serif'
@@ -86,7 +94,7 @@ export const AboutMe = (props) => {
             color: '#000000',
             fontFamily:'Merriweather, Georgia, serif'
         }
-        if (project1) {
+        if (about_me) {
             project1Style = {
                 color: '#D33668',
                 fontFamily:'Merriweather, Georgia, serif'
@@ -112,6 +120,12 @@ export const AboutMe = (props) => {
         }
         if (events1) {
             events1Style = {
+                color: '#D33668',
+                fontFamily:'Merriweather, Georgia, serif'
+            }
+        }
+        if (projects1) {
+            projects1Style = {
                 color: '#D33668',
                 fontFamily:'Merriweather, Georgia, serif'
             }
@@ -146,7 +160,7 @@ export const AboutMe = (props) => {
             color: '#dfdfdf',
             fontFamily:'Merriweather, Georgia, serif'
         }
-        if (project1) {
+        if (about_me) {
             project1Style = {
                 color: '#FFA7C3',
                 fontFamily:'Merriweather, Georgia, serif'
@@ -176,6 +190,12 @@ export const AboutMe = (props) => {
                 fontFamily:'Merriweather, Georgia, serif'
             }
         }
+        if (projects1) {
+            projects1Style = {
+                color: '#FFA7C3',
+                fontFamily:'Merriweather, Georgia, serif'
+            }
+        }
     }
     console.log("hamza1: "+events1Style.color)
 
@@ -195,7 +215,7 @@ export const AboutMe = (props) => {
             </div>
             <hr style={lineStyle}className="line" />
 
-            <div onClick={props.projects} className="list">
+            <div onClick={props.about_me} className="list">
                 <p style={project1Style} className="intropara" > {ABOUT_ME}</p>
             </div>
             <div onClick={props.achievements} className="list">
@@ -209,6 +229,9 @@ export const AboutMe = (props) => {
             </div>
             <div onClick={props.events} className="list">
                 <p style={events1Style} className="intropara"> {TalentHunters}</p>
+            </div>
+            <div onClick={props.projects} className="list">
+                <p style={projects1Style} className="intropara"> {PROJECTS}</p>
             </div>
             <div className="toggle_button list">
                 <label className="switch">

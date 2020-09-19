@@ -1,10 +1,10 @@
 import React from 'react'
-import './Projects.css'
+import './MyIntroduction.css'
 import 'typeface-montserrat'
 import 'typeface-merriweather'
 import { details,details_2 } from '../../Utils/Constants'
 
-export const Projects = (props) => {
+export const MyIntroduction = (props) => {
     const toggle = props.toggle
     let subgraphStyle = {
         color:'#ffffff',
@@ -45,7 +45,10 @@ export const Projects = (props) => {
     }
     return (
         <div className="Projects">
-           <h1>My Projects</h1>
+            <div className="Projectsheadings">
+                <div className="v2"><h1 style={name2Style} className="name2">What I do</h1></div>
+            </div>
+            <p style={subgraphStyle} className="subgraph">{details} {details_2}</p>
         </div>
     )
 }
