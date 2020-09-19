@@ -45,7 +45,7 @@ export const Projects = (props) => {
     }
     return (
         <div className="Projects">
-           <h1>My Projects</h1>
+          <div className="v2"><h1 style={name2Style} className="name2">My Projects</h1></div>
         </div>
     )
 }

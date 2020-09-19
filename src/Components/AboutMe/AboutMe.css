@@ -51,8 +51,11 @@
 }
 .profile_picture{
     width:200px;
-    height: 250px;
-}
+    height: 200px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 50%;
+  }
 .toggle_button{
     padding-bottom: 12%;
     padding-top: 12%;
@@ -179,8 +182,5 @@
         background-color: #d3d3d3;
         border: none;
     }
-    .profile_picture{
-        width:120px;
-        height: 150px;
-    }
+   
 }

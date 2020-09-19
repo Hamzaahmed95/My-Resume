@@ -1,6 +1,6 @@
 import React from 'react'
 import './AboutMe.css'
-import Profile from '../../images/profile.png'
+import Profile from '../../images/profile.jpg'
 import Github from '../../images/github.png'
 import Twitter from '../../images/twitter.png'
 import LinkedIn from '../../images/linkedin.png'
@@ -22,9 +22,9 @@ export const AboutMe = (props) => {
     const youtube1 = props.youtube1
     const events1 = props.events1
     const toggle = props.toggle1
-    const projects1 = props.project1
+    const projects1 = props.projects1
 
-    let project1Style = {
+    let aboutMe1Style = {
         color: '#dfdfdf',
         fontFamily:'Merriweather, Georgia, serif'
     }
@@ -59,6 +59,9 @@ export const AboutMe = (props) => {
         backgroundColor: '#D33668',
         fontFamily:'Merriweather, Georgia, serif'
     }
+    let RoundImage ={
+        borderRadius: '50'
+    }
     
     
     if(toggle){
@@ -70,7 +73,7 @@ export const AboutMe = (props) => {
             color:'#000000',
             fontFamily:'Merriweather, Georgia, serif'
         }
-        project1Style = {
+        aboutMe1Style = {
             color: '#000000',
             fontFamily:'Merriweather, Georgia, serif'
         }
@@ -94,8 +97,12 @@ export const AboutMe = (props) => {
             color: '#000000',
             fontFamily:'Merriweather, Georgia, serif'
         }
+        projects1Style = {
+            color: '#000000',
+            fontFamily:'Merriweather, Georgia, serif'
+        }
         if (about_me) {
-            project1Style = {
+            aboutMe1Style = {
                 color: '#D33668',
                 fontFamily:'Merriweather, Georgia, serif'
             }
@@ -139,7 +146,7 @@ export const AboutMe = (props) => {
             color:'#e9e9e9',
             fontFamily:'Merriweather, Georgia, serif'
         }
-        project1Style = {
+        aboutMe1Style = {
             color: '#dfdfdf',
             fontFamily:'Merriweather, Georgia, serif'
         }
@@ -161,7 +168,7 @@ export const AboutMe = (props) => {
             fontFamily:'Merriweather, Georgia, serif'
         }
         if (about_me) {
-            project1Style = {
+            aboutMe1Style = {
                 color: '#FFA7C3',
                 fontFamily:'Merriweather, Georgia, serif'
             }
@@ -203,10 +210,7 @@ export const AboutMe = (props) => {
         
         <div align="center" className="AboutMe">
             <img className="profile_picture" src={Profile} width="200" height="250" />
-            <p style={intropara2Style} className="intropara2">
-                Hi, my name is <span style={intropara2Style} className="name_bold">Hamza Ahmed</span> and I'm a software engineer. Welcome to my personal website!
-            </p>
-            <p style={intropara2Style} className="heading_hidden">{NAME}</p>
+
             <div className="icons">
                 <a href={TWITTER_URL} >{toggle?<img className="each_icon" src={TwitterLight} />:<img className="each_icon" src={Twitter}/>}</a>
                 <a href={GITHUB_URL} >{toggle?<img className="each_icon" src={GithubLight} />:<img className="each_icon" src={Github}/>}</a>
@@ -216,7 +220,7 @@ export const AboutMe = (props) => {
             <hr style={lineStyle}className="line" />
 
             <div onClick={props.about_me} className="list">
-                <p style={project1Style} className="intropara" > {ABOUT_ME}</p>
+                <p style={aboutMe1Style} className="intropara" > {ABOUT_ME}</p>
             </div>
             <div onClick={props.achievements} className="list">
                 <p style={achievements1Style} className="intropara" > {ACHIEVEMENT}</p>

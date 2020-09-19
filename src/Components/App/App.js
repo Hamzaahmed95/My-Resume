@@ -18,7 +18,7 @@ class App extends Component {
       toggle: false,
       projects: false,
       style: {
-        background: '#373D49',
+        background: '#1D2632',
         color: '#e9e9e9'
       },
       style2: {

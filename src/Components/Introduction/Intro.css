@@ -4,19 +4,33 @@
     display: flex;
     flex-direction: column;
     flex: 1;
+    
 }
 .Intro1{
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
+    
+  
+}
+.Intro1 >Introduction{
+    flex:1;
+    flex-grow: 3;
 }
 
-.Intro1 >div{
-    flex:1
-}
 .Introduction{
     padding-top: 5%;
-    padding-left: 5%;
+    padding-left: 2.5%;
+    flex-grow: 2;
+}
+.Introduction2{
+
+    margin-top: 5%;
+    margin-left: 5%;
+    height: 70%;
+    margin-right: 5%;
+    padding: 1%;
+  
 }
 .ProfileImage{
     flex: 1 0 600px;
@@ -39,6 +53,12 @@
 .subgraph1{
     
     font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(255, 255, 255, 0.747);
+}
+.subgraph2{
+    
+    font-size: 16px;
     font-family: 'Times New Roman', Times, serif;
     color: rgba(255, 255, 255, 0.747);
 }
@@ -72,11 +92,27 @@
     }
 }
 @media all and (max-width: 800px){
-    .subgraph1{
+    .subgraph1,subgraph2{
         font-size: 15px;
         padding: 0%;
         margin-right: 3%;
        
+    }
+    .Introduction2{
+
+        margin-top: 2%;
+        margin-left: 2.5%;
+        height: 70%;
+        margin-right: 2.5%;
+        padding: 1%;
+      
+    }
+  
+    .Intro1{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      
     }
    
     .name{

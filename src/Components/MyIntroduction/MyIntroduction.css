@@ -1,11 +1,22 @@
-.Projects{
+.MyIntroduction{
     padding: 2.5%;
     margin-right: 4.5%;
+    width: 60%;
    
    
 }
+.skills_div{
+  display: flex;
+  flex-direction: row;
 
-.Projectsheadings{
+ 
+}
+
+.skills{
+  margin-left: 1% !important;
+}
+
+.MyIntroductionHeadings{
     display: flex;
 }
 
@@ -34,5 +45,11 @@
     font-family: 'Times New Roman', Times, serif;
     color: rgba(255, 255, 255, 0.747);
   }
+  .MyIntroduction{
+    padding: 2%;
+    
+    width: 100%;
+  
+}
 } 
 
