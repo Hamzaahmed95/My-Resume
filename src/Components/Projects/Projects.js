@@ -3,9 +3,12 @@ import './Projects.css'
 import 'typeface-montserrat'
 import 'typeface-merriweather'
 import { details,details_2 } from '../../Utils/Constants'
+import projects_data from '../../DummyData/projects_data.json'
 
 export const Projects = (props) => {
     const toggle = props.toggle
+
+    const data = projects_data
     let subgraphStyle = {
         color:'#ffffff',
         fontFamily:'Merriweather, Georgia, serif',
@@ -46,6 +49,9 @@ export const Projects = (props) => {
     return (
         <div className="Projects">
           <div className="v2"><h1 style={name2Style} className="name2">My Projects</h1></div>
+          {data.data.map(datas =>{
+            return <div>{datas.name}</div>
+          })}
         </div>
     )
 }

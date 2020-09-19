@@ -18,7 +18,8 @@ class App extends Component {
       toggle: false,
       projects: false,
       style: {
-        background: '#1D2632',
+        background: '#282D35',
+        borderRight: '1px solid white',
         color: '#e9e9e9'
       },
       style2: {
@@ -103,7 +104,8 @@ class App extends Component {
       this.setState({
         style: {
           ...this.state.style,
-          background: '#1D2632',
+          background: '#282D35',
+          borderRight: '1px solid grey',
           color: '#e9e9e9'
         },
         style2: {
@@ -117,7 +119,8 @@ class App extends Component {
       this.setState({
         style: {
           ...this.state.style,
-          background: '#dfdfdf',
+          background: '#ffffff',
+          borderRight: '1px solid grey',
           color: '#000000'
         },
         style2: {

@@ -50,10 +50,10 @@
     height: 20px;
 }
 .profile_picture{
-    width:200px;
-    height: 200px;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    width:100px;
+    height: 100px;
+    padding-top: 25%;
+    padding-bottom: 25%;
     border-radius: 50%;
   }
 .toggle_button{

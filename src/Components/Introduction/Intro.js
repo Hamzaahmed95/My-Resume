@@ -24,7 +24,7 @@ export const Intro = (props) => {
         color: '#ffffff',
         fontFamily: 'Montserrat, sans-serif',
         fontWeight: '900',
-        fontSize: '32'
+        fontSize: '25px'
     }
     let subgraphStyle = {
         color: '#ffffff',
@@ -35,15 +35,17 @@ export const Intro = (props) => {
         color: '#ffffff'
     }
     let headingbackground = {
-        borderStyle: 'solid',
-        borderColor: '#FFA7C3'
+        border: '1px solid grey',
+        borderColor: '#d3d3d3',
+        borderRadius: '10px',
+        background:'#373D49'
     }
     if (toggle) {
         mainHeadingStyle = {
             color: '#000000',
             fontFamily: 'Montserrat, sans-serif',
             fontWeight: '900',
-            fontSize: '32'
+            fontSize: '25px'
         }
         subgraphStyle = {
             color: '#000000',
@@ -55,15 +57,17 @@ export const Intro = (props) => {
             color: '#ffffff'
         }
         headingbackground = {
-            borderStyle: 'solid',
-            borderColor: '#D33668'
+            border: '1px solid grey',
+            background:'#FEFAE1',
+            borderRadius: '10px',
+            borderColor: '#d3d3d3',
         }
     } else {
         mainHeadingStyle = {
             color: '#ffffff',
             fontFamily: 'Montserrat, sans-serif',
             fontWeight: '900',
-            fontSize: '32px'
+            fontSize: '25px'
 
         }
         subgraphStyle = {
@@ -75,8 +79,10 @@ export const Intro = (props) => {
             background: '#FFA7C3'
         }
         headingbackground = {
-            borderStyle: 'solid',
-            borderColor: '#FFA7C3'
+            border: '1px solid grey',
+            borderRadius: '10px',
+            borderColor: '#d3d3d3',
+            background:'#373D49'
         }
     }
     return (
