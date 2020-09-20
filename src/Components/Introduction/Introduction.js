@@ -1,11 +1,10 @@
 import React from 'react'
-import './MainComponent.css'
+import './Introduction.css'
 import Email from '../../images/email.png'
 import Email_NIGHT from '../../images/email_night.png'
 import Phone from '../../images/phone.png'
 import Phone_NIGHT from '../../images/phone_night.png'
 import { MyIntroduction } from '../MyIntroduction/MyIntroduction'
-import { Introduction } from '../Introduction/Introduction'
 import { Achievements } from '../Achievements/Achievements'
 import { Blogs } from '../Blogs/Blogs'
 import { Youtube } from '../Youtube/Youtube'
@@ -18,7 +17,7 @@ import { NAME, OCCUPATION, JAVASCRIPT, PYTHON, ANDROID } from '../../Utils/Const
 
 import 'typeface-merriweather'
 
-export const MainComponent = (props) => {
+export const Introduction = (props) => {
 
     const toggle = props.toggle
     let mainHeadingStyle = {
@@ -88,29 +87,18 @@ export const MainComponent = (props) => {
     }
     return (
         <div className="Intro">
-            <Introduction/>
-           
-            {props.about_me ?
-                <div className="Projects">
-                    <MyIntroduction toggle={toggle} />
-                </div> : ''}
-            <div className="for_width">
-                {props.achievements ?
-                    <div className="Achievements">
-                        <Achievements toggle={toggle} />
-                    </div> : ''}
-                {props.blogs ? <div className="Blogs">
-                    <Blogs toggle={toggle} />
-                </div> : ''}
-                {props.youtube ? <div className="Blogs">
-                    <Youtube toggle={toggle} />
-                </div> : ''}
-                {props.events ? <div className="Blogs">
-                    <Events toggle={toggle} />
-                </div> : ''}
-                {props.projects ? <div className="Blogs">
-                    <Projects toggle={toggle} />
-                </div> : ''}
+            <div className="Intro1">
+                <div className="Introduction">
+                    <h1 style={mainHeadingStyle} className="name">{NAME}</h1>
+                    <p style={subgraphStyle} className="subgraph1">I'm a software engineer specialized in frontend with <span style={rainbow1Style} className="rainbow">React.</span> I'm also working and writing in Android development with <span style={rainbow1Style} className="rainbow">Java/Kotlin.</span></p>
+                </div>
+                <div style={headingbackground} className="Introduction2">
+                    <h4 style={subgraphStyle}>Currently working as an <span style={rainbow1Style} className="rainbow">Android Developer</span> at Hong Leong Bank,
+                        Kuala Lumpur, Malaysia
+                    </h4>
+                    <p className="subgraph2" style={subgraphStyle}> {props.toggle ? <img src={Email_NIGHT} width={20} height={14} /> : <img src={Email} width={20} height={14} />} hamza.ahmed0402@gmail.com</p>
+                    <p className="subgraph2" style={subgraphStyle}>{props.toggle ? <img src={Phone_NIGHT} width={20} height={20} /> : <img src={Phone} width={20} height={20} />} (+60) 18 390 8407</p>
+                </div>
             </div>
         </div>
     )
