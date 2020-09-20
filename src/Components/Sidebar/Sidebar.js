@@ -1,16 +1,14 @@
 import React from 'react'
 import './Sidebar.css'
 import Profile from '../../images/profile.jpg'
-import Github from '../../images/github.png'
-import Twitter from '../../images/twitter.png'
-import LinkedIn from '../../images/linkedin.png'
-import Medium from '../../images/medium.png'
-import GithubLight from '../../images/github_light.png'
-import TwitterLight from '../../images/twitter_light.png'
-import LinkedInLight from '../../images/linkedin_light.png'
-import MediumLight from '../../images/medium_light.png'
-import Aboutme from '../../images/aboutme.png'
-import Portfolio from '../../images/portfolio.png'
+import Github from '../../images/night/github.png'
+import Twitter from '../../images/night/twitter.png'
+import LinkedIn from '../../images/night/linkedin.png'
+import Medium from '../../images/night/medium.png'
+import GithubLight from '../../images/day/github.png'
+import TwitterLight from '../../images/day/twitter.png'
+import LinkedInLight from '../../images/day/linkedin.png'
+import MediumLight from '../../images/day/medium.png'
 import { PROJECTS,NAME, ABOUT_ME, TalentHunters, YOUTUBER, ACHIEVEMENT, BLOGS, LINKEDIN_URL, MEDIUM_URL, GITHUB_URL, TWITTER_URL } from '../../Utils/Constants.js'
 import 'typeface-merriweather'
 
@@ -212,10 +210,10 @@ export const Sidebar = (props) => {
             <img className="profile_picture" src={Profile} width="200" height="250" />
 
             <div className="icons">
-                <a href={TWITTER_URL} >{toggle?<img className="each_icon" src={TwitterLight} />:<img className="each_icon" src={Twitter}/>}</a>
-                <a href={GITHUB_URL} >{toggle?<img className="each_icon" src={GithubLight} />:<img className="each_icon" src={Github}/>}</a>
-                <a href={LINKEDIN_URL} >{toggle?<img className="each_icon" src={LinkedInLight} />:<img className="each_icon" src={LinkedIn}/>}</a>
-                <a href={MEDIUM_URL} >{toggle?<img className="each_icon" src={MediumLight} />:<img className="each_icon" src={Medium}/>}</a>
+                <a href={TWITTER_URL} >{toggle?<img className="each_icon" src={Twitter} />:<img className="each_icon" src={TwitterLight}/>}</a>
+                <a href={GITHUB_URL} >{toggle?<img className="each_icon" src={Github} />:<img className="each_icon" src={GithubLight}/>}</a>
+                <a href={LINKEDIN_URL} >{toggle?<img className="each_icon" src={LinkedIn} />:<img className="each_icon" src={LinkedInLight}/>}</a>
+                <a href={MEDIUM_URL} >{toggle?<img className="each_icon" src={Medium} />:<img className="each_icon" src={MediumLight}/>}</a>
             </div>
             <hr style={lineStyle}className="line" />
 

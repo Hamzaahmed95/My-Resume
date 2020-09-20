@@ -1,9 +1,9 @@
 import React from 'react'
 import './Introduction.css'
-import Email from '../../images/email.png'
-import Email_NIGHT from '../../images/email_night.png'
-import Phone from '../../images/phone.png'
-import Phone_NIGHT from '../../images/phone_night.png'
+import Email from '../../images/day/email.png'
+import Email_NIGHT from '../../images/night/email.png'
+import Phone from '../../images/day/phone.png'
+import Phone_NIGHT from '../../images/night/phone.png'
 import { NAME, OCCUPATION, JAVASCRIPT, PYTHON, ANDROID } from '../../Utils/Constants.js'
 
 import 'typeface-merriweather'
