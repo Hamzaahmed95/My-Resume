@@ -1,13 +1,13 @@
 import React from 'react'
-import './MyIntroduction.css'
-import './node_modules/typeface-montserrat'
-import './node_modules/typeface-merriweather'
-import { details, details_2 } from '../../Utils/Constants'
+import './AboutMe.css'
+import 'typeface-montserrat'
+import 'typeface-merriweather'
+import { details, details_2 } from '../../../Utils/Constants'
 
-import Bullets from '../../images/bullets.png'
-import Bullets_NIGHT from '../../images/bullets_night.png'
+import Bullets from '../../../images/bullets.png'
+import Bullets_NIGHT from '../../../images/bullets_night.png'
 
-export const MyIntroduction = (props) => {
+export const AboutMe = (props) => {
     const toggle = props.toggle
     let subgraphStyle = {
         color: '#ffffff',

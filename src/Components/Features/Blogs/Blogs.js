@@ -1,11 +1,11 @@
 import React from 'react'
 import './Blogs.css'
-import { Blogs_Main_Heading, Blog_1_URL, Blog_2_URL, Blog_3_URL, Blog_4_URL, Blog_5_URL, Blog_1_Heading, Blog_2_Heading, Blog_3_Heading, Blog_4_Heading, Blog_5_Heading } from '../../Utils/Constants.js'
-import Blog1 from '../../images/blog11.png'
-import Blog2 from '../../images/blog22.png'
-import Blog3 from '../../images/blog33.png'
-import Blog4 from '../../images/blog44.png'
-import Blog5 from '../../images/blog55.png'
+import { Blogs_Main_Heading, Blog_1_URL, Blog_2_URL, Blog_3_URL, Blog_4_URL, Blog_5_URL, Blog_1_Heading, Blog_2_Heading, Blog_3_Heading, Blog_4_Heading, Blog_5_Heading } from '../../../Utils/Constants'
+import Blog1 from '../../../images/blog11.png'
+import Blog2 from '../../../images/blog22.png'
+import Blog3 from '../../../images/blog33.png'
+import Blog4 from '../../../images/blog44.png'
+import Blog5 from '../../../images/blog55.png'
 
 export const Blogs = (props) => {
 

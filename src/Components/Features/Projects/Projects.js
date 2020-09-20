@@ -1,9 +1,8 @@
 import React from 'react'
 import './Projects.css'
-import '../Features/AboutMe/node_modules/typeface-montserrat'
+import 'typeface-montserrat'
 import 'typeface-merriweather'
-import { details,details_2 } from '../../Utils/Constants'
-import projects_data from '../../DummyData/projects_data.json'
+import projects_data from '../../../DummyData/projects_data.json'
 
 export const Projects = (props) => {
     const toggle = props.toggle
