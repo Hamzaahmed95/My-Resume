@@ -1,5 +1,5 @@
 import React from 'react'
-import './Intro.css'
+import './MainComponent.css'
 import Email from '../../images/email.png'
 import Email_NIGHT from '../../images/email_night.png'
 import Phone from '../../images/phone.png'
@@ -17,7 +17,7 @@ import { NAME, OCCUPATION, JAVASCRIPT, PYTHON, ANDROID } from '../../Utils/Const
 
 import 'typeface-merriweather'
 
-export const Intro = (props) => {
+export const MainComponent = (props) => {
 
     const toggle = props.toggle
     let mainHeadingStyle = {

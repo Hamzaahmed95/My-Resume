@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 import './App.css';
-import { AboutMe } from '../AboutMe/AboutMe'
-import { Intro } from '../Introduction/Intro'
+import { Sidebar } from '../Sidebar/Sidebar'
+import { MainComponent } from '../MainComponent/MainComponent'
 
 class App extends Component {
 
@@ -136,11 +136,10 @@ class App extends Component {
 
 
   render() {
-    console.log("hamza: " + this.state.style)
     return (
       <div className="container1">
-        <div style={this.state.style} className="AboutMe"><AboutMe about_me1={this.state.about_me} blogs1={this.state.blogs} achievements1={this.state.achievements} youtube1={this.state.youtube} events1={this.state.events} toggle1={this.state.toggle} projects1={this.state.projects} about_me={this.handleChangeAboutMe} achievements={this.handleChangeAchievements} blogs={this.handleChangeBlogs} youtube={this.handleChangeYoutube} events={this.handleChangeEvents} toggle={this.handleChangeToggle} projects={this.handleChangeProjects} /></div>
-        <div style={this.state.style2} className="Intro"><Intro about_me={this.state.about_me} blogs={this.state.blogs} achievements={this.state.achievements} youtube={this.state.youtube} events={this.state.events} toggle={this.state.toggle} projects={this.state.projects}/></div>
+        <div style={this.state.style} className="AboutMe"><Sidebar about_me1={this.state.about_me} blogs1={this.state.blogs} achievements1={this.state.achievements} youtube1={this.state.youtube} events1={this.state.events} toggle1={this.state.toggle} projects1={this.state.projects} about_me={this.handleChangeAboutMe} achievements={this.handleChangeAchievements} blogs={this.handleChangeBlogs} youtube={this.handleChangeYoutube} events={this.handleChangeEvents} toggle={this.handleChangeToggle} projects={this.handleChangeProjects} /></div>
+        <div style={this.state.style2} className="Intro"><MainComponent about_me={this.state.about_me} blogs={this.state.blogs} achievements={this.state.achievements} youtube={this.state.youtube} events={this.state.events} toggle={this.state.toggle} projects={this.state.projects}/></div>
       </div>
     );
   }

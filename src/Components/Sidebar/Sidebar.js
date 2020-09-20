@@ -1,5 +1,5 @@
 import React from 'react'
-import './AboutMe.css'
+import './Sidebar.css'
 import Profile from '../../images/profile.jpg'
 import Github from '../../images/github.png'
 import Twitter from '../../images/twitter.png'
@@ -14,7 +14,7 @@ import Portfolio from '../../images/portfolio.png'
 import { PROJECTS,NAME, ABOUT_ME, TalentHunters, YOUTUBER, ACHIEVEMENT, BLOGS, LINKEDIN_URL, MEDIUM_URL, GITHUB_URL, TWITTER_URL } from '../../Utils/Constants.js'
 import 'typeface-merriweather'
 
-export const AboutMe = (props) => {
+export const Sidebar = (props) => {
 
     const about_me = props.about_me1
     const achievements1 = props.achievements1
