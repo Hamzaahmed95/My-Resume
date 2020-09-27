@@ -1,23 +1,14 @@
 import React from 'react'
-import './Intro.css'
-import Email from '../../images/email.png'
-import Email_NIGHT from '../../images/email_night.png'
-import Phone from '../../images/phone.png'
-import Phone_NIGHT from '../../images/phone_night.png'
-import { MyIntroduction } from '../MyIntroduction/MyIntroduction'
-import { Achievements } from '../Achievements/Achievements'
-import { Blogs } from '../Blogs/Blogs'
-import { Youtube } from '../Youtube/Youtube'
-import { Events } from '../Events/Events'
-import { Projects } from '../Projects/Projects'
-import AndroidIcon from '../../images/android.png'
-import ReactIcon from '../../images/react.png'
-import NodeIcon from '../../images/node.png'
+import './Introduction.css'
+import Email from '../../images/day/email.png'
+import Email_NIGHT from '../../images/night/email.png'
+import Phone from '../../images/day/phone.png'
+import Phone_NIGHT from '../../images/night/phone.png'
 import { NAME, OCCUPATION, JAVASCRIPT, PYTHON, ANDROID } from '../../Utils/Constants.js'
 
 import 'typeface-merriweather'
 
-export const Intro = (props) => {
+export const Introduction = (props) => {
 
     const toggle = props.toggle
     let mainHeadingStyle = {
@@ -99,29 +90,6 @@ export const Intro = (props) => {
                     <p className="subgraph2" style={subgraphStyle}> {props.toggle ? <img src={Email_NIGHT} width={20} height={14} /> : <img src={Email} width={20} height={14} />} hamza.ahmed0402@gmail.com</p>
                     <p className="subgraph2" style={subgraphStyle}>{props.toggle ? <img src={Phone_NIGHT} width={20} height={20} /> : <img src={Phone} width={20} height={20} />} (+60) 18 390 8407</p>
                 </div>
-
-            </div>
-            {props.about_me ?
-                <div className="Projects">
-                    <MyIntroduction toggle={toggle} />
-                </div> : ''}
-            <div className="for_width">
-                {props.achievements ?
-                    <div className="Achievements">
-                        <Achievements toggle={toggle} />
-                    </div> : ''}
-                {props.blogs ? <div className="Blogs">
-                    <Blogs toggle={toggle} />
-                </div> : ''}
-                {props.youtube ? <div className="Blogs">
-                    <Youtube toggle={toggle} />
-                </div> : ''}
-                {props.events ? <div className="Blogs">
-                    <Events toggle={toggle} />
-                </div> : ''}
-                {props.projects ? <div className="Blogs">
-                    <Projects toggle={toggle} />
-                </div> : ''}
             </div>
         </div>
     )

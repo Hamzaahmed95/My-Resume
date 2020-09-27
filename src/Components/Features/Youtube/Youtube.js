@@ -1,9 +1,8 @@
 import React from 'react'
 import './Youtube.css'
-import { Youtube_Main_Heading, video1_link, video2_link, Blog_3_URL, Video_1_Heading, Video_2_Heading, Achievement_3_Heading, Blog_4_Heading, Blog_5_Heading } from '../../Utils/Constants.js'
-import Video1 from '../../images/disrupt.jpg'
-import Video2 from '../../images/Ilmi_shaoor.png'
-import Achievement3 from '../../images/achievement3.jpeg'
+import { Youtube_Main_Heading, video1_link, video2_link, Blog_3_URL, Video_1_Heading, Video_2_Heading, Achievement_3_Heading, Blog_4_Heading, Blog_5_Heading } from '../../../Utils/Constants'
+import Video1 from '../../../images/disrupt.jpg'
+import Video2 from '../../../images/Ilmi_shaoor.png'
 
 export const Youtube = (props) => {
 

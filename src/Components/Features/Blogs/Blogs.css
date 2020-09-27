@@ -1,41 +1,51 @@
-.Events{
+.Blogs{
     padding: 2.5%; 
 }
 
-.Eventsheadings{
+.name2{
+    font-size: 25px;
+    margin-bottom: 5%;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.Blogsheadings{
     display: flex;
 }
 
 .name2{
     font-size: 25px;
-    padding-bottom: 15px;
     color:#b0b3b8;
     margin-bottom: auto;
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.eventPieces{
+.blogPieces{
     display: flex;
-    flex-wrap: wrap;
+
+    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: left; 
 }
-.eventPieces > div > img{
+
+.blogPieces > div > a >img{
+    margin-right: 5% !important;
     width:300px;
     height:171px;
 }
-.event1, .event2, .event3, .event4,.event5 {    
-    margin:2% 2% 0% 0%;
+
+.blog_headings{
+    color:orange;
     
 }
-.event_headings{
-    color:orange;
+.para_blogs{
+    padding-left: 2%;
 }
 a{
     color:transparent
 }
 
 @media all and (max-width: 700px){
-    .eventPieces{
+    .blogPieces{
         display: flex;
         flex-wrap: wrap;
         justify-content: center; 

@@ -3,10 +3,15 @@
 export const Blogs_Main_Heading = "Blogs";
 
 export const Blog_1_Heading = "Master the Android Interview";
+export const Blog_1_Content = "This blog covers the basic level of android knowledge which includes life cycles of activity, intents, permissions, sending data from one activity to another, back stack and fragments, networking and API calls, android debug bridge (ADB) and socket Programming in Android";
 export const Blog_2_Heading = "Four Pillars of OOP";
-export const Blog_3_Heading = "A biginners guide to reactjs";
+export const Blog_2_Content = "This blog covers real life examples of four pillars of object oriented programming";
+export const Blog_3_Heading = "A biginners guide to REACTJS";
+export const Blog_3_Content = "This blog covers basic introduction of React JS framework using real life examples (Youtube page structure)";
 export const Blog_4_Heading = "Design a circle in Android";
+export const Blog_4_Content = "This blog is about designing a circular screen or circular design using linear layout.";
 export const Blog_5_Heading = "Design a bar chart in Android";
+export const Blog_5_Content = "This blog is about designing a bar chart screen or bar chart design using linear layout.";
 export const Blog_1_URL= "https://medium.com/@hamzzza.ahmed95/master-the-android-interview-basics-3f7511a4a2fc";
 export const Blog_2_URL= "https://medium.com/@hamzzza.ahmed95/four-pillars-of-object-oriented-programming-oop-e8d7822aa219";
 export const Blog_3_URL= "https://medium.com/@hamzzza.ahmed95/a-beginners-guide-to-reactjs-2b59db83fa18";
@@ -39,8 +44,11 @@ export const ANDROID = "Android"
 
 export const Achievements_Main_Heading = "Achievements"
 export const Achievement_1_Heading = "Winner of PROCOM 2018"
+export const Achievement_1_Content = "I won national level mobile development competition held in 2018. Our team consist of three and we are top among 20 teams"
 export const Achievement_2_Heading = "Awarded for Creating League App"
+export const Achievement_2_Content = "I was awarded by sportics society for creating an android app which has been downloaded by 2k people from playstore. The purpose of this app is to digitalised the sports league. All the scores, team records, points table, man of the match and live scores can be foundd in the app"
 export const Achievement_3_Heading = "App head award in DevDay 2018"
+export const Achievement_3_Content = "It was honoured for me to design question set for National level competition and also I was given award of appreciation by ACM society for becoming head of mobile development competition at DEV DAY 2018"
 
 
 //MY PROJECTS
