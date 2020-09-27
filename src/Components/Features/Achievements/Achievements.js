@@ -57,28 +57,28 @@ export const Achievements = (props) => {
     return (
         <div className="Achievements">
             <div className="Achievementsheadings">
-                <div className="v2"><h1 style={name2Style} className="name2">{Achievements_Main_Heading}</h1></div>
+                <div className="v2"><h1 style={name2Style}>{Achievements_Main_Heading}</h1></div>
             </div>
             <div className="achievementsPieces">
                 <div align="left" style = {background} className="blog1">
                     <img src={Achievement1} />
                     <div>
                         <h2 style={name2Style} >{Achievement_1_Heading}</h2>
-                        <p style={subgraphStyle}>{Achievement_1_Content}</p>
+                        <p className= "sub_style" style={subgraphStyle}>{Achievement_1_Content}</p>
                     </div>
                 </div>
                 <div align="left" style = {background}className="blog2">
                     <img src={Achievement2} />
                     <div>
                         <h2 style={name2Style} >{Achievement_2_Heading}</h2>
-                        <p style={subgraphStyle}>{Achievement_2_Content}</p>
+                        <p className= "sub_style" style={subgraphStyle}>{Achievement_2_Content}</p>
                     </div>
                 </div>
                 <div align="left" style = {background} className="blog3">
                     <img src={Achievement3} />
                     <div>
                         <h2 style={name2Style} >{Achievement_3_Heading}</h2>
-                        <p style={subgraphStyle}>{Achievement_3_Content}</p>
+                        <p sclassName= "sub_style" tyle={subgraphStyle}>{Achievement_3_Content}</p>
                     </div>
                 </div>
             </div>

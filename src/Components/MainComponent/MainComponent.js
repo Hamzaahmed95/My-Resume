@@ -24,7 +24,7 @@ export const MainComponent = (props) => {
                     <div className="Projects">
                         <AboutMe toggle={toggle} />
                     </div>
-                    </div> : ''}
+                </div> : ''}
             <div className="for_width">
                 {props.achievements ?
                     <div className="Achievements">
@@ -34,11 +34,7 @@ export const MainComponent = (props) => {
                     <div className="Blogs">
                         <Blogs toggle={toggle} />
                     </div> : ''}
-                
-                {props.events ?
-                    <div className="Blogs">
-                        <Events toggle={toggle} />
-                    </div> : ''}
+
                 {props.projects ?
                     <div className="Blogs">
                         <Projects toggle={toggle} />

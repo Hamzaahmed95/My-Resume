@@ -21,19 +21,24 @@
 }
 .blogPieces{
     display: flex;
-    flex-wrap: wrap;
+
+    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: left; 
 }
+
 .blogPieces > div > a >img{
+    margin-right: 5% !important;
     width:300px;
     height:171px;
 }
-.blog1, .blog2, .blog3, .blog4,.blog5 {    
-    margin:2% 2% 0% 0%;
-    
-}
+
 .blog_headings{
     color:orange;
+    
+}
+.para_blogs{
+    padding-left: 2%;
 }
 a{
     color:transparent

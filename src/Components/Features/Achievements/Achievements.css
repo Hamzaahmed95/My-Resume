@@ -24,7 +24,7 @@
     width:200px;
     height:356px;
 }
-.blog1, .blog2, .blog3{    
+.blog1, .blog2, .blog3,.blog4,.blog5{    
     display: flex;
     padding: 2%;
     flex-wrap: nowrap;
@@ -42,19 +42,23 @@ a{
     color:transparent
 }
 
+
 @media all and (max-width: 800px){
     .achievementsPieces{
         display: flex;
         flex-wrap: wrap;
         justify-content: center; 
     }
-    .blog1, .blog2, .blog3{    
+    .blog1, .blog2, .blog3,.blog4,.blog5{    
         display: flex;
         padding: 2%;
         flex-wrap: wrap;
         background: #363D48;
         box-shadow: 0 4px 8px 8px rgba(0,0,0,0.2);
         
+    }
+    .sub_style{
+        font-size: 12px;
     }
 
 }

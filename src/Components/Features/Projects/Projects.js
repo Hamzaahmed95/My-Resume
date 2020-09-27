@@ -75,7 +75,7 @@ export const Projects = (props) => {
     return (
         <div className="Projects">
 
-            <div className="v2"><h1 style={name2Style} className="name2">My Projects</h1></div>
+            <div className="v2"><h1 style={name2Style} >My Projects</h1></div>
 
             <div className="container">
                 <div style = {first_child} className="child">
@@ -86,7 +86,7 @@ export const Projects = (props) => {
                                 <div className="eventPieces">
                                     <div className="event1">
                                         <div className="v2"><h1 style={name2Style} className="name2">{datas.name}</h1></div>
-                                        <p style={subgraphStyle} className="event_headings">{datas.details}</p>
+                                        <p className= "sub_style" style={subgraphStyle} >{datas.details}</p>
                                     </div>
                                 </div>
                             )
@@ -102,7 +102,7 @@ export const Projects = (props) => {
                                 <div className="eventPieces">
                                     <div className="event1">
                                         <div className="v2"><h1 style={name2Style} className="name2">{datas.name}</h1></div>
-                                        <p style={subgraphStyle} className="event_headings">{datas.details}</p>
+                                        <p className= "sub_style" style={subgraphStyle}>{datas.details}</p>
                                     </div>
                                 </div>
                             )

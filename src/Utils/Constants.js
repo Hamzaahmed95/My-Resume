@@ -3,10 +3,15 @@
 export const Blogs_Main_Heading = "Blogs";
 
 export const Blog_1_Heading = "Master the Android Interview";
+export const Blog_1_Content = "This blog covers the basic level of android knowledge which includes life cycles of activity, intents, permissions, sending data from one activity to another, back stack and fragments, networking and API calls, android debug bridge (ADB) and socket Programming in Android";
 export const Blog_2_Heading = "Four Pillars of OOP";
-export const Blog_3_Heading = "A biginners guide to reactjs";
+export const Blog_2_Content = "This blog covers real life examples of four pillars of object oriented programming";
+export const Blog_3_Heading = "A biginners guide to REACTJS";
+export const Blog_3_Content = "This blog covers basic introduction of React JS framework using real life examples (Youtube page structure)";
 export const Blog_4_Heading = "Design a circle in Android";
+export const Blog_4_Content = "This blog is about designing a circular screen or circular design using linear layout.";
 export const Blog_5_Heading = "Design a bar chart in Android";
+export const Blog_5_Content = "This blog is about designing a bar chart screen or bar chart design using linear layout.";
 export const Blog_1_URL= "https://medium.com/@hamzzza.ahmed95/master-the-android-interview-basics-3f7511a4a2fc";
 export const Blog_2_URL= "https://medium.com/@hamzzza.ahmed95/four-pillars-of-object-oriented-programming-oop-e8d7822aa219";
 export const Blog_3_URL= "https://medium.com/@hamzzza.ahmed95/a-beginners-guide-to-reactjs-2b59db83fa18";

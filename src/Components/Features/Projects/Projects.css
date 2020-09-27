@@ -1,4 +1,6 @@
-
+.Projects{
+  padding: 2.5%; 
+}
 .container {
     display: flex;
     justify-content: space-between;
@@ -24,4 +26,12 @@
     background: #282D35;
   }
 
+
+@media all and (max-width: 800px){
+  
+  .sub_style{
+      font-size: 12px;
+  }
+
+}
   

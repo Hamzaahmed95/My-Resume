@@ -17,7 +17,6 @@ export const Sidebar = (props) => {
     const about_me = props.about_me1
     const achievements1 = props.achievements1
     const blogs1 = props.blogs1
-    const events1 = props.events1
     const toggle = props.toggle1
     const projects1 = props.projects1
 
@@ -34,11 +33,6 @@ export const Sidebar = (props) => {
         fontFamily:'Merriweather, Georgia, serif'
     }
    
-    let events1Style = {
-        color: '#dfdfdf',
-        fontFamily:'Merriweather, Georgia, serif'
-    }
-
     let projects1Style = {
         color: '#dfdfdf',
         fontFamily:'Merriweather, Georgia, serif'
@@ -79,10 +73,7 @@ export const Sidebar = (props) => {
             color: '#000000',
             fontFamily:'Merriweather, Georgia, serif'
         }
-        events1Style = {
-            color: '#000000',
-            fontFamily:'Merriweather, Georgia, serif'
-        }
+       
         intropara2Style = {
             color:'#000000',
             fontFamily:'Merriweather, Georgia, serif'
@@ -111,12 +102,7 @@ export const Sidebar = (props) => {
             }
         }
         
-        if (events1) {
-            events1Style = {
-                color: '#D33668',
-                fontFamily:'Merriweather, Georgia, serif'
-            }
-        }
+       
         if (projects1) {
             projects1Style = {
                 color: '#D33668',
@@ -144,11 +130,7 @@ export const Sidebar = (props) => {
             color: '#dfdfdf',
             fontFamily:'Merriweather, Georgia, serif'
         }
-        events1Style = {
-            color: '#dfdfdf',
-            fontFamily:'Merriweather, Georgia, serif'
-        }
-    
+      
         
         if (about_me) {
             aboutMe1Style = {
@@ -168,13 +150,7 @@ export const Sidebar = (props) => {
                 fontFamily:'Merriweather, Georgia, serif'
             }
         }
-       
-        if (events1) {
-            events1Style = {
-                color: '#FFA7C3',
-                fontFamily:'Merriweather, Georgia, serif'
-            }
-        }
+      
         if (projects1) {
             projects1Style = {
                 color: '#FFA7C3',
@@ -182,7 +158,6 @@ export const Sidebar = (props) => {
             }
         }
     }
-    console.log("hamza1: "+events1Style.color)
 
     return (
         
@@ -206,9 +181,7 @@ export const Sidebar = (props) => {
             <div onClick={props.blogs} className="list">
                 <p style={blogs1Style} className="intropara" > {BLOGS}</p>
             </div>
-            <div onClick={props.events} className="list">
-                <p style={events1Style} className="intropara"> {TalentHunters}</p>
-            </div>
+           
             <div onClick={props.projects} className="list">
                 <p style={projects1Style} className="intropara"> {PROJECTS}</p>
             </div>
