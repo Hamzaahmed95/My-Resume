@@ -34,10 +34,7 @@ export const MainComponent = (props) => {
                     <div className="Blogs">
                         <Blogs toggle={toggle} />
                     </div> : ''}
-                {props.youtube ?
-                    <div className="Blogs">
-                        <Youtube toggle={toggle} />
-                    </div> : ''}
+                
                 {props.events ?
                     <div className="Blogs">
                         <Events toggle={toggle} />

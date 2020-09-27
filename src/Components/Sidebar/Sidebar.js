@@ -17,7 +17,6 @@ export const Sidebar = (props) => {
     const about_me = props.about_me1
     const achievements1 = props.achievements1
     const blogs1 = props.blogs1
-    const youtube1 = props.youtube1
     const events1 = props.events1
     const toggle = props.toggle1
     const projects1 = props.projects1
@@ -34,10 +33,7 @@ export const Sidebar = (props) => {
         color: '#dfdfdf',
         fontFamily:'Merriweather, Georgia, serif'
     }
-    let youtube1Style = {
-        color: '#dfdfdf',
-        fontFamily:'Merriweather, Georgia, serif'
-    }
+   
     let events1Style = {
         color: '#dfdfdf',
         fontFamily:'Merriweather, Georgia, serif'
@@ -91,10 +87,7 @@ export const Sidebar = (props) => {
             color:'#000000',
             fontFamily:'Merriweather, Georgia, serif'
         }
-        youtube1Style = {
-            color: '#000000',
-            fontFamily:'Merriweather, Georgia, serif'
-        }
+       
         projects1Style = {
             color: '#000000',
             fontFamily:'Merriweather, Georgia, serif'
@@ -117,12 +110,7 @@ export const Sidebar = (props) => {
                 fontFamily:'Merriweather, Georgia, serif'
             }
         }
-        if (youtube1) {
-            youtube1Style = {
-                color: '#D33668',
-                fontFamily:'Merriweather, Georgia, serif'
-            }
-        }
+        
         if (events1) {
             events1Style = {
                 color: '#D33668',
@@ -161,10 +149,7 @@ export const Sidebar = (props) => {
             fontFamily:'Merriweather, Georgia, serif'
         }
     
-        youtube1Style = {
-            color: '#dfdfdf',
-            fontFamily:'Merriweather, Georgia, serif'
-        }
+        
         if (about_me) {
             aboutMe1Style = {
                 color: '#FFA7C3',
@@ -183,12 +168,7 @@ export const Sidebar = (props) => {
                 fontFamily:'Merriweather, Georgia, serif'
             }
         }
-        if (youtube1) {
-            youtube1Style = {
-                color: '#FFA7C3',
-                fontFamily:'Merriweather, Georgia, serif'
-            }
-        }
+       
         if (events1) {
             events1Style = {
                 color: '#FFA7C3',
@@ -225,9 +205,6 @@ export const Sidebar = (props) => {
             </div>
             <div onClick={props.blogs} className="list">
                 <p style={blogs1Style} className="intropara" > {BLOGS}</p>
-            </div>
-            <div onClick={props.youtube} className="list">
-                <p style={youtube1Style} className="intropara" > {YOUTUBER}</p>
             </div>
             <div onClick={props.events} className="list">
                 <p style={events1Style} className="intropara"> {TalentHunters}</p>
