@@ -1,0 +1,34 @@
+{
+    "data": [
+        {
+            "name": "Leage of Glory",
+            "picture": "picture_url",
+            "domain": "Android",
+            "details": "LOG (League of Glory) is an android app of sportics event \"LOG\" specially designed for FASTIANS. One of the main feature of the app is Fantasy League of Glory where you can make your own team and on the basis of that you get the points just like the FANTASY Premier Leagues"
+        },
+        {
+            "name": "Helmet Finder",
+            "picture": "picture_url",
+            "domain": "Android",
+            "details": "Helmet Finder is an android app which is connect with Helmet's raspberry pi for finding driver's exact location and call driver if its reach at the desire location."
+        },
+        {
+            "name": "News Wizard",
+            "picture": "picture_url",
+            "domain": "Android",
+            "details": "News wizard is a google news stand clone for visually impared people. Braille language is used to communicate."
+        },
+        {
+            "name": "Go Nets",
+            "picture": "picture_url",
+            "domain": "Android",
+            "details": "Go Nets is an android app which helps cricket lovers to find net session near by their places. Each can host net practise session also"
+        },
+        {
+            "name": "Teacher Studio",
+            "picture": "picture_url",
+            "domain": "Android",
+            "details": "Teacher Studio is an android app for teachers to maintain class activities and work and can check class assignment"
+        }
+    ]
+}

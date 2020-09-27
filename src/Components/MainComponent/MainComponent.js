@@ -16,12 +16,15 @@ export const MainComponent = (props) => {
 
     return (
         <div className="Intro">
-            <Introduction toggle={toggle} />
+
 
             {props.about_me ?
-                <div className="Projects">
-                    <AboutMe toggle={toggle} />
-                </div> : ''}
+                <div>
+                    <Introduction toggle={toggle} />
+                    <div className="Projects">
+                        <AboutMe toggle={toggle} />
+                    </div>
+                    </div> : ''}
             <div className="for_width">
                 {props.achievements ?
                     <div className="Achievements">
