@@ -217,23 +217,22 @@ export const Sidebar = (props) => {
             </div>
             <hr style={lineStyle}className="line" />
 
-
-            <div onClick={()=>props.status("about_me")} className="list">
+            <div onClick={props.about_me} className="list">
                 <p style={aboutMe1Style} className="intropara" > {ABOUT_ME}</p>
             </div>
-            <div onClick={()=>props.status("achievements")} className="list">
+            <div onClick={props.achievements} className="list">
                 <p style={achievements1Style} className="intropara" > {ACHIEVEMENT}</p>
             </div>
-            <div onClick={()=>props.status("blogs")} className="list">
+            <div onClick={props.blogs} className="list">
                 <p style={blogs1Style} className="intropara" > {BLOGS}</p>
             </div>
-            <div onClick={()=>props.status("youtube")} className="list">
+            <div onClick={props.youtube} className="list">
                 <p style={youtube1Style} className="intropara" > {YOUTUBER}</p>
             </div>
-            <div onClick={()=>props.status("events")} className="list">
+            <div onClick={props.events} className="list">
                 <p style={events1Style} className="intropara"> {TalentHunters}</p>
             </div>
-            <div onClick={()=>props.status("projects")} className="list">
+            <div onClick={props.projects} className="list">
                 <p style={projects1Style} className="intropara"> {PROJECTS}</p>
             </div>
             <div className="toggle_button list">
