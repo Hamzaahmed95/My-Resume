@@ -4,8 +4,6 @@ import { AboutMe } from '../Features/AboutMe/AboutMe'
 import { Introduction } from '../Introduction/Introduction'
 import { Achievements } from '../Features/Achievements/Achievements'
 import { Blogs } from '../Features/Blogs/Blogs'
-import { Youtube } from '../Features/Youtube/Youtube'
-import { Events } from '../Features/Events/Events'
 import { Projects } from '../Features/Projects/Projects'
 
 import 'typeface-merriweather'
