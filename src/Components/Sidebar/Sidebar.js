@@ -14,11 +14,11 @@ import 'typeface-merriweather'
 
 export const Sidebar = (props) => {
 
-    const about_me = props.about_me1
-    const achievements1 = props.achievements1
-    const blogs1 = props.blogs1
-    const toggle = props.toggle1
-    const projects1 = props.projects1
+    const about_me = props.about_me
+    const achievements = props.achievements
+    const blogs = props.blogs
+    const toggle = props.toggle
+    const projects = props.projects
 
     let aboutMe1Style = {
         color: '#dfdfdf',
@@ -89,13 +89,13 @@ export const Sidebar = (props) => {
                 fontFamily:'Merriweather, Georgia, serif'
             }
         }
-        if (achievements1) {
+        if (achievements) {
             achievements1Style = {
                 color: '#D33668',
                 fontFamily:'Merriweather, Georgia, serif'
             }
         }
-        if (blogs1) {
+        if (blogs) {
             blogs1Style = {
                 color: '#D33668',
                 fontFamily:'Merriweather, Georgia, serif'
@@ -103,7 +103,7 @@ export const Sidebar = (props) => {
         }
         
        
-        if (projects1) {
+        if (projects) {
             projects1Style = {
                 color: '#D33668',
                 fontFamily:'Merriweather, Georgia, serif'
@@ -138,20 +138,20 @@ export const Sidebar = (props) => {
                 fontFamily:'Merriweather, Georgia, serif'
             }
         }
-        if (achievements1) {
+        if (achievements) {
             achievements1Style = {
                 color: '#FFA7C3',
                 fontFamily:'Merriweather, Georgia, serif'
             }
         }
-        if (blogs1) {
+        if (blogs) {
             blogs1Style = {
                 color: '#FFA7C3',
                 fontFamily:'Merriweather, Georgia, serif'
             }
         }
       
-        if (projects1) {
+        if (projects) {
             projects1Style = {
                 color: '#FFA7C3',
                 fontFamily:'Merriweather, Georgia, serif'

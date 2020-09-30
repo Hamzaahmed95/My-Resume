@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { Sidebar } from '../Sidebar/Sidebar'
 import { MainComponent } from '../MainComponent/MainComponent'
-import {sidebar_background_dark,sidebar_background_light,main_component_background_dark,main_component_background_light} from '../../Utils/styles'
+import { sidebar_background_dark, sidebar_background_light, main_component_background_dark, main_component_background_light } from '../../Utils/styles'
 
 class App extends Component {
 
@@ -13,7 +13,7 @@ class App extends Component {
       about_me: true,
       achievements: false,
       blogs: false,
-      project:false,
+      project: false,
       toggle: false,
       projects: false,
     }
@@ -30,7 +30,7 @@ class App extends Component {
       achievements: false,
       about_me: true,
       blogs: false,
-      projects:false
+      projects: false
     })
   }
   handleChangeAchievements() {
@@ -38,7 +38,7 @@ class App extends Component {
       achievements: true,
       about_me: false,
       blogs: false,
-      projects:false
+      projects: false
     })
   }
   handleChangeBlogs() {
@@ -46,7 +46,7 @@ class App extends Component {
       achievements: false,
       about_me: false,
       blogs: true,
-      projects:false
+      projects: false
     })
   }
 
@@ -55,21 +55,37 @@ class App extends Component {
       achievements: false,
       about_me: false,
       blogs: false,
-      projects:true,
+      projects: true,
     })
   }
   handleChangeToggle() {
     this.setState({ toggle: !this.state.toggle })
   }
- 
+
 
 
   render() {
     return (
-      <div className="container1">
-        
-        <div style={this.state.toggle? sidebar_background_dark: sidebar_background_light} className="AboutMe"><Sidebar about_me1={this.state.about_me} blogs1={this.state.blogs} achievements1={this.state.achievements}  toggle1={this.state.toggle} projects1={this.state.projects} about_me={this.handleChangeAboutMe} achievements={this.handleChangeAchievements} blogs={this.handleChangeBlogs} toggle={this.handleChangeToggle} projects={this.handleChangeProjects} /></div>
-        <div style={this.state.toggle? main_component_background_dark:main_component_background_light} className="Intro"><MainComponent about_me={this.state.about_me} blogs={this.state.blogs} achievements={this.state.achievements}  toggle={this.state.toggle} projects={this.state.projects}/></div>
+      <div className="app_container">
+        <div style={this.state.toggle ? sidebar_background_dark : sidebar_background_light} className="AboutMe">
+          <Sidebar
+            about_me={this.state.about_me}
+            blogs={this.state.blogs}
+            achievements={this.state.achievements}
+            toggle={this.state.toggle}
+            projects={this.state.projects}
+            about_me_function={this.handleChangeAboutMe}
+            achievements_function={this.handleChangeAchievements}
+            blogs_function={this.handleChangeBlogs}
+            toggle_function={this.handleChangeToggle}
+            projects_function={this.handleChangeProjects} /></div>
+        <div style={this.state.toggle ? main_component_background_dark : main_component_background_light} className="Intro">
+          <MainComponent
+            about_me={this.state.about_me}
+            blogs={this.state.blogs}
+            achievements={this.state.achievements}
+            toggle={this.state.toggle}
+            projects={this.state.projects} /></div>
       </div>
     );
   }
