@@ -127,3 +127,11 @@ export const subgraph_style_night = {
     fontSize: '16',
     fontWeight: '40'
 }
+
+export const block_background_day={
+        backgroundColor: '#FDFAE0'
+}
+
+export const block_background_night={
+    backgroundColor: '#363D48'
+}
