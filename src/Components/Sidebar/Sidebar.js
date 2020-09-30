@@ -9,7 +9,7 @@ import GithubLight from '../../images/day/github.png'
 import TwitterLight from '../../images/day/twitter.png'
 import LinkedInLight from '../../images/day/linkedin.png'
 import MediumLight from '../../images/day/medium.png'
-import { PROJECTS,lineStyle,lineStyleNight, standard_day_theme,standard_font_day_theme,standard_font_night_theme,standard_night_theme,ABOUT_ME, TalentHunters, YOUTUBER, ACHIEVEMENT, BLOGS, LINKEDIN_URL, MEDIUM_URL, GITHUB_URL, TWITTER_URL } from '../../Utils/Constants.js'
+import { PROJECTS,line_style_night,line_style, standard_day_theme,standard_font_day_theme,standard_font_night_theme,standard_night_theme,ABOUT_ME, TalentHunters, YOUTUBER, ACHIEVEMENT, BLOGS, LINKEDIN_URL, MEDIUM_URL, GITHUB_URL, TWITTER_URL } from '../../Utils/Constants.js'
 import 'typeface-merriweather'
 
 export const Sidebar = (props) => {
@@ -31,7 +31,7 @@ export const Sidebar = (props) => {
                 <a href={LINKEDIN_URL} >{toggle?<img className="each_icon" src={LinkedIn} />:<img className="each_icon" src={LinkedInLight}/>}</a>
                 <a href={MEDIUM_URL} >{toggle?<img className="each_icon" src={Medium} />:<img className="each_icon" src={MediumLight}/>}</a>
             </div>
-            <hr style={toggle? lineStyle:lineStyleNight}className="line" />
+            <hr style={toggle? line_style:line_style_night}className="line" />
 
             <div onClick={props.about_me_function} className="list">
                 <p style={toggle? (about_me ?standard_font_night_theme:standard_night_theme):(about_me ?standard_font_day_theme:standard_day_theme)} className="intropara" > {ABOUT_ME}</p>

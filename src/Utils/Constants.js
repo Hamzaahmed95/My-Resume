@@ -75,6 +75,8 @@ export const Event_Main_Heading = "Events"
 
 //COLORS_VARIABLES
 
+//SIDEBAR
+
 export const standard_day_theme = {
     color: '#dfdfdf',
     fontFamily: 'Merriweather, Georgia, serif'
@@ -92,10 +94,36 @@ export const standard_font_night_theme = {
     color: '#D33668',
     fontFamily: 'Merriweather, Georgia, serif'
 }
-export const lineStyle = {
+export const line_style = {
     backgroundColor: '#D33668',
-    fontFamily:'Merriweather, Georgia, serif'
+    fontFamily: 'Merriweather, Georgia, serif'
 }
-export const lineStyleNight = {
+export const line_style_night = {
     backgroundColor: '#FFA7C3'
+}
+
+//ABOUT_ME
+
+export const heading_style_day = {
+    color: '#D33668',
+    fontFamily: 'Montserrat, sans-serif',
+    fontWeight: '900'
+}
+export const heading_style_night = {
+    color: '#FFA7C3',
+    fontFamily: 'Montserrat, sans-serif',
+    fontWeight: '900'
+}
+export const subgraph_style_day = {
+    color: '#000000',
+    fontFamily: 'Merriweather, Georgia, serif',
+    fontSize: '16',
+    fontWeight: '40'
+}
+
+export const subgraph_style_night = {
+    color: '#ffffff',
+    fontFamily: 'Merriweather, Georgia, serif',
+    fontSize: '16',
+    fontWeight: '40'
 }
