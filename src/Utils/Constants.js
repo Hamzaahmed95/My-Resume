@@ -128,27 +128,72 @@ export const subgraph_style_night = {
     fontWeight: '40'
 }
 
-export const block_background_day={
-        backgroundColor: '#FDFAE0'
+export const block_background_day = {
+    backgroundColor: '#FDFAE0'
 }
 
-export const block_background_night={
+export const block_background_night = {
     backgroundColor: '#363D48'
 }
 
-export const  mobile_projects_day = {
+export const mobile_projects_day = {
     backgroundColor: '#FDFAE0',
     color: '#000000'
 }
-export const  mobile_projects_night = {
+export const mobile_projects_night = {
     backgroundColor: '#363D48',
     color: '#ffffff'
 }
-export const  web_projects_day = {
+export const web_projects_day = {
     backgroundColor: '#ffffff',
     color: '#000000'
 }
-export const  web_projects_night = {
+export const web_projects_night = {
     backgroundColor: '#282D35',
     color: '#ffffff'
 }
+
+export const main_heading_style_day = {
+    color: '#000000',
+    fontFamily: 'Montserrat, sans-serif',
+    fontWeight: '900',
+    fontSize: '25px'
+}
+export const main_heading_style_night = {
+    color: '#ffffff',
+    fontFamily: 'Montserrat, sans-serif',
+    fontWeight: '900',
+    fontSize: '25px'
+}
+export const subgraph_normal_style_day = {
+    color: '#000000',
+    fontFamily: 'Merriweather, Georgia, serif',
+}
+export const subgraph_normal_style_night = {
+    color: '#ffffff',
+    fontFamily: 'Merriweather, Georgia, serif',
+}
+export const rainbow_style_day = {
+    background: '#D33668',
+    color:'#ffffff'
+}
+export const rainbow_style_night = {
+    background: '#FFA7C3',
+    color:'#000000'
+}
+
+export const heading_background_day= {
+    border: '1px solid grey',
+    background:'#FEFAE1',
+    borderRadius: '10px',
+    borderColor: '#d3d3d3'
+}
+export const heading_background_night= {
+    border: '1px solid grey',
+    borderRadius: '10px',
+    borderColor: '#d3d3d3',
+    background:'#373D49'
+}
+
+
+

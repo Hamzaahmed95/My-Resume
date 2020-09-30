@@ -4,7 +4,7 @@ import Email from '../../images/day/email.png'
 import Email_NIGHT from '../../images/night/email.png'
 import Phone from '../../images/day/phone.png'
 import Phone_NIGHT from '../../images/night/phone.png'
-import { NAME, OCCUPATION, JAVASCRIPT, PYTHON, ANDROID } from '../../Utils/Constants.js'
+import { NAME, main_heading_style_day,main_heading_style_night,subgraph_normal_style_day, subgraph_normal_style_night, rainbow_style_day, rainbow_style_night,heading_background_day,heading_background_night } from '../../Utils/Constants.js'
 
 import 'typeface-merriweather'
 
@@ -80,15 +80,15 @@ export const Introduction = (props) => {
         <div className="Intro">
             <div className="Intro1">
                 <div className="Introduction">
-                    <h1 style={mainHeadingStyle} className="name">{NAME}</h1>
-                    <p style={subgraphStyle} className="subgraph1">I'm a software engineer specialized in frontend with <span style={rainbow1Style} className="rainbow">React.</span> I'm also working and writing in Android development with <span style={rainbow1Style} className="rainbow">Java/Kotlin.</span></p>
+                    <h1 style={toggle?main_heading_style_day:main_heading_style_night} className="name">{NAME}</h1>
+                    <p style={toggle?subgraph_normal_style_day:subgraph_normal_style_night} className="subgraph1">I'm a software engineer specialized in frontend with <span style={toggle?rainbow_style_day:rainbow_style_night} className="rainbow">React.</span> I'm also working and writing in Android development with <span style={toggle?rainbow_style_day:rainbow_style_night} className="rainbow">Java/Kotlin.</span></p>
                 </div>
-                <div style={headingbackground} className="Introduction2">
-                    <h4 style={subgraphStyle}>Currently working as an <span style={rainbow1Style} className="rainbow">Android Developer</span> at Hong Leong Bank,
+                <div style={toggle?heading_background_day:heading_background_night} className="Introduction2">
+                    <h4 style={toggle?subgraph_normal_style_day:subgraph_normal_style_night}>Currently working as an <span style={toggle?rainbow_style_day:rainbow_style_night} className="rainbow">Android Developer</span> at Hong Leong Bank,
                         Kuala Lumpur, Malaysia
                     </h4>
-                    <p className="subgraph2" style={subgraphStyle}> {props.toggle ? <img src={Email_NIGHT} width={20} height={14} /> : <img src={Email} width={20} height={14} />} hamza.ahmed0402@gmail.com</p>
-                    <p className="subgraph2" style={subgraphStyle}>{props.toggle ? <img src={Phone_NIGHT} width={20} height={20} /> : <img src={Phone} width={20} height={20} />} (+60) 18 390 8407</p>
+                    <p className="subgraph2" style={toggle?subgraph_normal_style_day:subgraph_normal_style_night}> {props.toggle ? <img src={Email_NIGHT} width={20} height={14} /> : <img src={Email} width={20} height={14} />} hamza.ahmed0402@gmail.com</p>
+                    <p className="subgraph2" style={toggle?subgraph_normal_style_day:subgraph_normal_style_night}>{props.toggle ? <img src={Phone_NIGHT} width={20} height={20} /> : <img src={Phone} width={20} height={20} />} (+60) 18 390 8407</p>
                 </div>
             </div>
         </div>
