@@ -61,13 +61,11 @@ class App extends Component {
   handleChangeToggle() {
     this.setState({ toggle: !this.state.toggle })
   }
-
-
-
+  
   render() {
     return (
       <div className="app_container">
-        <div style={this.state.toggle ? sidebar_background_dark : sidebar_background_light} className="AboutMe">
+        <div style={this.state.toggle ? sidebar_background_dark : sidebar_background_light} className="sidebar_component">
           <Sidebar
             about_me={this.state.about_me}
             blogs={this.state.blogs}
@@ -79,7 +77,7 @@ class App extends Component {
             blogs_function={this.handleChangeBlogs}
             toggle_function={this.handleChangeToggle}
             projects_function={this.handleChangeProjects} /></div>
-        <div style={this.state.toggle ? main_component_background_dark : main_component_background_light} className="Intro">
+        <div style={this.state.toggle ? main_component_background_dark : main_component_background_light} className="main_component">
           <MainComponent
             about_me={this.state.about_me}
             blogs={this.state.blogs}
