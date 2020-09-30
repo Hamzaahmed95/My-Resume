@@ -12,11 +12,11 @@ export const Blog_4_Heading = "Design a circle in Android";
 export const Blog_4_Content = "This blog is about designing a circular screen or circular design using linear layout.";
 export const Blog_5_Heading = "Design a bar chart in Android";
 export const Blog_5_Content = "This blog is about designing a bar chart screen or bar chart design using linear layout.";
-export const Blog_1_URL= "https://medium.com/@hamzzza.ahmed95/master-the-android-interview-basics-3f7511a4a2fc";
-export const Blog_2_URL= "https://medium.com/@hamzzza.ahmed95/four-pillars-of-object-oriented-programming-oop-e8d7822aa219";
-export const Blog_3_URL= "https://medium.com/@hamzzza.ahmed95/a-beginners-guide-to-reactjs-2b59db83fa18";
-export const Blog_4_URL= "https://medium.com/@hamzzza.ahmed95/designing-a-circle-with-linearlayout-in-android-625baa1bf4f6";
-export const Blog_5_URL= "https://medium.com/@hamzzza.ahmed95/designing-bar-charts-using-linearlayouts-in-android-d01e9846678e";
+export const Blog_1_URL = "https://medium.com/@hamzzza.ahmed95/master-the-android-interview-basics-3f7511a4a2fc";
+export const Blog_2_URL = "https://medium.com/@hamzzza.ahmed95/four-pillars-of-object-oriented-programming-oop-e8d7822aa219";
+export const Blog_3_URL = "https://medium.com/@hamzzza.ahmed95/a-beginners-guide-to-reactjs-2b59db83fa18";
+export const Blog_4_URL = "https://medium.com/@hamzzza.ahmed95/designing-a-circle-with-linearlayout-in-android-625baa1bf4f6";
+export const Blog_5_URL = "https://medium.com/@hamzzza.ahmed95/designing-bar-charts-using-linearlayouts-in-android-d01e9846678e";
 
 
 //About Me
@@ -58,8 +58,8 @@ export const details_2 = "I also write in medium. I'm a youtuber and a head of T
 
 
 // YOUTUBE
-export const video1_link ="https://www.youtube.com/watch?v=q81IM0BSzuI"
-export const video2_link ="https://www.youtube.com/watch?v=0XrHhoz3M24&t=120s"
+export const video1_link = "https://www.youtube.com/watch?v=q81IM0BSzuI"
+export const video2_link = "https://www.youtube.com/watch?v=0XrHhoz3M24&t=120s"
 
 export const Video_1_Heading = "Disrupt 1.0"
 export const Video_2_Heading = "Education Awareness"
@@ -71,3 +71,31 @@ export const Event_2_Heading = "Disrupt 1.0"
 export const Event_3_Heading = "How to Think Like a Leader"
 export const Event_4_Heading = "Education Expo'18"
 export const Event_Main_Heading = "Events"
+
+
+//COLORS_VARIABLES
+
+export const standard_day_theme = {
+    color: '#dfdfdf',
+    fontFamily: 'Merriweather, Georgia, serif'
+}
+export const standard_night_theme = {
+    color: '#000000',
+    fontFamily: 'Merriweather, Georgia, serif'
+}
+
+export const standard_font_day_theme = {
+    color: '#FFA7C3',
+    fontFamily: 'Merriweather, Georgia, serif'
+}
+export const standard_font_night_theme = {
+    color: '#D33668',
+    fontFamily: 'Merriweather, Georgia, serif'
+}
+export const lineStyle = {
+    backgroundColor: '#D33668',
+    fontFamily:'Merriweather, Georgia, serif'
+}
+export const lineStyleNight = {
+    backgroundColor: '#FFA7C3'
+}

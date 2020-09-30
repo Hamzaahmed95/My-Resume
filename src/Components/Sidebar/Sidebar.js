@@ -9,7 +9,7 @@ import GithubLight from '../../images/day/github.png'
 import TwitterLight from '../../images/day/twitter.png'
 import LinkedInLight from '../../images/day/linkedin.png'
 import MediumLight from '../../images/day/medium.png'
-import { PROJECTS,NAME, ABOUT_ME, TalentHunters, YOUTUBER, ACHIEVEMENT, BLOGS, LINKEDIN_URL, MEDIUM_URL, GITHUB_URL, TWITTER_URL } from '../../Utils/Constants.js'
+import { PROJECTS,lineStyle,lineStyleNight, standard_day_theme,standard_font_day_theme,standard_font_night_theme,standard_night_theme,ABOUT_ME, TalentHunters, YOUTUBER, ACHIEVEMENT, BLOGS, LINKEDIN_URL, MEDIUM_URL, GITHUB_URL, TWITTER_URL } from '../../Utils/Constants.js'
 import 'typeface-merriweather'
 
 export const Sidebar = (props) => {
@@ -19,145 +19,6 @@ export const Sidebar = (props) => {
     const blogs = props.blogs
     const toggle = props.toggle
     const projects = props.projects
-
-    let aboutMe1Style = {
-        color: '#dfdfdf',
-        fontFamily:'Merriweather, Georgia, serif'
-    }
-    let achievements1Style = {
-        color: '#dfdfdf',
-        fontFamily:'Merriweather, Georgia, serif'
-    }
-    let blogs1Style = {
-        color: '#dfdfdf',
-        fontFamily:'Merriweather, Georgia, serif'
-    }
-   
-    let projects1Style = {
-        color: '#dfdfdf',
-        fontFamily:'Merriweather, Georgia, serif'
-    }
-
-    let intropara2Style = {
-        color:'#000000',
-        fontFamily:'Merriweather, Georgia, serif'
-    }
-
-    let lineStyle = {
-        backgroundColor: '#D33668',
-        fontFamily:'Merriweather, Georgia, serif'
-    }
-    let RoundImage ={
-        borderRadius: '50'
-    }
-    
-    
-    if(toggle){
-        lineStyle = {
-            backgroundColor: '#D33668',
-            fontFamily:'Merriweather, Georgia, serif'
-        }
-        intropara2Style = {
-            color:'#000000',
-            fontFamily:'Merriweather, Georgia, serif'
-        }
-        aboutMe1Style = {
-            color: '#000000',
-            fontFamily:'Merriweather, Georgia, serif'
-        }
-        achievements1Style = {
-            color: '#000000',
-            fontFamily:'Merriweather, Georgia, serif'
-        }
-        blogs1Style = {
-            color: '#000000',
-            fontFamily:'Merriweather, Georgia, serif'
-        }
-       
-        intropara2Style = {
-            color:'#000000',
-            fontFamily:'Merriweather, Georgia, serif'
-        }
-       
-        projects1Style = {
-            color: '#000000',
-            fontFamily:'Merriweather, Georgia, serif'
-        }
-        if (about_me) {
-            aboutMe1Style = {
-                color: '#D33668',
-                fontFamily:'Merriweather, Georgia, serif'
-            }
-        }
-        if (achievements) {
-            achievements1Style = {
-                color: '#D33668',
-                fontFamily:'Merriweather, Georgia, serif'
-            }
-        }
-        if (blogs) {
-            blogs1Style = {
-                color: '#D33668',
-                fontFamily:'Merriweather, Georgia, serif'
-            }
-        }
-        
-       
-        if (projects) {
-            projects1Style = {
-                color: '#D33668',
-                fontFamily:'Merriweather, Georgia, serif'
-            }
-        }
-    }else{
-        lineStyle = {
-            backgroundColor: '#FFA7C3',
-            fontFamily:'Merriweather, Georgia, serif'
-        }
-        intropara2Style = {
-            color:'#e9e9e9',
-            fontFamily:'Merriweather, Georgia, serif'
-        }
-        aboutMe1Style = {
-            color: '#dfdfdf',
-            fontFamily:'Merriweather, Georgia, serif'
-        }
-        achievements1Style = {
-            color: '#dfdfdf',
-            fontFamily:'Merriweather, Georgia, serif'
-        }
-        blogs1Style = {
-            color: '#dfdfdf',
-            fontFamily:'Merriweather, Georgia, serif'
-        }
-      
-        
-        if (about_me) {
-            aboutMe1Style = {
-                color: '#FFA7C3',
-                fontFamily:'Merriweather, Georgia, serif'
-            }
-        }
-        if (achievements) {
-            achievements1Style = {
-                color: '#FFA7C3',
-                fontFamily:'Merriweather, Georgia, serif'
-            }
-        }
-        if (blogs) {
-            blogs1Style = {
-                color: '#FFA7C3',
-                fontFamily:'Merriweather, Georgia, serif'
-            }
-        }
-      
-        if (projects) {
-            projects1Style = {
-                color: '#FFA7C3',
-                fontFamily:'Merriweather, Georgia, serif'
-            }
-        }
-    }
 
     return (
         
@@ -170,24 +31,24 @@ export const Sidebar = (props) => {
                 <a href={LINKEDIN_URL} >{toggle?<img className="each_icon" src={LinkedIn} />:<img className="each_icon" src={LinkedInLight}/>}</a>
                 <a href={MEDIUM_URL} >{toggle?<img className="each_icon" src={Medium} />:<img className="each_icon" src={MediumLight}/>}</a>
             </div>
-            <hr style={lineStyle}className="line" />
+            <hr style={toggle? lineStyle:lineStyleNight}className="line" />
 
-            <div onClick={props.about_me} className="list">
-                <p style={aboutMe1Style} className="intropara" > {ABOUT_ME}</p>
+            <div onClick={props.about_me_function} className="list">
+                <p style={toggle? (about_me ?standard_font_night_theme:standard_night_theme):(about_me ?standard_font_day_theme:standard_day_theme)} className="intropara" > {ABOUT_ME}</p>
             </div>
-            <div onClick={props.achievements} className="list">
-                <p style={achievements1Style} className="intropara" > {ACHIEVEMENT}</p>
+            <div onClick={props.achievements_function} className="list">
+                <p style={toggle? (achievements ?standard_font_night_theme:standard_night_theme):(achievements ?standard_font_day_theme:standard_day_theme)} className="intropara" > {ACHIEVEMENT}</p>
             </div>
-            <div onClick={props.blogs} className="list">
-                <p style={blogs1Style} className="intropara" > {BLOGS}</p>
+            <div onClick={props.blogs_function} className="list">
+                <p style={toggle? (blogs ?standard_font_night_theme:standard_night_theme):(blogs ?standard_font_day_theme:standard_day_theme)} className="intropara" > {BLOGS}</p>
             </div>
            
-            <div onClick={props.projects} className="list">
-                <p style={projects1Style} className="intropara"> {PROJECTS}</p>
+            <div onClick={props.projects_function} className="list">
+                <p style={toggle? (projects?standard_font_night_theme:standard_night_theme):(projects?standard_font_day_theme:standard_day_theme)} className="intropara"> {PROJECTS}</p>
             </div>
             <div className="toggle_button list">
                 <label className="switch">
-                    <input onChange={props.toggle} type="checkbox" />
+                    <input onChange={props.toggle_function} type="checkbox" />
                     <span className="slider round"></span>
                 </label>
             </div>
