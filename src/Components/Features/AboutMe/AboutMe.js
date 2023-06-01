@@ -20,17 +20,13 @@ export const AboutMe = ({ toggle }) => {
             <div className="MyIntroductionHeadings">
                 <div className="v2"><h1 style={toggle ? heading_style_day : heading_style_night} className="name2">Skills</h1></div>
             </div>
-            {skills.map(skill => {
+            {skills.map((skill, index) => {
                 let final_skill = " " + skill;
                 return (
-                    <div>
-                        <div>
-                            <h2 style={toggle ? subgraph_style_day : subgraph_style_night}>
-                                {toggle ? <img src={Bullets_NIGHT} width="15" height="19" /> : <img src={Bullets} width="15" height="19" />}
-                                {final_skill}
-                            </h2>
-                        </div>
-                    </div>
+                    <h2 key={index} style={toggle ? subgraph_style_day : subgraph_style_night}>
+                        {toggle ? <img src={Bullets_NIGHT} width="15" height="19" /> : <img src={Bullets} width="15" height="19" />}
+                        {final_skill}
+                    </h2>
                 )
             })}
 

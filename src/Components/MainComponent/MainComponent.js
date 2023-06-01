@@ -8,11 +8,11 @@ import { Projects } from '../Features/Projects/Projects'
 
 import 'typeface-merriweather'
 
-export const MainComponent = ({ toggle, aboutMe, achievements, blogs, projects }) => {
+export const MainComponent = ({ toggle, activeBar }) => {
 
     return (
         <div className="Intro">
-            {aboutMe ?
+            {activeBar == "aboutMe" ?
                 <div>
                     <Introduction toggle={toggle} />
                     <div className="Projects">
@@ -20,16 +20,16 @@ export const MainComponent = ({ toggle, aboutMe, achievements, blogs, projects }
                     </div>
                 </div> : ''}
             <div className="for_width">
-                {achievements ?
+                {activeBar == "achievements" ?
                     <div className="Achievements">
                         <Achievements toggle={toggle} />
                     </div> : ''}
-                {blogs ?
+                {activeBar == "blogs" ?
                     <div className="Blogs">
                         <Blogs toggle={toggle} />
                     </div> : ''}
 
-                {projects ?
+                {activeBar == "projects" ?
                     <div className="Blogs">
                         <Projects toggle={toggle} />
                     </div> : ''}

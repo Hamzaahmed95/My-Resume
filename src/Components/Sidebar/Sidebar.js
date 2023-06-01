@@ -14,15 +14,10 @@ import 'typeface-merriweather'
 
 export const Sidebar = (props) => {
     const {
-        aboutMe,
-        achievements,
-        blogs, toggle,
-        projects,
-        handleChangeAboutMe,
-        handleChangeAchievements,
-        handleChangeBlogs,
+        activeBar,
+        toggle,
+        handleChangeActiveBar,
         handleChangeToggle,
-        handleChangeProjects
     } = props
 
     return (
@@ -41,21 +36,21 @@ export const Sidebar = (props) => {
                 </a>
                 <a href={MEDIUM_URL} >
                     <img className="each_icon" src={toggle ? Medium : MediumLight} />
-                ƒ</a>
+                </a>
             </div>
             <hr style={toggle ? line_style : line_style_night} className="line" />
-            <div onClick={handleChangeAboutMe} className="list">
-                <p style={toggle ? (aboutMe ? standard_font_night_theme : standard_night_theme) : (aboutMe ? standard_font_day_theme : standard_day_theme)} className="intropara" > {ABOUT_ME}</p>
+            <div onClick={() => handleChangeActiveBar("aboutMe")} className="list">
+                <p style={toggle ? (activeBar == "aboutMe" ? standard_font_night_theme : standard_night_theme) : (activeBar == "aboutMe" ? standard_font_day_theme : standard_day_theme)} className="intropara" > {ABOUT_ME}</p>
             </div>
-            <div onClick={handleChangeAchievements} className="list">
-                <p style={toggle ? (achievements ? standard_font_night_theme : standard_night_theme) : (achievements ? standard_font_day_theme : standard_day_theme)} className="intropara" > {ACHIEVEMENT}</p>
+            <div onClick={() => handleChangeActiveBar("achievements")} className="list">
+                <p style={toggle ? (activeBar == "achievements" ? standard_font_night_theme : standard_night_theme) : (activeBar == "achievements" ? standard_font_day_theme : standard_day_theme)} className="intropara" > {ACHIEVEMENT}</p>
             </div>
-            <div onClick={handleChangeBlogs} className="list">
-                <p style={toggle ? (blogs ? standard_font_night_theme : standard_night_theme) : (blogs ? standard_font_day_theme : standard_day_theme)} className="intropara" > {BLOGS}</p>
+            <div onClick={() => handleChangeActiveBar("blogs")} className="list">
+                <p style={toggle ? (activeBar == "blogs" ? standard_font_night_theme : standard_night_theme) : (activeBar == "blogs" ? standard_font_day_theme : standard_day_theme)} className="intropara" > {BLOGS}</p>
             </div>
 
-            <div onClick={handleChangeProjects} className="list">
-                <p style={toggle ? (projects ? standard_font_night_theme : standard_night_theme) : (projects ? standard_font_day_theme : standard_day_theme)} className="intropara"> {PROJECTS}</p>
+            <div onClick={() => handleChangeActiveBar("projects")} className="list">
+                <p style={toggle ? (activeBar == "projects" ? standard_font_night_theme : standard_night_theme) : (activeBar == "projects" ? standard_font_day_theme : standard_day_theme)} className="intropara"> {PROJECTS}</p>
             </div>
             <div className="toggle_button list">
                 <label className="switch">

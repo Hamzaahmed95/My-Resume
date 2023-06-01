@@ -34,7 +34,7 @@ export const Achievements = (props) => {
                     <img src={Achievement3} />
                     <div>
                         <h2 style={toggle ? heading_style_day : heading_style_night} >{Achievement_3_Heading}</h2>
-                        <p sclassName="sub_style" tyle={toggle ? subgraph_style_day : subgraph_style_night}>{Achievement_3_Content}</p>
+                        <p className="sub_style" tyle={toggle ? subgraph_style_day : subgraph_style_night}>{Achievement_3_Content}</p>
                     </div>
                 </div>
             </div>
