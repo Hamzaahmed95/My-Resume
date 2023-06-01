@@ -6,7 +6,7 @@ import { Achievements } from '../Features/Achievements/Achievements'
 import { Blogs } from '../Features/Blogs/Blogs'
 import { Projects } from '../Features/Projects/Projects'
 
-import 'typeface-merriweather'
+//import 'typeface-merriweather'
 
 export const MainComponent = (props) => {
 
