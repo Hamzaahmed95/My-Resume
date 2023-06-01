@@ -1,8 +1,8 @@
 import React from 'react'
 import './Projects.css'
 import { mobile_projects_day,mobile_projects_night,web_projects_day,web_projects_night,heading_style_day,heading_style_night,subgraph_style_day,subgraph_style_night } from '../../../Utils/Constants'
-// import 'typeface-montserrat'
-// import 'typeface-merriweather'
+import 'typeface-montserrat'
+import 'typeface-merriweather'
 import mobile_projects from '../../../DummyData/mobile_projects.json'
 import web_projects from '../../../DummyData/web_projects.json'
 

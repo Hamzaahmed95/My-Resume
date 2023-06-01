@@ -13,17 +13,18 @@
     "mini-css-extract-plugin": "^2.7.5",
     "webpack": "^5.85.0",
     "webpack-cli": "^5.1.0",
-    "webpack-dev-server": "^4.14.0"
+    "webpack-dev-server": "^4.14.0",
+    "js-loader": "^0.1.1"
   },
   "dependencies": {
     "@babel/preset-react": "^7.22.3",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "js-loader": "^0.1.1",
-    "json-loader": "^0.5.7",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "typeface-merriweather": "0.0.72",
+    "typeface-montserrat": "0.0.75"
   },
   "scripts": {
     "start": "webpack serve --port 3000"
