@@ -9,7 +9,7 @@ import GithubLight from '../../images/day/github.png'
 import TwitterLight from '../../images/day/twitter.png'
 import LinkedInLight from '../../images/day/linkedin.png'
 import MediumLight from '../../images/day/medium.png'
-import { PROJECTS,line_style_night,line_style, standard_day_theme,standard_font_day_theme,standard_font_night_theme,standard_night_theme,ABOUT_ME, TalentHunters, YOUTUBER, ACHIEVEMENT, BLOGS, LINKEDIN_URL, MEDIUM_URL, GITHUB_URL, TWITTER_URL } from '../../Utils/Constants.js'
+import { PROJECTS,line_style_night,line_style, standard_day_theme,standard_font_day_theme,standard_font_night_theme,standard_night_theme,ABOUT_ME, TalentHunters, YOUTUBER, ACHIEVEMENT, BLOGS, LINKEDIN_URL, MEDIUM_URL, GITHUB_URL, TWITTER_URL } from '../../utils/Constants.js'
 import 'typeface-merriweather'
 
 export const Sidebar = (props) => {

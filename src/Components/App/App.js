@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { Sidebar } from '../Sidebar/Sidebar'
 import { MainComponent } from '../MainComponent/MainComponent'
-import { sidebar_background_dark, sidebar_background_light, main_component_background_dark, main_component_background_light } from '../../Utils/styles'
+import { sidebar_background_dark, sidebar_background_light, main_component_background_dark, main_component_background_light } from '../../utils/styles'
 
 class App extends Component {
 
