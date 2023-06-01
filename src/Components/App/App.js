@@ -1,92 +1,71 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 
 import './App.css';
 import { Sidebar } from '../Sidebar/Sidebar'
 import { MainComponent } from '../MainComponent/MainComponent'
 import { sidebar_background_dark, sidebar_background_light, main_component_background_dark, main_component_background_light } from '../../utils/styles'
 
-class App extends Component {
+const App = () => {
+  const [aboutMe, setAboutMe] = useState(true)
+  const [achievements, setAchievements] = useState(false)
+  const [blogs, setBlogs] = useState(false)
+  const [project, setProject] = useState(false)
+  const [toggle, setToggle] = useState(false)
+  const [projects, setProjects] = useState(false)
 
-  constructor(props) {
-    super(props)
-    this.state = {
-      about_me: true,
-      achievements: false,
-      blogs: false,
-      project: false,
-      toggle: false,
-      projects: false,
-    }
-    this.handleChangeAboutMe = this.handleChangeAboutMe.bind(this)
-    this.handleChangeAchievements = this.handleChangeAchievements.bind(this)
-    this.handleChangeBlogs = this.handleChangeBlogs.bind(this)
-    this.handleChangeToggle = this.handleChangeToggle.bind(this)
-    this.handleChangeProjects = this.handleChangeProjects.bind(this)
-
+  const handleChangeAboutMe = () => {
+    setAboutMe(true)
+    setAchievements(false)
+    setBlogs(false)
+    setProjects(false)
   }
-
-  handleChangeAboutMe() {
-    this.setState({
-      achievements: false,
-      about_me: true,
-      blogs: false,
-      projects: false
-    })
-  }
-  handleChangeAchievements() {
-    this.setState({
-      achievements: true,
-      about_me: false,
-      blogs: false,
-      projects: false
-    })
-  }
-  handleChangeBlogs() {
-    this.setState({
-      achievements: false,
-      about_me: false,
-      blogs: true,
-      projects: false
-    })
+  const handleChangeAchievements = () => {
+    setAboutMe(false)
+    setAchievements(true)
+    setBlogs(false)
+    setProjects(false)
   }
 
-  handleChangeProjects() {
-    this.setState({
-      achievements: false,
-      about_me: false,
-      blogs: false,
-      projects: true,
-    })
+  const handleChangeBlogs = () => {
+    setAboutMe(false)
+    setAchievements(false)
+    setBlogs(true)
+    setProjects(false)
   }
-  handleChangeToggle() {
-    this.setState({ toggle: !this.state.toggle })
+
+  const handleChangeProjects = () => {
+    setAboutMe(false)
+    setAchievements(false)
+    setBlogs(false)
+    setProjects(true)
+
   }
-  
-  render() {
-    return (
-      <div className="app_container">
-        <div style={this.state.toggle ? sidebar_background_dark : sidebar_background_light} className="sidebar_component">
-          <Sidebar
-            about_me={this.state.about_me}
-            blogs={this.state.blogs}
-            achievements={this.state.achievements}
-            toggle={this.state.toggle}
-            projects={this.state.projects}
-            about_me_function={this.handleChangeAboutMe}
-            achievements_function={this.handleChangeAchievements}
-            blogs_function={this.handleChangeBlogs}
-            toggle_function={this.handleChangeToggle}
-            projects_function={this.handleChangeProjects} /></div>
-        <div style={this.state.toggle ? main_component_background_dark : main_component_background_light} className="main_component">
-          <MainComponent
-            about_me={this.state.about_me}
-            blogs={this.state.blogs}
-            achievements={this.state.achievements}
-            toggle={this.state.toggle}
-            projects={this.state.projects} /></div>
-      </div>
-    );
+  const handleChangeToggle = () => {
+    setToggle(!toggle)
   }
+  return (
+    <div className="app_container">
+      <div style={toggle ? sidebar_background_dark : sidebar_background_light} className="sidebar_component">
+        <Sidebar
+          aboutMe={aboutMe}
+          blogs={blogs}
+          achievements={achievements}
+          toggle={toggle}
+          projects={projects}
+          handleChangeAboutMe={handleChangeAboutMe}
+          handleChangeAchievements={handleChangeAchievements}
+          handleChangeBlogs={handleChangeBlogs}
+          handleChangeToggle={handleChangeToggle}
+          handleChangeProjects={handleChangeProjects} /></div>
+      <div style={toggle ? main_component_background_dark : main_component_background_light} className="main_component">
+        <MainComponent
+          aboutMe={aboutMe}
+          blogs={blogs}
+          achievements={achievements}
+          toggle={toggle}
+          projects={projects} /></div>
+    </div>
+  )
+
 }
-
 export default App;

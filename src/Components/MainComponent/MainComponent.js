@@ -8,15 +8,11 @@ import { Projects } from '../Features/Projects/Projects'
 
 import 'typeface-merriweather'
 
-export const MainComponent = (props) => {
-
-    const toggle = props.toggle
+export const MainComponent = ({ toggle, aboutMe, achievements, blogs, projects }) => {
 
     return (
         <div className="Intro">
-
-
-            {props.about_me ?
+            {aboutMe ?
                 <div>
                     <Introduction toggle={toggle} />
                     <div className="Projects">
@@ -24,16 +20,16 @@ export const MainComponent = (props) => {
                     </div>
                 </div> : ''}
             <div className="for_width">
-                {props.achievements ?
+                {achievements ?
                     <div className="Achievements">
                         <Achievements toggle={toggle} />
                     </div> : ''}
-                {props.blogs ?
+                {blogs ?
                     <div className="Blogs">
                         <Blogs toggle={toggle} />
                     </div> : ''}
 
-                {props.projects ?
+                {projects ?
                     <div className="Blogs">
                         <Projects toggle={toggle} />
                     </div> : ''}
