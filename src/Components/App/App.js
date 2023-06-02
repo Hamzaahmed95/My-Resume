@@ -26,7 +26,8 @@ const App = () => {
       <div style={toggle ? main_component_background_dark : main_component_background_light} className="main_component">
         <MainComponent
           activeBar={activeBar}
-          toggle={toggle} /></div>
+          toggle={toggle} />
+      </div>
     </div>
   )
 
