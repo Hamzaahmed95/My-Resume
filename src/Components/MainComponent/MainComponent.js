@@ -12,28 +12,24 @@ export const MainComponent = ({ toggle, activeBar }) => {
 
     return (
         <div className="Intro">
+            <Introduction toggle={toggle} />
             {activeBar == "aboutMe" ?
-                <div>
-                    <Introduction toggle={toggle} />
-                    <div className="Projects">
-                        <AboutMe toggle={toggle} />
-                    </div>
+                <div className="Projects">
+                    <AboutMe toggle={toggle} />
                 </div> : ''}
-            <div className="for_width">
-                {activeBar == "achievements" ?
-                    <div className="Achievements">
-                        <Achievements toggle={toggle} />
-                    </div> : ''}
-                {activeBar == "blogs" ?
-                    <div className="Blogs">
-                        <Blogs toggle={toggle} />
-                    </div> : ''}
+            {activeBar == "achievements" ?
+                <div className="Achievements">
+                    <Achievements toggle={toggle} />
+                </div> : ''}
+            {activeBar == "blogs" ?
+                <div className="Blogs">
+                    <Blogs toggle={toggle} />
+                </div> : ''}
 
-                {activeBar == "projects" ?
-                    <div className="Blogs">
-                        <Projects toggle={toggle} />
-                    </div> : ''}
-            </div>
+            {activeBar == "projects" ?
+                <div className="Blogs">
+                    <Projects toggle={toggle} />
+                </div> : ''}
         </div>
     )
 }
