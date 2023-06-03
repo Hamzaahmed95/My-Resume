@@ -1,186 +1,213 @@
-.AboutMe{
-    padding:0 2% 0% 2%;
-    background-color: transparent;
-    flex-wrap: wrap;
-}
-.heading{
-    margin-top: 20%;
-    margin-bottom: 0px;
-    font-family: 'Courier New', Courier, monospace;
-}
-.intropara,.intropara2{
-    font-family: 'Times New Roman', Times, serif;
-    color: rgb(223, 223, 223);
-    font-size: large;
-}
-.name_bold{
-    font-weight: bolder;
-    font-size: large;
-    color: rgb(255, 255, 255);
-}
-.icons{
-    display:flex;
-    justify-content: space-around;
-}
-.line{
-    height: 1px;
-    margin-top:10% ;
-    width: 75%;
-    background-color: #11161E;
-    border: none;
-}
-.list{
-    display:flex;
-    justify-content: center;
-   
-    flex-direction: row;
+.AboutMe {
+  padding: 0 2% 0% 2%;
+  background-color: transparent;
+  flex-wrap: wrap;
 }
 
-.heading_hidden{
-    display: none;
+.heading {
+  margin-top: 20%;
+  margin-bottom: 0px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-.image1{
-    flex: 0;
-    padding-top: 6%;
-    padding-right: 2%;
+.intropara,
+.intropara2 {
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(223, 223, 223);
+  font-size: large;
 }
-.each_icon{
-    width: 20px;
-    height: 20px;
+
+.name_bold {
+  font-weight: bolder;
+  font-size: large;
+  color: rgb(255, 255, 255);
 }
-.profile_picture{
-    width:100px;
-    height: 100px;
-    padding-top: 25%;
-    padding-bottom: 25%;
-    border-radius: 50%;
-  }
-.toggle_button{
-    padding-bottom: 12%;
-    padding-top: 12%;
+
+.icons {
+  display: flex;
+  justify-content: space-around;
 }
+
+.line_light {
+  height: 1px;
+  margin-top: 10%;
+  width: 75%;
+  border: none;
+
+  background-color: #FFA7C3;
+}
+
+.line_dark {
+  height: 1px;
+  margin-top: 10%;
+  width: 75%;
+  border: none;
+  background-color: #D33668;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+
+  flex-direction: row;
+}
+
+.heading_hidden {
+  display: none;
+}
+
+.image1 {
+  flex: 0;
+  padding-top: 6%;
+  padding-right: 2%;
+}
+
+.each_icon {
+  width: 20px;
+  height: 20px;
+}
+
+.profile_picture {
+  width: 100px;
+  height: 100px;
+  padding-top: 25%;
+  padding-bottom: 25%;
+  border-radius: 50%;
+}
+
+.toggle_button {
+  padding-bottom: 12%;
+  padding-top: 12%;
+}
+
 .switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #FFA7C3;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #D33668;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+@media all and (max-width: 800px) {
+  /* .profile_picture,.heading,.intropara{
+       display: none;
+    } */
+
+  .heading,
+  .image1 {
+    display: none;
   }
-  
-  .switch input { 
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
+
   .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #FFA7C3;
-    -webkit-transition: .4s;
-    transition: .4s;
+    height: 20px;
+    width: 50px;
   }
-  
+
   .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 13px;
+    width: 13px;
     left: 4px;
+    right: 4px;
     bottom: 4px;
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
   }
-  
-  input:checked + .slider {
-    background-color: #D33668;
-  }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-  }
-  
-  input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
-    border-radius: 34px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }
 
 
-@media all and (max-width: 800px){
-    /* .profile_picture,.heading,.intropara{
-       display: none;
-    } */
 
-    .heading, .image1{
-        display: none;
-    }
-    .slider {
-        height: 20px;
-        width: 50px;
-      }
-      .slider:before {
-        position: absolute;
-        content: "";
-        height: 13px;
-        width: 13px;
-        left: 4px;
-        right: 4px;
-        bottom: 4px;
-        background-color: white;
-        -webkit-transition: .4s;
-        transition: .4s;
-      }
-      
-      
-      
-    .list{
-        display: inline-block;
-        padding: 2%;
-        
-        font-weight: bolder;
-    }
-    .heading_hidden{
-        margin-top: 0px;
-        margin-bottom: 7%;
-        font-weight: bolder;
-        font-size: x-large;
-        font-family: 'Courier New', Courier, monospace;
-        display: block;
-    }
-    .intropara{
-        font-family: 'Times New Roman', Times, serif;
-        color: rgb(223, 223, 223);
-        font-size: 65%;
-    }
-    
-     .intropara2{
-        display: none;
-    } 
-    .each_icon{
-        width: 30px;
-        height: 30px;
-    }
-    .line{
-        height: 3px;
-        margin-top:5% ;
-        width: 80%;
-        background-color: #d3d3d3;
-        border: none;
-    }
-   
+  .list {
+    display: inline-block;
+    padding: 2%;
+
+    font-weight: bolder;
+  }
+
+  .heading_hidden {
+    margin-top: 0px;
+    margin-bottom: 7%;
+    font-weight: bolder;
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+    display: block;
+  }
+
+  .intropara {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(223, 223, 223);
+    font-size: 65%;
+  }
+
+  .intropara2 {
+    display: none;
+  }
+
+  .each_icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* .line {
+    height: 3px;
+    margin-top: 5%;
+    width: 80%;
+    background-color: #d3d3d3;
+    border: none;
+  } */
+
 }

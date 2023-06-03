@@ -1,23 +1,21 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Sidebar.css'
-import { line_style_night, line_style } from '../../utils/Constants.js'
 import 'typeface-merriweather'
-import { DisplayIcons, DisplayProfilePicture, DisplaySections, ToggleButton } from '../../utils/utility'
-export const Sidebar = (props) => {
-    const {
-        activeBar,
-        toggle,
-        handleChangeActiveBar,
-        handleChangeToggle,
-    } = props
+import { DisplayIcons, DisplayProfilePicture, DisplaySections, ToggleButton, getThemeStyle } from '../../utils/utility'
+
+import { ThemeContext } from '../App/App'
+
+export const Sidebar = () => {
 
     return (
-        <div align="center" className="AboutMe">
-            <DisplayProfilePicture />
-            <DisplayIcons toggle={toggle} />
-            <hr style={toggle ? line_style : line_style_night} className="line" />
-            <DisplaySections toggle={toggle} handleChangeActiveBar={handleChangeActiveBar} activeBar={activeBar} />
-            <ToggleButton handleChangeToggle={handleChangeToggle} />
+        <div className={getThemeStyle('sidebar_background')}>
+            <div align="center" className="AboutMe">
+                <DisplayProfilePicture />
+                <DisplayIcons />
+                <hr className={getThemeStyle('line')} />
+                <DisplaySections />
+                <ToggleButton />
+            </div>
         </div>
     )
 }

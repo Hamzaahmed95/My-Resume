@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './MainComponent.css'
 import { AboutMe } from '../Features/AboutMe/AboutMe'
 import { Introduction } from '../Introduction/Introduction'
@@ -8,28 +8,34 @@ import { Projects } from '../Features/Projects/Projects'
 
 import 'typeface-merriweather'
 
-export const MainComponent = ({ toggle, activeBar }) => {
+import { ThemeContext } from '../App/App'
+import { main_component_background_dark, main_component_background_light } from '../../utils/styles'
+export const MainComponent = () => {
+
+    const theme = useContext(ThemeContext)
 
     return (
-        <div className="Intro">
-            <Introduction toggle={toggle} />
-            {activeBar == "aboutMe" ?
-                <div className="Projects">
-                    <AboutMe toggle={toggle} />
-                </div> : ''}
-            {activeBar == "achievements" ?
-                <div className="Achievements">
-                    <Achievements toggle={toggle} />
-                </div> : ''}
-            {activeBar == "blogs" ?
-                <div className="Blogs">
-                    <Blogs toggle={toggle} />
-                </div> : ''}
+        <div style={theme.theme === "dark" ? main_component_background_dark : main_component_background_light} className="main_component">
+            <div className="Intro">
+                <Introduction />
+                {theme.activeBar == "aboutMe" ?
+                    <div className="Projects">
+                        <AboutMe />
+                    </div> : ''}
+                {theme.activeBar == "achievements" ?
+                    <div className="Achievements">
+                        <Achievements />
+                    </div> : ''}
+                {theme.activeBar == "blogs" ?
+                    <div className="Blogs">
+                        <Blogs />
+                    </div> : ''}
 
-            {activeBar == "projects" ?
-                <div className="Blogs">
-                    <Projects toggle={toggle} />
-                </div> : ''}
+                {theme.activeBar == "projects" ?
+                    <div className="Blogs">
+                        <Projects />
+                    </div> : ''}
+            </div>
         </div>
     )
 }

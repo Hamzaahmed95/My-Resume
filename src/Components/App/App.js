@@ -4,31 +4,32 @@ import './App.css';
 import { Sidebar } from '../Sidebar/Sidebar'
 import { MainComponent } from '../MainComponent/MainComponent'
 import { sidebar_background_dark, sidebar_background_light, main_component_background_dark, main_component_background_light } from '../../utils/styles'
+import { getThemeStyle } from '../../utils/utility';
+
+export const ThemeContext = React.createContext();
+
+const themes = {
+  light: { background: '#fff', color: '#000' },
+  dark: { background: '#171717', color: '#fff' }
+}
 
 const App = () => {
   const [activeBar, setActiveBar] = useState("aboutMe")
-  const [toggle, setToggle] = useState(false)
+  const [theme, setTheme] = useState("light")
 
   const handleChangeActiveBar = (value) => {
     setActiveBar(value)
   }
-  const handleChangeToggle = () => {
-    setToggle(!toggle)
+  const toggleTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light")
   }
+  const providerValue = { theme: theme, toggleTheme, activeBar: activeBar, handleChangeActiveBar }
+
   return (
-    <div className="app_container">
-      <div style={toggle ? sidebar_background_dark : sidebar_background_light} className="sidebar_component">
-        <Sidebar
-          activeBar={activeBar}
-          toggle={toggle}
-          handleChangeActiveBar={handleChangeActiveBar}
-          handleChangeToggle={handleChangeToggle} /></div>
-      <div style={toggle ? main_component_background_dark : main_component_background_light} className="main_component">
-        <MainComponent
-          activeBar={activeBar}
-          toggle={toggle} />
-      </div>
-    </div>
+    <ThemeContext.Provider value={providerValue}>
+      <Sidebar />
+      <MainComponent />
+    </ThemeContext.Provider>
   )
 
 }

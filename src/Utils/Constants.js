@@ -96,7 +96,6 @@ export const standard_font_night_theme = {
 }
 export const line_style = {
     backgroundColor: '#D33668',
-    fontFamily: 'Merriweather, Georgia, serif'
 }
 export const line_style_night = {
     backgroundColor: '#FFA7C3'
@@ -175,24 +174,24 @@ export const subgraph_normal_style_night = {
 }
 export const rainbow_style_day = {
     background: '#D33668',
-    color:'#ffffff'
+    color: '#ffffff'
 }
 export const rainbow_style_night = {
     background: '#FFA7C3',
-    color:'#000000'
+    color: '#000000'
 }
 
-export const heading_background_day= {
+export const heading_background_day = {
     border: '1px solid grey',
-    background:'#FEFAE1',
+    background: '#FEFAE1',
     borderRadius: '10px',
     borderColor: '#d3d3d3'
 }
-export const heading_background_night= {
+export const heading_background_night = {
     border: '1px solid grey',
     borderRadius: '10px',
     borderColor: '#d3d3d3',
-    background:'#373D49'
+    background: '#373D49'
 }
 
 

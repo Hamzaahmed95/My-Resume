@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './AboutMe.css'
 import 'typeface-montserrat'
 import 'typeface-merriweather'
@@ -6,25 +6,27 @@ import { details, details_2, heading_style_day, heading_style_night, subgraph_st
 
 import Bullets from '../../../images/day/bullets.png'
 import Bullets_NIGHT from '../../../images/night/bullets.png'
+import { ThemeContext } from '../../App/App'
 
-export const AboutMe = ({ toggle }) => {
+export const AboutMe = () => {
+    const theme = useContext(ThemeContext)
 
     let skills = ['Java', 'Android', 'Javascript', 'Reactjs', 'Kotlin']
 
     return (
         <div className="MyIntroduction">
             <div className="MyIntroductionHeadings">
-                <div className="v2"><h1 style={toggle ? heading_style_day : heading_style_night} className="name2">What I do</h1></div>
+                <div className="v2"><h1 style={theme.theme === "dark" ? heading_style_day : heading_style_night} className="name2">What I do</h1></div>
             </div>
-            <p style={toggle ? subgraph_style_day : subgraph_style_night} className="subgraph">{details} {details_2}</p>
+            <p style={theme.theme === "dark" ? subgraph_style_day : subgraph_style_night} className="subgraph">{details} {details_2}</p>
             <div className="MyIntroductionHeadings">
-                <div className="v2"><h1 style={toggle ? heading_style_day : heading_style_night} className="name2">Skills</h1></div>
+                <div className="v2"><h1 style={theme.theme === "dark" ? heading_style_day : heading_style_night} className="name2">Skills</h1></div>
             </div>
             {skills.map((skill, index) => {
                 let final_skill = " " + skill;
                 return (
-                    <h2 key={index} style={toggle ? subgraph_style_day : subgraph_style_night}>
-                        {toggle ? <img src={Bullets_NIGHT} width="15" height="19" /> : <img src={Bullets} width="15" height="19" />}
+                    <h2 key={index} style={theme.theme === "dark" ? subgraph_style_day : subgraph_style_night}>
+                        {theme.theme === "dark" ? <img src={Bullets_NIGHT} width="15" height="19" /> : <img src={Bullets} width="15" height="19" />}
                         {final_skill}
                     </h2>
                 )
