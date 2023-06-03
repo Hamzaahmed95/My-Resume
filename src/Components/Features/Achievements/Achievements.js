@@ -4,11 +4,11 @@ import { block_background_day, block_background_night, heading_style_day, headin
 import Achievement1 from '../../../images/achievement1.jpeg'
 import Achievement2 from '../../../images/achievement2.jpeg'
 import Achievement3 from '../../../images/achievement3.jpeg'
-import { ThemeContext } from '../../App/index'
+import { useThemeContext } from '../../../hooks/useThemeContext'
 
 export const Achievements = () => {
 
-    const theme = useContext(ThemeContext)
+    const theme = useThemeContext()
     return (
         <div className="Achievements">
             <div className="Achievementsheadings">

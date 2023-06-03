@@ -5,11 +5,11 @@ import 'typeface-montserrat'
 import 'typeface-merriweather'
 import mobile_projects from '../../../mockData/mobile_projects.json'
 import web_projects from '../../../mockData/web_projects.json'
-import { ThemeContext } from '../../App/index'
+import { useThemeContext } from '../../../hooks/useThemeContext'
 
 export const Projects = () => {
 
-    const theme = useContext(ThemeContext)
+    const theme = useThemeContext()
 
     const mobile_data = mobile_projects
     const web_data = web_projects

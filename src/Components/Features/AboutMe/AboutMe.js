@@ -6,10 +6,10 @@ import { details, details_2, heading_style_day, heading_style_night, subgraph_st
 
 import Bullets from '../../../images/day/bullets.png'
 import Bullets_NIGHT from '../../../images/night/bullets.png'
-import { ThemeContext } from '../../App/index'
+import { useThemeContext } from '../../../hooks/useThemeContext'
 
 export const AboutMe = () => {
-    const theme = useContext(ThemeContext)
+    const theme = useThemeContext()
 
     let skills = ['Java', 'Android', 'Javascript', 'Reactjs', 'Kotlin']
 
