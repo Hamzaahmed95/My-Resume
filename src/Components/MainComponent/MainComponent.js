@@ -8,7 +8,7 @@ import { Projects } from '../Features/Projects/Projects'
 
 import 'typeface-merriweather'
 
-import { ThemeContext } from '../App/App'
+import { ThemeContext } from '../App'
 import { main_component_background_dark, main_component_background_light } from '../../utils/styles'
 export const MainComponent = () => {
 

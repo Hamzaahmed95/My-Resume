@@ -5,7 +5,7 @@ import 'typeface-montserrat'
 import 'typeface-merriweather'
 import mobile_projects from '../../../mockData/mobile_projects.json'
 import web_projects from '../../../mockData/web_projects.json'
-import { ThemeContext } from '../../App/App'
+import { ThemeContext } from '../../App/index'
 
 export const Projects = () => {
 

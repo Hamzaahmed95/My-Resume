@@ -4,7 +4,7 @@ import { block_background_day, block_background_night, heading_style_day, headin
 import Achievement1 from '../../../images/achievement1.jpeg'
 import Achievement2 from '../../../images/achievement2.jpeg'
 import Achievement3 from '../../../images/achievement3.jpeg'
-import { ThemeContext } from '../../App/App'
+import { ThemeContext } from '../../App/index'
 
 export const Achievements = () => {
 

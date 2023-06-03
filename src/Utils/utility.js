@@ -10,7 +10,7 @@ import LinkedInLight from '../images/day/linkedin.png'
 import MediumLight from '../images/day/medium.png'
 import Profile from '../images/profile.jpg'
 import { ABOUT_ME, ACHIEVEMENT, BLOGS, PROJECTS, LINKEDIN_URL, MEDIUM_URL, GITHUB_URL, TWITTER_URL, standard_day_theme, standard_font_day_theme, standard_font_night_theme, standard_night_theme } from './Constants'
-import { ThemeContext } from '../components/App/App'
+import { ThemeContext } from '../components/App'
 
 const icons = [{ name: { dark: Twitter, light: TwitterLight }, url: TWITTER_URL }, { name: { dark: Github, light: GithubLight }, url: GITHUB_URL }, { name: { dark: LinkedIn, light: LinkedInLight }, url: LINKEDIN_URL }, { name: { dark: Medium, light: MediumLight }, url: MEDIUM_URL }]
 const sections = [{ name: "aboutMe", text: ABOUT_ME }, { name: "achievements", text: ACHIEVEMENT }, { name: "blogs", text: BLOGS }, { name: "projects", text: PROJECTS }]

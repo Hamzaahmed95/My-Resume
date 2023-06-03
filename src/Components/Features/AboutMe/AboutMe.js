@@ -6,7 +6,7 @@ import { details, details_2, heading_style_day, heading_style_night, subgraph_st
 
 import Bullets from '../../../images/day/bullets.png'
 import Bullets_NIGHT from '../../../images/night/bullets.png'
-import { ThemeContext } from '../../App/App'
+import { ThemeContext } from '../../App/index'
 
 export const AboutMe = () => {
     const theme = useContext(ThemeContext)

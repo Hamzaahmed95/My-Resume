@@ -7,7 +7,7 @@ import Phone_NIGHT from '../../images/night/phone.png'
 import { NAME, main_heading_style_day, main_heading_style_night, subgraph_normal_style_day, subgraph_normal_style_night, rainbow_style_day, rainbow_style_night, heading_background_day, heading_background_night } from '../../utils/Constants.js'
 
 import 'typeface-merriweather'
-import { ThemeContext } from '../App/App'
+import { ThemeContext } from '../App'
 
 export const Introduction = () => {
 

@@ -6,7 +6,7 @@ import Blog2 from '../../../images/blog22.png'
 import Blog3 from '../../../images/blog33.png'
 import Blog4 from '../../../images/blog44.png'
 import Blog5 from '../../../images/blog55.png'
-import { ThemeContext } from '../../App/App'
+import { ThemeContext } from '../../App/index'
 
 export const Blogs = () => {
 
