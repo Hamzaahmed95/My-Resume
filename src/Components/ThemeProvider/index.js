@@ -1,5 +1,17 @@
 import React, { useState, createContext } from 'react';
-import {ThemeContext} from '../App/index'
+import { ThemeContext } from '../App/index'
+
+
+const themes = {
+  light: {
+    background: '#282D35',
+    color: '#000000',
+  },
+  dark: {
+    background: '#ffffff',
+    color: '#e9e9e9',
+  }
+}
 
 export const ThemeProvider = ({ children }) => {
 
@@ -13,7 +25,7 @@ export const ThemeProvider = ({ children }) => {
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light")
   }
-  const providerValue = { theme: theme, toggleTheme, activeBar: activeBar, handleChangeActiveBar }
+  const providerValue = { theme: theme, toggleTheme, activeBar: activeBar, handleChangeActiveBar, newTheme: themes[theme] }
 
   return (
     <ThemeContext.Provider value={providerValue}>

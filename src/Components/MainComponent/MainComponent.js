@@ -6,14 +6,12 @@ import { Achievements } from '../Features/Achievements/Achievements'
 import { Blogs } from '../Features/Blogs/Blogs'
 import { Projects } from '../Features/Projects/Projects'
 import 'typeface-merriweather'
-import { main_component_background_dark, main_component_background_light } from '../../utils/styles'
 import { useThemeContext } from '../../hooks/useThemeContext'
 export const MainComponent = () => {
 
     const theme = useThemeContext()
-
     return (
-        <div style={theme.theme === "dark" ? main_component_background_dark : main_component_background_light} className="main_component">
+        <div style={theme.newTheme} className="main_component">
             <div className="Intro">
                 <Introduction />
                 {theme.activeBar == "aboutMe" ?

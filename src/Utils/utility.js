@@ -31,7 +31,9 @@ export const DisplayIcons = () => {
 
 
 export const DisplayProfilePicture = () => (
-  <img className="profile_picture" src={Profile} width="200" height="250" />
+  <div align="center">
+    <img className="profile_picture" src={Profile} width="200" height="250" />
+  </div>
 )
 
 export const DisplaySections = () => {
