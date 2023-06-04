@@ -1,9 +1,9 @@
 import React, { createContext } from 'react';
 
 import './index.css';
-import { Sidebar } from '../Sidebar/Sidebar'
-import { MainComponent } from '../MainComponent/MainComponent'
-import { ThemeProvider } from '../ThemeProvider/index'
+import { Sidebar } from '../Sidebar'
+import { MainComponent } from '../MainComponent'
+import { ThemeProvider } from '../ThemeProvider'
 
 export const ThemeContext = createContext();
 

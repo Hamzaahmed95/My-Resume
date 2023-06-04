@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
-import './AboutMe.css'
+import './index.css'
 import 'typeface-montserrat'
 import 'typeface-merriweather'
-import { details, details_2, heading_style_day, heading_style_night, subgraph_style_day, subgraph_style_night } from '../../../utils/Constants'
+import { details, details_2, heading_style_day, heading_style_night, subgraph_style_day, subgraph_style_night } from '../../../utils/constants'
 
 import Bullets from '../../../images/day/bullets.png'
 import Bullets_NIGHT from '../../../images/night/bullets.png'

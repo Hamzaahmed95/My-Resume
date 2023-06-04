@@ -1,5 +1,5 @@
-import React, { useContext } from 'react'
-import './Sidebar.css'
+import React from 'react'
+import './index.css'
 import 'typeface-merriweather'
 import { DisplayIcons, DisplayProfilePicture, DisplaySections, ToggleButton, getThemeStyle } from '../../utils/utility'
 import { useThemeContext } from '../../hooks/useThemeContext'

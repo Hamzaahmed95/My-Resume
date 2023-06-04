@@ -1,10 +1,10 @@
 import React, { useContext } from 'react'
-import './Introduction.css'
+import './index.css'
 import Email from '../../images/day/email.png'
 import Email_NIGHT from '../../images/night/email.png'
 import Phone from '../../images/day/phone.png'
 import Phone_NIGHT from '../../images/night/phone.png'
-import { NAME, main_heading_style_day, main_heading_style_night, subgraph_normal_style_day, subgraph_normal_style_night, rainbow_style_day, rainbow_style_night, heading_background_day, heading_background_night } from '../../utils/Constants.js'
+import { NAME, main_heading_style_day, main_heading_style_night, subgraph_normal_style_day, subgraph_normal_style_night, rainbow_style_day, rainbow_style_night, heading_background_day, heading_background_night } from '../../utils/constants.js'
 
 import 'typeface-merriweather'
 import { useThemeContext } from '../../hooks/useThemeContext'

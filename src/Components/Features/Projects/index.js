@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
-import './Projects.css'
-import { mobile_projects_day, mobile_projects_night, web_projects_day, web_projects_night, heading_style_day, heading_style_night, subgraph_style_day, subgraph_style_night } from '../../../utils/Constants'
+import './index.css'
+import { mobile_projects_day, mobile_projects_night, web_projects_day, web_projects_night, heading_style_day, heading_style_night, subgraph_style_day, subgraph_style_night } from '../../../utils/constants'
 import 'typeface-montserrat'
 import 'typeface-merriweather'
 import mobile_projects from '../../../mockData/mobile_projects.json'
