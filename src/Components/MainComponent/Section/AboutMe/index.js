@@ -1,12 +1,12 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import './index.css'
 import 'typeface-montserrat'
 import 'typeface-merriweather'
-import { details, details_2, heading_style_day, heading_style_night, subgraph_style_day, subgraph_style_night } from '../../../utils/constants'
+import { details, details_2, heading_style_day, heading_style_night, subgraph_style_day, subgraph_style_night } from '../../../../utils/constants'
 
-import Bullets from '../../../images/day/bullets.png'
-import Bullets_NIGHT from '../../../images/night/bullets.png'
-import { useThemeContext } from '../../../hooks/useThemeContext'
+import Bullets from '../../../../images/day/bullets.png'
+import Bullets_NIGHT from '../../../../images/night/bullets.png'
+import { useThemeContext } from '../../../../hooks/useThemeContext'
 
 export const AboutMe = () => {
     const theme = useThemeContext()

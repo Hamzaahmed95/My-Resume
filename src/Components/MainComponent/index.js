@@ -1,10 +1,7 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import './index.css'
-import { AboutMe } from '../Features/AboutMe'
-import { Introduction } from '../Introduction'
-import { Achievements } from '../Features/Achievements'
-import { Blogs } from '../Features/Blogs'
-import { Projects } from '../Features/Projects'
+import { AboutMe, Achievements, Blogs, Projects } from './Section'
+import { Introduction } from '../MainComponent/Introduction'
 import 'typeface-merriweather'
 import { useThemeContext } from '../../hooks/useThemeContext'
 export const MainComponent = () => {
