@@ -224,6 +224,26 @@ export const icons = [
     }
 ]
 
+export const sections = [
+    {
+        name: "aboutMe",
+        text: ABOUT_ME
+    },
+    {
+        name: "achievements",
+        text: ACHIEVEMENT
+    },
+    {
+        name: "blogs",
+        text: BLOGS
+    },
+    {
+        name: "projects",
+        text: PROJECTS
+    }
+]
+
+
 
 
 
