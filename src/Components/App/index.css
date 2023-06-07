@@ -1,26 +1,13 @@
 .app_container {
-
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
 }
 
 .app_container>div {
   flex: 1
 }
 
-.sidebar_background_dark {
-  border-right: 1px solid grey;
-}
-
-.sidebar_background_light {
-  border-right: 1px solid white;
-}
-
 .app_container>.main_component {
   flex: 4;
-  background: #11161E;
-  color: white;
 }
 
 @media all and (max-width: 800px) {

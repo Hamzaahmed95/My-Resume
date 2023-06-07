@@ -9,8 +9,10 @@ export const ThemeContext = createContext();
 
 const App = () => (
   <ThemeProvider>
-    <Sidebar />
-    <MainComponent />
+    <div className="app_container">
+      <Sidebar />
+      <MainComponent />
+    </div>
   </ThemeProvider>
 )
 
