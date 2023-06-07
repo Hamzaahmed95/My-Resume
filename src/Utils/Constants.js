@@ -1,3 +1,13 @@
+import Github from '../images/night/github.png'
+import Twitter from '../images/night/twitter.png'
+import LinkedIn from '../images/night/linkedin.png'
+import Medium from '../images/night/medium.png'
+import GithubLight from '../images/day/github.png'
+import TwitterLight from '../images/day/twitter.png'
+import LinkedInLight from '../images/day/linkedin.png'
+import MediumLight from '../images/day/medium.png'
+
+
 //BLOGS CONSTANTS
 
 export const Blogs_Main_Heading = "Blogs";
@@ -193,6 +203,27 @@ export const heading_background_night = {
     borderColor: '#d3d3d3',
     background: '#373D49'
 }
+
+//Utilities
+export const icons = [
+    {
+        name: { dark: Twitter, light: TwitterLight },
+        url: TWITTER_URL
+    },
+    {
+        name: { dark: Github, light: GithubLight },
+        url: GITHUB_URL
+    },
+    {
+        name: { dark: LinkedIn, light: LinkedInLight },
+        url: LINKEDIN_URL
+    },
+    {
+        name: { dark: Medium, light: MediumLight },
+        url: MEDIUM_URL
+    }
+]
+
 
 
 

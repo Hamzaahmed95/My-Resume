@@ -1,7 +1,7 @@
 import React from 'react'
 import './index.css'
 import { AboutMe, Achievements, Blogs, Projects } from './Section'
-import { Introduction } from '../MainComponent/Introduction'
+import { Introduction } from './Introduction'
 import 'typeface-merriweather'
 import { useThemeContext } from '../../hooks/useThemeContext'
 export const MainComponent = () => {
