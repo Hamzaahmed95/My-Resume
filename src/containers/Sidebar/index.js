@@ -1,10 +1,9 @@
 import React from 'react'
 import './index.css'
 import 'typeface-merriweather'
-import { DisplayProfilePicture, ToggleButton, getThemeStyle } from '../../utils/utility'
+import { DisplayProfilePicture, getThemeStyle } from '../../utils/utility'
 import { useThemeContext } from '../../hooks/useThemeContext'
-import { DisplayIcons } from '../../components/DisplayIcons'
-import { DisplaySections } from '../../components/DisplaySections'
+import { DisplayIcons, ToggleButton, DisplaySections } from '../../components'
 
 export const Sidebar = () => {
     const theme = useThemeContext()
