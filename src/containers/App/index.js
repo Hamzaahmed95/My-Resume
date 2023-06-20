@@ -8,9 +8,8 @@ import { useThemeContext } from '../../hooks/useThemeContext';
 export const ThemeContext = createContext();
 
 const App = () => {
-  
   const theme = useThemeContext()
-
+  
   useEffect(() => {
     document.body.style.background = theme.newTheme.background
     document.body.style.color= theme.newTheme.color

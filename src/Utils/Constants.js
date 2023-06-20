@@ -49,6 +49,14 @@ export const OCCUPATION = "Software Engineer"
 export const JAVASCRIPT = "Javascript"
 export const PYTHON = "Python"
 export const ANDROID = "Android"
+export const INTRO = " I am a highly skilled Senior Frontend Engineer with over 5 years of experience specializing in"
+export const REACT = " REACT"
+export const TYPESCRIPT = " TYPESCRIPT "
+export const EMAIL = "hamza.ahmed0402@gmail.com"
+export const COMPANY = "Hong Leong Bank, Kuala Lumpur, Malaysia"
+export const PROFESSION = "Android Developer"
+export const CONTACT_NUMBER = "(+60) 18 390 8407"
+export const CONTACT_DETAILS = "Currently working as an"
 
 //ACHIEVEMENTS
 
@@ -162,23 +170,6 @@ export const web_projects_night = {
     color: '#ffffff'
 }
 
-
-export const subgraph_normal_style_day = {
-    color: '#000000',
-    fontFamily: 'Merriweather, Georgia, serif',
-}
-export const subgraph_normal_style_night = {
-    color: '#ffffff',
-    fontFamily: 'Merriweather, Georgia, serif',
-}
-export const rainbow_style_day = {
-    background: '#D33668',
-    color: '#ffffff'
-}
-export const rainbow_style_night = {
-    background: '#FFA7C3',
-    color: '#000000'
-}
 
 export const heading_background_day = {
     border: '1px solid grey',

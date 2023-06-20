@@ -2,36 +2,19 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-
 }
 
-.Intro1 {
+.main_intro {
     display: flex;
-    justify-content: center;
     flex-wrap: nowrap;
-
-
-}
-
-.Intro1>Introduction {
-    flex: 1;
-    flex-grow: 3;
-}
-
-.Introduction {
-    padding-top: 5%;
-    padding-left: 2.5%;
-    flex-grow: 2;
 }
 
 .Introduction2 {
-
     margin-top: 5%;
     margin-left: 5%;
     height: 70%;
     margin-right: 5%;
     padding: 1%;
-
 }
 
 .ProfileImage {
@@ -55,7 +38,7 @@
 
 .subgraph1 {
     font-size: 24px;
-    font-family: Merriweather, Georgia, serif;
+    font-family: 'Merriweather, Georgia, serif';
 }
 
 .subgraph2 {
@@ -65,14 +48,6 @@
     color: rgba(255, 255, 255, 0.747);
 }
 
-.rainbow {
-    color: black;
-    padding: 0% 2% 0.5% 0%;
-
-    background-color: orange;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-}
 
 .projects {
     display: flex;
@@ -115,7 +90,7 @@
 
     }
 
-    .Intro1 {
+    .main_intro {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;

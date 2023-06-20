@@ -1,0 +1,23 @@
+.overview_dark {
+  border: 1px solid grey;
+  background: #FEFAE1;
+  border-radius: 10px;
+  border-color: #d3d3d3;
+}
+
+.overview_light {
+  border: 1px solid grey;
+  border-radius: 10px;
+  border-color: #d3d3d3;
+  background: #373D49;
+}
+
+.content_light {
+  color: '#ffffff';
+  font-family: 'Merriweather, Georgia, serif';
+}
+
+.content_dark {
+  color: #000000;
+  font-family: 'Merriweather, Georgia, serif';
+}
