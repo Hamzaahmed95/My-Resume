@@ -1,17 +1,14 @@
 import React, { useState, createContext } from 'react';
 import { ThemeContext } from '../App/index'
 
-
 const themes = {
   light: {
     background: '#000000',
     color: '#000000',
-    height: '100%'
   },
   dark: {
     background: '#ffffff',
     color: '#e9e9e9',
-    height: '100%'
   }
 }
 

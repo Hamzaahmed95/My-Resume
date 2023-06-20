@@ -8,7 +8,7 @@ export const MainComponent = () => {
 
     const theme = useThemeContext()
     return (
-        <div style={theme.newTheme} className="main_component">
+        <div className="main_component">
             <div className="Intro">
                 <Introduction />
                 {theme.activeBar == "aboutMe" ?

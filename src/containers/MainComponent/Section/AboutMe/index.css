@@ -1,43 +1,13 @@
-.MyIntroduction{
-    padding: 2.5%;
-    margin-right: 4.5%;
-    width: 60%;
-   
-   
-}
-.skills_div{
-  display: flex;
-  flex-direction: row;
-
- 
+ .MyIntroduction {
+  padding: 1%;
+  width: 60%;
 }
 
-.skills{
-  margin-left: 1% !important;
-}
+/* 
+@media all and (max-width: 800px) {
 
-.MyIntroductionHeadings{
-    display: flex;
-}
+  .subgraph {
 
-.name2{
-    font-size: 25px;
-    color:#b0b3b8;
-    margin-bottom: auto;
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-
-
-  .subgraph{  
-    color: rgba(255, 255, 255, 0.747);
-}
-
-@media all and (max-width: 800px){
-
-   .subgraph {
-    
     padding: 0%;
     margin-right: 3%;
     margin-top: 4%;
@@ -45,11 +15,11 @@
     font-family: 'Times New Roman', Times, serif;
     color: rgba(255, 255, 255, 0.747);
   }
-  .MyIntroduction{
-    padding: 2%;
-    
-    width: 100%;
-  
-}
-} 
 
+  .MyIntroduction {
+    padding: 2%;
+
+    width: 100%;
+
+  }
+} */
