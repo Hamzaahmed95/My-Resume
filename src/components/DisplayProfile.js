@@ -1,8 +1,8 @@
 import React from "react"
-import Profile from '../images/dp.png'
+import Profile from '../images/display.jpeg'
 
 export const DisplayProfilePicture = () => (
-  <div align="center">
-    <img className="profile_picture" src={Profile} />
-  </div>
+
+  <img className="profile_picture" src={Profile} />
+
 )

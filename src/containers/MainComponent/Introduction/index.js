@@ -84,13 +84,13 @@ export const Introduction = () => {
                 <div className="Introduction">
                     <h1 style={theme.theme === "dark" ? main_heading_style_day : main_heading_style_night} className="name">{NAME}</h1>
                     <p style={theme.theme === "dark" ? subgraph_normal_style_day : subgraph_normal_style_night} className="subgraph1">
-                        I'm a software engineer specialized in frontend with
+                        I am a highly skilled Senior Frontend Engineer with over 5 years of experience specializing in
                         <span style={theme.theme === "dark" ? rainbow_style_day : rainbow_style_night} className="rainbow">
                             React.
                         </span>
-                        I'm also working and writing in Android development with
+                        and
                         <span style={theme.theme === "dark" ? rainbow_style_day : rainbow_style_night} className="rainbow">
-                            Java/Kotlin.
+                            Typescript
                         </span>
                     </p>
                 </div>

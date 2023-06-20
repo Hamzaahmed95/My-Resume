@@ -63,7 +63,7 @@ export const Achievement_3_Content = "It was honoured for me to design question 
 
 //MY PROJECTS
 
-export const details = "I have 2+ years experience in Full Stack Development as well as in Mobile Development. I love Javascript and its magical functions due to many reasons."
+export const details = " With a passion for creating interactive and user-friendly web applications, I strive to deliver high-quality code and exceptional user experiences. Throughout my career, I have worked on a variety of projects, ranging from small startups to large-scale enterprise applications. My strong knowledge of frontend technologies, combined with my expertise in React and Typescript, allows me to build robust and scalable solutions."
 export const details_2 = "I also write in medium. I'm a youtuber and a head of TALENT HUNTERS (a team for spreading education awareness)"
 
 

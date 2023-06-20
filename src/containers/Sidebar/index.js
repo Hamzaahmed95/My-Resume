@@ -8,7 +8,7 @@ import { DisplayIcons, ToggleButton, DisplaySections, DisplayProfilePicture } fr
 export const Sidebar = () => {
     const theme = useThemeContext()
     return (
-        <div className={`${getThemeStyle('sidebar_background')} sidebar_component`} >
+        <div align="center" className={`${getThemeStyle('sidebar_background')} sidebar_component`} >
             <DisplayProfilePicture />
             <DisplayIcons />
             <hr className={getThemeStyle('line')} />
