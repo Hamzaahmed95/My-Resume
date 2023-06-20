@@ -4,7 +4,7 @@ import { useThemeContext } from "../hooks/useThemeContext"
 export const ToggleButton = () => {
   const theme = useThemeContext()
   return (
-    <div className="toggle_button list">
+    <div className="toggle_button">
       <label className="switch">
         <input onChange={theme.toggleTheme} type="checkbox" />
         <span className="slider round"></span>

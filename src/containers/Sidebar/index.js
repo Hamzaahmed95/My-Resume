@@ -1,20 +1,19 @@
 import React from 'react'
 import './index.css'
 import 'typeface-merriweather'
-import { getThemeStyle } from '../../utils/utility'
 import { useThemeContext } from '../../hooks/useThemeContext'
 import { DisplayIcons, ToggleButton, DisplaySections, DisplayProfilePicture } from '../../components'
 
 export const Sidebar = () => {
     const theme = useThemeContext()
     return (
-        <div align="center" className={`${getThemeStyle('sidebar_background')} sidebar_component`} >
+        <div align="center" className={`sidebar_background_${theme.theme} sidebar_component`} >
             <DisplayProfilePicture />
             <DisplayIcons />
-            <hr className={getThemeStyle('line')} />
+            <hr className={`line_${theme.theme}`} />
             <DisplaySections />
             <ToggleButton />
-        </div >
+        </div>
     )
 }
 

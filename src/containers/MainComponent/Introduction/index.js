@@ -4,7 +4,7 @@ import Email from '../../../images/day/email.png'
 import Email_NIGHT from '../../../images/night/email.png'
 import Phone from '../../../images/day/phone.png'
 import Phone_NIGHT from '../../../images/night/phone.png'
-import { NAME, main_heading_style_day, main_heading_style_night, subgraph_normal_style_day, subgraph_normal_style_night, rainbow_style_day, rainbow_style_night, heading_background_day, heading_background_night } from '../../../utils/constants.js'
+import { NAME, name_light, name_dark, subgraph_normal_style_day, subgraph_normal_style_night, rainbow_style_day, rainbow_style_night, heading_background_day, heading_background_night } from '../../../utils/constants.js'
 
 import 'typeface-merriweather'
 import { useThemeContext } from '../../../hooks/useThemeContext'
@@ -79,39 +79,37 @@ export const Introduction = () => {
         }
     }
     return (
-        <div className="Intro">
-            <div className="Intro1">
-                <div className="Introduction">
-                    <h1 style={theme.theme === "dark" ? main_heading_style_day : main_heading_style_night} className="name">{NAME}</h1>
-                    <p style={theme.theme === "dark" ? subgraph_normal_style_day : subgraph_normal_style_night} className="subgraph1">
-                        I am a highly skilled Senior Frontend Engineer with over 5 years of experience specializing in
-                        <span style={theme.theme === "dark" ? rainbow_style_day : rainbow_style_night} className="rainbow">
-                            React.
-                        </span>
-                        and
-                        <span style={theme.theme === "dark" ? rainbow_style_day : rainbow_style_night} className="rainbow">
-                            Typescript
-                        </span>
-                    </p>
-                </div>
-                <div style={theme.theme === "dark" ? heading_background_day : heading_background_night} className="Introduction2">
-                    <h4 style={theme.theme === "dark" ? subgraph_normal_style_day : subgraph_normal_style_night}>
-                        Currently working as an
-                        <span style={theme.theme === "dark" ? rainbow_style_day : rainbow_style_night} className="rainbow">
-                            Android Developer
-                        </span>
-                        at Hong Leong Bank,
-                        Kuala Lumpur, Malaysia
-                    </h4>
-                    <p className="subgraph2" style={theme.theme === "dark" ? subgraph_normal_style_day : subgraph_normal_style_night}>
-                        {theme.theme === "dark" ? <img src={Email_NIGHT} width={20} height={14} /> : <img src={Email} width={20} height={14} />}
-                        hamza.ahmed0402@gmail.com
-                    </p>
-                    <p className="subgraph2" style={theme.theme === "dark" ? subgraph_normal_style_day : subgraph_normal_style_night}>
-                        {theme.theme === "dark" ? <img src={Phone_NIGHT} width={20} height={20} /> : <img src={Phone} width={20} height={20} />}
-                        (+60) 18 390 8407
-                    </p>
-                </div>
+        <div className="Intro1">
+            <div className="Introduction">
+                <h1 className="name">{NAME}</h1>
+                <p className="subgraph1">
+                    I am a highly skilled Senior Frontend Engineer with over 5 years of experience specializing in
+                    <span style={theme.theme === "dark" ? rainbow_style_day : rainbow_style_night} className="rainbow">
+                        React.
+                    </span>
+                    and
+                    <span style={theme.theme === "dark" ? rainbow_style_day : rainbow_style_night} className="rainbow">
+                        Typescript
+                    </span>
+                </p>
+            </div>
+            <div style={theme.theme === "dark" ? heading_background_day : heading_background_night} className="Introduction2">
+                <h4 style={theme.theme === "dark" ? subgraph_normal_style_day : subgraph_normal_style_night}>
+                    Currently working as an
+                    <span style={theme.theme === "dark" ? rainbow_style_day : rainbow_style_night} className="rainbow">
+                        Android Developer
+                    </span>
+                    at Hong Leong Bank,
+                    Kuala Lumpur, Malaysia
+                </h4>
+                <p className="subgraph2" style={theme.theme === "dark" ? subgraph_normal_style_day : subgraph_normal_style_night}>
+                    {theme.theme === "dark" ? <img src={Email_NIGHT} width={20} height={14} /> : <img src={Email} width={20} height={14} />}
+                    hamza.ahmed0402@gmail.com
+                </p>
+                <p className="subgraph2" style={theme.theme === "dark" ? subgraph_normal_style_day : subgraph_normal_style_night}>
+                    {theme.theme === "dark" ? <img src={Phone_NIGHT} width={20} height={20} /> : <img src={Phone} width={20} height={20} />}
+                    (+60) 18 390 8407
+                </p>
             </div>
         </div>
     )

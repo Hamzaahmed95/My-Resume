@@ -1,14 +1,29 @@
-import React, { useState, createContext } from 'react';
+import React, { useState } from 'react';
 import { ThemeContext } from '../App/index'
+
+const colors = {
+  black: '#000000',
+  white: '#ffffff',
+  light_pink: '#FFA7C3',
+  dark_pink: '#D33668',
+}
 
 const themes = {
   light: {
-    background: '#000000',
-    color: '#000000',
+    background: colors.black,
+    color: colors.white,
+    fontFamily: 'Merriweather, Georgia, serif',
+    pink: {
+      color: colors.light_pink,
+    }
   },
   dark: {
-    background: '#ffffff',
-    color: '#e9e9e9',
+    background: colors.white,
+    color: colors.black,
+    fontFamily: 'Merriweather, Georgia, serif',
+    pink: {
+      color: colors.dark_pink,
+    }
   }
 }
 

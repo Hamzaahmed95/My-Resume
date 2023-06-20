@@ -10,7 +10,7 @@ export const DisplayIcons = () => {
   return (<div className="icons">
     {icons.map((icon, index) => (
       <a key={index} href={icon.url} >
-        <img className="each_icon" src={theme.theme === "dark" ? icon.name.dark : icon.name.light} />
+        <img className="each_icon" src={icon.name[theme.theme]} />
       </a>
     ))}
   </div>)

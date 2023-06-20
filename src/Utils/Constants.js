@@ -162,18 +162,7 @@ export const web_projects_night = {
     color: '#ffffff'
 }
 
-export const main_heading_style_day = {
-    color: '#000000',
-    fontFamily: 'Montserrat, sans-serif',
-    fontWeight: '900',
-    fontSize: '25px'
-}
-export const main_heading_style_night = {
-    color: '#ffffff',
-    fontFamily: 'Montserrat, sans-serif',
-    fontWeight: '900',
-    fontSize: '25px'
-}
+
 export const subgraph_normal_style_day = {
     color: '#000000',
     fontFamily: 'Merriweather, Georgia, serif',
