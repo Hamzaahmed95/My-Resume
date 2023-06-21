@@ -7,6 +7,10 @@ import TwitterLight from '../images/day/twitter.png'
 import LinkedInLight from '../images/day/linkedin.png'
 import MediumLight from '../images/day/medium.png'
 
+import Achievement1 from '../images/achievement1.jpeg'
+import Achievement2 from '../images/achievement2.jpeg'
+import Achievement3 from '../images/achievement3.jpeg'
+
 
 //BLOGS CONSTANTS
 
@@ -220,6 +224,24 @@ export const sections = [
     {
         name: "projects",
         text: PROJECTS
+    }
+]
+
+export const achievements = [
+    {
+        img_url: Achievement1,
+        heading: Achievement_1_Heading,
+        content: Achievement_1_Content
+    },
+    {
+        img_url: Achievement2,
+        heading: Achievement_2_Heading,
+        content: Achievement_2_Content
+    },
+    {
+        img_url: Achievement3,
+        heading: Achievement_3_Heading,
+        content: Achievement_3_Content
     }
 ]
 

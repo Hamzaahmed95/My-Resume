@@ -29,7 +29,7 @@ const themes = {
 
 export const ThemeProvider = ({ children }) => {
 
-  const [activeBar, setActiveBar] = useState("aboutMe")
+  const [activeBar, setActiveBar] = useState("achievements")
   const [theme, setTheme] = useState("light")
 
   const handleChangeActiveBar = (value) => {

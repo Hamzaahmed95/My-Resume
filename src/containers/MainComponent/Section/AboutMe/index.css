@@ -1,25 +1,52 @@
- .MyIntroduction {
-  padding: 1%;
-  width: 60%;
-}
+ .about_me_container {
+   padding: 1%;
+   width: 60%;
+ }
+
+ .about_me_heading_dark {
+   color: #D33668;
+   font-family: Montserrat, sans-serif;
+   font-weight: 900;
+ }
+
+ .about_me_heading_light {
+   color: #FFA7C3;
+   font-family: Montserrat, sans-serif;
+   font-weight: 900
+ }
+
+ .about_me_content_dark {
+   color: #000000;
+   font-family: Merriweather, Georgia, serif;
+   font-size: 16;
+   font-weight: 40
+ }
+
+ .about_me_content_light {
+   color: #ffffff;
+   font-family: Merriweather, Georgia, serif;
+   font-size: 16;
+   font-weight: 40;
+ }
 
 
-@media all and (max-width: 800px) {
 
-  .subgraph {
+ @media all and (max-width: 800px) {
 
-    padding: 0%;
-    margin: 3%;
-    margin-top: 4%;
-    font-size: 13px;
-    font-family: 'Times New Roman', Times, serif;
-    color: rgba(255, 255, 255, 0.747);
-  }
+   .subgraph {
 
-  .MyIntroduction {
-    padding: 2%;
+     padding: 0%;
+     margin: 3%;
+     margin-top: 4%;
+     font-size: 13px;
+     font-family: Times New Roman, Times, serif;
+     color: rgba(255, 255, 255, 0.747);
+   }
 
-    width: 100%;
+   .MyIntroduction {
+     padding: 2%;
 
-  }
-}
+     width: 100%;
+
+   }
+ }
