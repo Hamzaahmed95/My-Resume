@@ -11,6 +11,12 @@ import Achievement1 from '../images/achievement1.jpeg'
 import Achievement2 from '../images/achievement2.jpeg'
 import Achievement3 from '../images/achievement3.jpeg'
 
+import Blog1 from '../images/blog11.png'
+import Blog2 from '../images/blog22.png'
+import Blog3 from '../images/blog33.png'
+import Blog4 from '../images/blog44.png'
+import Blog5 from '../images/blog55.png'
+
 
 //BLOGS CONSTANTS
 
@@ -244,6 +250,41 @@ export const achievements = [
         content: Achievement_3_Content
     }
 ]
+
+
+export const blogs = [
+    {
+        name: Blog_1_Heading,
+        description: Blog_1_Content,
+        img_url: Blog1,
+        link: Blog_1_URL,
+    },
+    {
+        name: Blog_2_Heading,
+        description: Blog_2_Content,
+        img_url: Blog2,
+        link: Blog_2_URL,
+    },
+    {
+        name: Blog_3_Heading,
+        description: Blog_3_Content,
+        img_url: Blog3,
+        link: Blog_3_URL,
+    },
+    {
+        name: Blog_4_Heading,
+        description: Blog_4_Content,
+        img_url: Blog4,
+        link: Blog_4_URL,
+    },
+    {
+        name: Blog_5_Heading,
+        description: Blog_5_Content,
+        img_url: Blog5,
+        link: Blog_5_URL,
+    },
+]
+
 
 
 
