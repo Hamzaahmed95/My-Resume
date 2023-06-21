@@ -4,35 +4,23 @@
   height: 100vh;
   width: 100%;
 }
-
 .app_container {
   display: flex;
 }
-
 .sidebar_component {
   flex: 1;
 }
-
 .main_component {
   flex: 4;
-}
-.light-theme {
-  background-color: #ffffff; /* Light theme background color */
-}
-
-.dark-theme {
-  background-color: #000000; /* Dark theme background color */
 }
 
 @media all and (max-width: 800px) {
   .app_container {
     flex-direction: column;
   }
-
   .app {
     display: flex;
     justify-content: center;
     width: 100%;
   }
-  
 }

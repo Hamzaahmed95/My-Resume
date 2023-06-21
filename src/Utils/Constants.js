@@ -7,15 +7,15 @@ import TwitterLight from '../images/day/twitter.png'
 import LinkedInLight from '../images/day/linkedin.png'
 import MediumLight from '../images/day/medium.png'
 
-import Achievement1 from '../images/achievement1.jpeg'
-import Achievement2 from '../images/achievement2.jpeg'
-import Achievement3 from '../images/achievement3.jpeg'
+import Achievement1 from '../images/achievement1.png'
+import Achievement2 from '../images/achievement2.png'
+import Achievement3 from '../images/achievement3.png'
 
-import Blog1 from '../images/blog11.png'
-import Blog2 from '../images/blog22.png'
-import Blog3 from '../images/blog33.png'
-import Blog4 from '../images/blog44.png'
-import Blog5 from '../images/blog55.png'
+import Blog1 from '../images/blog1.png'
+import Blog2 from '../images/blog2.png'
+import Blog3 from '../images/blog3.png'
+import Blog4 from '../images/blog4.png'
+import Blog5 from '../images/blog5.png'
 
 
 //BLOGS CONSTANTS
@@ -46,8 +46,6 @@ export const ABOUT_ME = "About Me";
 export const PROJECTS = "Projects";
 export const ACHIEVEMENT = "Achievements";
 export const BLOGS = "Blogs";
-export const YOUTUBER = "Youtuber";
-export const TalentHunters = "Events";
 export const LINKEDIN_URL = "https://www.linkedin.com/in/hamzaahmed95/"
 export const MEDIUM_URL = "https://medium.com/@hamzzza.ahmed95"
 export const GITHUB_URL = "https://github.com/hamzaahmed95"
@@ -57,8 +55,6 @@ export const TWITTER_URL = "https://twitter.com/hagab95"
 
 export const OCCUPATION = "Software Engineer"
 export const JAVASCRIPT = "Javascript"
-export const PYTHON = "Python"
-export const ANDROID = "Android"
 export const INTRO = " I am a highly skilled Senior Frontend Engineer with over 5 years of experience specializing in"
 export const REACT = " REACT"
 export const TYPESCRIPT = " TYPESCRIPT "
@@ -82,117 +78,7 @@ export const Achievement_3_Content = "It was honoured for me to design question 
 //MY PROJECTS
 
 export const details = " With a passion for creating interactive and user-friendly web applications, I strive to deliver high-quality code and exceptional user experiences. Throughout my career, I have worked on a variety of projects, ranging from small startups to large-scale enterprise applications. My strong knowledge of frontend technologies, combined with my expertise in React and Typescript, allows me to build robust and scalable solutions."
-export const details_2 = "I also write in medium. I'm a youtuber and a head of TALENT HUNTERS (a team for spreading education awareness)"
 
-
-// YOUTUBE
-export const video1_link = "https://www.youtube.com/watch?v=q81IM0BSzuI"
-export const video2_link = "https://www.youtube.com/watch?v=0XrHhoz3M24&t=120s"
-
-export const Video_1_Heading = "Disrupt 1.0"
-export const Video_2_Heading = "Education Awareness"
-export const Youtube_Main_Heading = "Videos"
-
-// EVENTS
-export const Event_1_Heading = "Presentation Battlefield"
-export const Event_2_Heading = "Disrupt 1.0"
-export const Event_3_Heading = "How to Think Like a Leader"
-export const Event_4_Heading = "Education Expo'18"
-export const Event_Main_Heading = "Events"
-
-
-//COLORS_VARIABLES
-
-//SIDEBAR
-
-export const standard_day_theme = {
-    color: '#dfdfdf',
-    fontFamily: 'Merriweather, Georgia, serif'
-}
-export const standard_night_theme = {
-    color: '#000000',
-    fontFamily: 'Merriweather, Georgia, serif'
-}
-
-export const standard_font_day_theme = {
-    color: '#FFA7C3',
-    fontFamily: 'Merriweather, Georgia, serif'
-}
-export const standard_font_night_theme = {
-    color: '#D33668',
-    fontFamily: 'Merriweather, Georgia, serif'
-}
-export const line_style = {
-    backgroundColor: '#D33668',
-}
-export const line_style_night = {
-    backgroundColor: '#FFA7C3'
-}
-
-//ABOUT_ME
-
-export const heading_style_day = {
-    color: '#D33668',
-    fontFamily: 'Montserrat, sans-serif',
-    fontWeight: '900'
-}
-export const heading_style_night = {
-    color: '#FFA7C3',
-    fontFamily: 'Montserrat, sans-serif',
-    fontWeight: '900'
-}
-export const subgraph_style_day = {
-    color: '#000000',
-    fontFamily: 'Merriweather, Georgia, serif',
-    fontSize: '16',
-    fontWeight: '40'
-}
-
-export const subgraph_style_night = {
-    color: '#ffffff',
-    fontFamily: 'Merriweather, Georgia, serif',
-    fontSize: '16',
-    fontWeight: '40'
-}
-
-export const block_background_day = {
-    backgroundColor: '#FDFAE0'
-}
-
-export const block_background_night = {
-    backgroundColor: '#363D48'
-}
-
-export const mobile_projects_day = {
-    backgroundColor: '#FDFAE0',
-    color: '#000000'
-}
-export const mobile_projects_night = {
-    backgroundColor: '#363D48',
-    color: '#ffffff'
-}
-export const web_projects_day = {
-    backgroundColor: '#ffffff',
-    color: '#000000'
-}
-export const web_projects_night = {
-    backgroundColor: '#282D35',
-    color: '#ffffff'
-}
-
-
-export const heading_background_day = {
-    border: '1px solid grey',
-    background: '#FEFAE1',
-    borderRadius: '10px',
-    borderColor: '#d3d3d3'
-}
-export const heading_background_night = {
-    border: '1px solid grey',
-    borderRadius: '10px',
-    borderColor: '#d3d3d3',
-    background: '#373D49'
-}
 
 //Utilities
 export const icons = [

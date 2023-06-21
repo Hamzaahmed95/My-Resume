@@ -1,25 +1,6 @@
-.Intro {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
-
 .main_intro {
     display: flex;
     flex-wrap: nowrap;
-}
-
-.Introduction2 {
-    margin-top: 5%;
-    margin-left: 5%;
-    height: 70%;
-    margin-right: 5%;
-    padding: 1%;
-}
-
-.ProfileImage {
-    flex: 1 0 600px;
-
 }
 
 .name {
@@ -29,72 +10,24 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-.subname {
-    margin-top: 2%;
-    font-size: 25px;
-    color: #242526;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.subgraph1 {
+.subgraph {
     font-size: 24px;
     font-family: 'Merriweather, Georgia, serif';
 }
 
-.subgraph2 {
-
-    font-size: 16px;
-    font-family: 'Times New Roman', Times, serif;
-    color: rgba(255, 255, 255, 0.747);
-}
-
-
-.projects {
-    display: flex;
-    justify-content: space-around;
-}
-
-.button {
-    border: 2px solid orange;
-    margin-right: 5%;
-    padding-bottom: 5%;
-    font-size: large;
-    background: transparent;
-    color: white;
-}
-
-
-@media all and (max-width: 900px) {
-    .ProfileImage {
-        display: none;
-    }
-}
 
 @media all and (max-width: 800px) {
 
-    .subgraph1,
-    subgraph2 {
+    .subgraph1 {
         font-size: 15px;
         padding: 0%;
         margin-right: 3%;
-
-    }
-
-    .Introduction2 {
-
-        margin-top: 2%;
-        margin-left: 2.5%;
-        height: 70%;
-        margin-right: 2.5%;
-        padding: 1%;
-
     }
 
     .main_intro {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-
     }
 
     .name {
