@@ -29,14 +29,24 @@
    font-weight: 40;
  }
 
+
+
  @media all and (max-width: 800px) {
 
    .subgraph {
+
      padding: 0%;
      margin: 3%;
      margin-top: 4%;
      font-size: 13px;
      font-family: Times New Roman, Times, serif;
      color: rgba(255, 255, 255, 0.747);
+   }
+
+   .MyIntroduction {
+     padding: 2%;
+
+     width: 100%;
+
    }
  }

@@ -6,12 +6,14 @@ export const DisplaySections = () => {
 
   const theme = useThemeContext()
   return (
-    sections.map((section, index) => (
-      <div key={index} onClick={() => theme.handleChangeActiveBar(section.name)} className="list">
-        <p style={theme.activeBar == section.name ? theme.newTheme.pink : theme.newTheme}>
-          {section.text}
-        </p>
-      </div>
-    ))
+    <div className="list">
+      {sections.map((section, index) => (
+        <div key={index} onClick={() => theme.handleChangeActiveBar(section.name)} >
+          <p style={theme.activeBar == section.name ? theme.newTheme.pink : theme.newTheme}>
+            {section.text}
+          </p>
+        </div>
+      ))}
+    </div>
   )
 }

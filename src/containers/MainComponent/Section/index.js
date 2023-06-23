@@ -2,8 +2,8 @@ import React from 'react'
 import { AboutMe } from './AboutMe'
 import { Achievements } from './Achievements'
 import { Blogs } from './Blogs'
-import { useThemeContext } from '../../../hooks/useThemeContext'
 import { Projects } from './Projects'
+import { useThemeContext } from '../../../hooks/useThemeContext'
 export const Sections = () => {
 
   const theme = useThemeContext()

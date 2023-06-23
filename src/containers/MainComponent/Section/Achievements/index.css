@@ -1,11 +1,20 @@
 .achievements_container {}
 
-.block_background_dark {
+.block_background_dark{
     background-color: #FDFAE0
 }
 
-.block_background_light {
+.block_background_light{
     background-color: #363D48
+}
+
+
+.name2 {
+    font-size: 25px;
+    color: #b0b3b8;
+    margin-bottom: auto;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .achievements_content {
@@ -16,17 +25,32 @@
 }
 
 .achievements_content>div>img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 356px;
 }
 
-.blog1 {
+.blog1,
+.blog2,
+.blog3,
+.blog4,
+.blog5 {
     display: flex;
     padding: 5%;
     margin-bottom: 1.5%;
     flex-wrap: nowrap;
     box-shadow: 0 4px 8px 8px rgba(0, 0, 0, 0.2);
+
 }
+
+
+.achievement_headings {
+    color: orange;
+}
+
+a {
+    color: transparent
+}
+
 
 @media all and (max-width: 800px) {
     .achievements_content {
@@ -35,12 +59,21 @@
         justify-content: center;
     }
 
-    .blog1 {
+    .blog1,
+    .blog2,
+    .blog3,
+    .blog4,
+    .blog5 {
         display: flex;
         padding: 2%;
         flex-wrap: wrap;
         background: #363D48;
         box-shadow: 0 4px 8px 8px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .sub_style {
+        font-size: 12px;
     }
 
 }
