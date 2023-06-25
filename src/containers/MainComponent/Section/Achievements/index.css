@@ -1,10 +1,8 @@
-.achievements_container {}
-
-.block_background_dark{
+.block_background_dark {
     background-color: #FDFAE0
 }
 
-.block_background_light{
+.block_background_light {
     background-color: #363D48
 }
 
@@ -29,22 +27,12 @@
     height: 356px;
 }
 
-.blog1,
-.blog2,
-.blog3,
-.blog4,
-.blog5 {
+.blog1 {
     display: flex;
     padding: 5%;
     margin-bottom: 1.5%;
     flex-wrap: nowrap;
     box-shadow: 0 4px 8px 8px rgba(0, 0, 0, 0.2);
-
-}
-
-
-.achievement_headings {
-    color: orange;
 }
 
 a {
@@ -59,11 +47,7 @@ a {
         justify-content: center;
     }
 
-    .blog1,
-    .blog2,
-    .blog3,
-    .blog4,
-    .blog5 {
+    .blog1 {
         display: flex;
         padding: 2%;
         flex-wrap: wrap;
@@ -75,5 +59,4 @@ a {
     .sub_style {
         font-size: 12px;
     }
-
 }

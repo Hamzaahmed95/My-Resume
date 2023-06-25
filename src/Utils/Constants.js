@@ -63,10 +63,10 @@ export const INTRO = " I am a highly skilled Senior Frontend Engineer with over 
 export const REACT = " REACT"
 export const TYPESCRIPT = " TYPESCRIPT "
 export const EMAIL = "hamza.ahmed0402@gmail.com"
-export const COMPANY = "Hong Leong Bank, Kuala Lumpur, Malaysia"
-export const PROFESSION = "Android Developer"
+export const COMPANY = "Aleph labs, Malaysia"
+export const PROFESSION = "Senior Frontend Developer"
 export const CONTACT_NUMBER = "(+60) 18 390 8407"
-export const CONTACT_DETAILS = "Currently working as an"
+export const CONTACT_DETAILS = "Currently working as a"
 
 //ACHIEVEMENTS
 
