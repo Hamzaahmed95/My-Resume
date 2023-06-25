@@ -1,16 +1,4 @@
-.Blogs{
-    padding: 1%; 
-}
 
-.name2{
-    font-size: 25px;
-    margin-bottom: 5%;
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.Blogsheadings{
-    display: flex;
-}
 
 .name2{
     font-size: 25px;
@@ -33,15 +21,8 @@
     height:171px;
 }
 
-.blog_headings{
-    color:orange;
-    
-}
 .para_blogs{
     padding-left: 2%;
-}
-a{
-    color:transparent
 }
 
 @media all and (max-width: 700px){

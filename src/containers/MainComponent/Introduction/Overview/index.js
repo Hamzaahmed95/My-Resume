@@ -1,5 +1,5 @@
 import React from 'react'
-import { NAME, rainbow_style_day, rainbow_style_night, INTRO, REACT, TYPESCRIPT } from '../../../../utils/constants.js'
+import { NAME, INTRO, REACT, TYPESCRIPT } from '../../../../utils/constants.js'
 import './index.css'
 import 'typeface-merriweather'
 import { useThemeContext } from '../../../../hooks/useThemeContext'

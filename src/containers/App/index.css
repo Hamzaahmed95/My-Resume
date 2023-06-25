@@ -24,11 +24,9 @@
   .app_container {
     flex-direction: column;
   }
-
   .app {
     display: flex;
     justify-content: center;
     width: 100%;
   }
-  
 }
