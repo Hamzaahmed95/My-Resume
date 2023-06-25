@@ -11,6 +11,7 @@
 
 .main_component {
   flex: 4;
+  max-width: 2000px;
 }
 .light-theme {
   background-color: #ffffff; /* Light theme background color */
