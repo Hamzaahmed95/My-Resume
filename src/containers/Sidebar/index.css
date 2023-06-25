@@ -107,7 +107,6 @@ input:checked+.slider:before {
 
 .sidebar_position {
   display: flex;
-  width: 240px;
   flex-direction: column;
   position: fixed;
   justify-content: space-between;
