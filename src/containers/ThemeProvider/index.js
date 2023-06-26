@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import { ThemeContext } from '../App/index'
 
 const colors = {
-  black: '#000000',
+  black: '#081229',
   white: '#ffffff',
   light_pink: '#FFA7C3',
   dark_pink: '#D33668',
+  shades_light: '#191D3A',
+  shades_dark: '#f5f5f5'
 }
 
 const themes = {
@@ -14,7 +16,15 @@ const themes = {
     color: colors.white,
     fontFamily: 'Merriweather, Georgia, serif',
     pink: {
-      color: colors.light_pink,
+      color: colors.white,
+      borderBottom: `0.2px solid ${colors.light_pink}`,
+      paddingBottom:'2.5px'
+    },
+    normal: {
+      color: colors.white,
+    },
+    shades:{
+      background: colors.shades_light,
     }
   },
   dark: {
@@ -23,6 +33,14 @@ const themes = {
     fontFamily: 'Merriweather, Georgia, serif',
     pink: {
       color: colors.dark_pink,
+      borderBottom: `0.2px solid ${colors.dark_pink}`,
+      paddingBottom:'2.5px'
+    },
+    normal: {
+      color: colors.black,
+    },
+    shades:{
+      background: colors.shades_dark,
     }
   }
 }

@@ -5,14 +5,13 @@ import { sections } from "../utils/constants"
 export const DisplaySections = () => {
 
   const theme = useThemeContext()
+
   return (
-    <div className="list">
+    <div className="list" style={theme.newTheme.shades}>
       {sections.map((section, index) => (
-        <div key={index} onClick={() => theme.handleChangeActiveBar(section.name)} >
-          <p style={theme.activeBar == section.name ? theme.newTheme.pink : theme.newTheme}>
-            {section.text}
-          </p>
-        </div>
+        <p key={index} onClick={() => theme.handleChangeActiveBar(section.name)} style={theme.activeBar == section.name ? theme.newTheme.pink : theme.newTheme.normal}>
+          {section.text}
+        </p>
       ))}
     </div>
   )

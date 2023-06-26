@@ -24,7 +24,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: '14px';
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  padding-left: 45px;
+  padding-right: 45px
 }
 
 .each_icon {
@@ -33,7 +37,7 @@
 }
 
 .toggle_button {
- padding-bottom: 50%;
+  padding-bottom: 50%;
 }
 
 .switch {
@@ -101,7 +105,8 @@ input:checked+.slider:before {
   display: flex;
   justify-content: center;
 }
-.sidebar_items{
+
+.sidebar_items {
   width: 100%;
 }
 
@@ -164,6 +169,7 @@ input:checked+.slider:before {
     justify-content: space-evenly;
     font-size: 12px;
   }
+
   .each_icon {
     width: 20px;
     height: 20px;
@@ -195,7 +201,8 @@ input:checked+.slider:before {
     position: relative;
     width: 100%;
   }
+
   .toggle_button {
     display: none;
-   }
+  }
 }
