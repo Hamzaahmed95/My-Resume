@@ -40,7 +40,7 @@ a {
 }
 
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 900px) {
     .achievements_content {
         display: flex;
         flex-wrap: wrap;

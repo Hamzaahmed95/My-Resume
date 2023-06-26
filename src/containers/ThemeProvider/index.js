@@ -18,7 +18,8 @@ const themes = {
     pink: {
       color: colors.white,
       borderBottom: `0.2px solid ${colors.light_pink}`,
-      paddingBottom:'2.5px'
+      paddingBottom:'2.5px',
+      
     },
     normal: {
       color: colors.white,

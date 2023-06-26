@@ -27,8 +27,8 @@
   font-size: 14px;
   cursor: pointer;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-  padding-left: 45px;
-  padding-right: 45px
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 .each_icon {
@@ -108,6 +108,15 @@ input:checked+.slider:before {
 
 .sidebar_items {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1
+}
+
+.sidebar_items>* {
+  flex-shrink: 2;
+  /* Allows the boxes to shrink if needed */
 }
 
 .sidebar_position {
@@ -136,7 +145,7 @@ input:checked+.slider:before {
 
 
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 900px) {
 
   .profile_picture {
     width: 120px;
@@ -204,5 +213,13 @@ input:checked+.slider:before {
 
   .toggle_button {
     display: none;
+  }
+
+  .sidebar_items {
+    width: 100%;
+  }
+
+  .list_item {
+    padding: 0 1.5rem 0 1.5rem;
   }
 }

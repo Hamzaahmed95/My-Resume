@@ -9,7 +9,7 @@ export const DisplaySections = () => {
   return (
     <div className="list" style={theme.newTheme.shades}>
       {sections.map((section, index) => (
-        <p key={index} onClick={() => theme.handleChangeActiveBar(section.name)} style={theme.activeBar == section.name ? theme.newTheme.pink : theme.newTheme.normal}>
+        <p key={index} className="list_item" onClick={() => theme.handleChangeActiveBar(section.name)} style={theme.activeBar == section.name ? theme.newTheme.pink : theme.newTheme.normal}>
           {section.text}
         </p>
       ))}

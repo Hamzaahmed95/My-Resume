@@ -21,7 +21,7 @@
     font-family: 'Merriweather, Georgia, serif';
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 900px) {
 
     .subgraph1{
         font-size: 15px;

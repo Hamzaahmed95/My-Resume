@@ -22,7 +22,7 @@
   background-color: #000000; /* Dark theme background color */
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 900px) {
   .app_container {
     flex-direction: column;
   }
