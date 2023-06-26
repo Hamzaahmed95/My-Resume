@@ -1,4 +1,5 @@
 import React from 'react'
+import './index.css'
 import { AboutMe } from './AboutMe'
 import { Achievements } from './Achievements'
 import { Blogs } from './Blogs'

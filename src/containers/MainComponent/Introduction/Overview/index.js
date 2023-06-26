@@ -1,4 +1,4 @@
-import React,{useState,useEffect,useRef} from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { NAME, INTRO, REACT, TYPESCRIPT } from '../../../../utils/constants.js'
 import './index.css'
 import 'typeface-merriweather'
@@ -23,27 +23,25 @@ export const Overview = () => {
 
 
   return (
-    <div>
-      <div>
-        <h1 className="name">{NAME}</h1>
-        <p className="subgraph1">{INTRO}
-          <span className={`highlight_${theme.theme} rainbow`}>
-            {' '}{REACT} {' '}
-          </span>
-          and
-          <span className={`highlight_${theme.theme} rainbow`}>
-            <CSSTransition
-              in={true}
-              appear={true}
-              timeout={500}
-              classNames="word-transition"
-              nodeRef={wordRef}
-            >
-              <span ref={wordRef}> {' '} {words[currentWordIndex]}{' '}</span>
-            </CSSTransition>
-          </span>
-        </p>
-      </div>
+    <div className='overview_container'>
+      <h1 className="name">{NAME}</h1>
+      <p className="subgraph1">{INTRO}{' '}
+        <span className={`highlight_${theme.theme} rainbow`}>
+          {REACT}
+        </span>
+        {' '}and{' '}
+        <span className={`highlight_${theme.theme} rainbow`}>
+          <CSSTransition
+            in={true}
+            appear={true}
+            timeout={500}
+            classNames="word-transition"
+            nodeRef={wordRef}
+          >
+            <span ref={wordRef}>{words[currentWordIndex]}</span>
+          </CSSTransition>
+        </span>
+      </p>
     </div>
   )
 }

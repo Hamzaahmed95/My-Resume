@@ -1,3 +1,8 @@
+.contactInfo_container {
+  padding: 0 2% 0 2%;
+  flex-basis: 30%;
+}
+
 .overview_dark {
   border: 1px solid grey;
   background: #FEFAE1;
@@ -6,18 +11,28 @@
 }
 
 .overview_light {
-  border: 1px solid grey;
+  border: 1px solid #516391;
   border-radius: 10px;
-  border-color: #d3d3d3;
-  background: #373D49;
+  background: #0E0F1C;
 }
 
 .content_light {
-  color: '#ffffff';
-  font-family: 'Merriweather, Georgia, serif';
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26.4px;
 }
 
 .content_dark {
   color: #000000;
-  font-family: 'Merriweather, Georgia, serif';
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26.4px;
+}
+@media all and (max-width: 900px) {
+  .contactInfo_container {
+    flex-basis: 80%;
+  }
 }

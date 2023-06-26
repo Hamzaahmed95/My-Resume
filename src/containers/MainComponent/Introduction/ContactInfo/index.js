@@ -13,13 +13,13 @@ export const ContactInfo = () => {
   const theme = useThemeContext()
 
   return (
-    <div className={`overview_${theme.theme}`}>
+    <div className={`contactInfo_container overview_${theme.theme}`}>
       <h4 className={`content_${theme.theme}`}>
-        {CONTACT_DETAILS}
+        {CONTACT_DETAILS} {' '}
         <span className={`highlight_${theme.theme} rainbow`}>
-          {PROFESSION}
+         {PROFESSION}
         </span>
-        at {COMPANY}
+        {' '} at {COMPANY}
       </h4>
       <p className={`content_${theme.theme}`}>
         <img src={theme.theme === "dark" ? email_dark : email_light} width={20} height={14} />

@@ -1,6 +1,8 @@
+.overview_container{
+ flex-basis: 60%;
+}
 .rainbow {
   color: black;
-  padding: 0% 2% 0.5% 0%;
   background-color: orange;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -8,9 +10,24 @@
 .highlight_dark {
   background: #D33668;
   color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26.4px;
 }
 
 .highlight_light {
-  background: #FFA7C3;
-  color: #000000;
+  background: #0E0F1C;
+  color: #FFA7C3;
+  border: 1px solid #516391;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26.4px;
+}
+@media all and (max-width: 900px) {
+  .overview_container{
+    flex-basis: 80%;
+    align-items: center;
+   }
 }

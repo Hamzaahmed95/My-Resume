@@ -1,6 +1,8 @@
 .main_intro {
     display: flex;
+    justify-content: space-between;
     flex-wrap: nowrap;
+    max-width: 100%;
 }
 
 .ProfileImage {

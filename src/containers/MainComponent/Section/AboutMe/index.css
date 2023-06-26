@@ -1,5 +1,8 @@
  .about_me_container {
    width: 60%;
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
  }
 
  .about_me_heading_dark {
@@ -27,3 +30,39 @@
    font-size: 16;
    font-weight: 40;
  }
+ @media all and (max-width: 900px) {
+  .about_me_container {
+    width: 80%;
+    padding-left: 8%;
+    padding-top: 8%;
+    display:flex;
+    flex-direction: column;
+  }
+  .about_me_heading_dark {
+    color: #D33668;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+  }
+ 
+  .about_me_heading_light {
+    color: #FFA7C3;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 900
+  }
+ 
+  .about_me_content_dark {
+    color: #000000;
+    font-family: Merriweather, Georgia, serif;
+    font-size: 12px;
+    font-weight: 40
+  }
+ 
+  .about_me_content_light {
+    color: #ffffff;
+    font-family: Merriweather, Georgia, serif;
+    font-size: 12px;
+    font-weight: 40;
+  }
+}
