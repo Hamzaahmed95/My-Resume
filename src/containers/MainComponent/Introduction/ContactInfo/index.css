@@ -33,6 +33,7 @@
 }
 @media all and (max-width: 900px) {
   .contactInfo_container {
-    flex-basis: 80%;
+    flex-basis: 100%;
+    font-size: 12px;
   }
 }

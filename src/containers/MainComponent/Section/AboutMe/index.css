@@ -32,9 +32,8 @@
  }
  @media all and (max-width: 900px) {
   .about_me_container {
-    width: 80%;
-    padding-left: 8%;
-    padding-top: 8%;
+    width: 100%;
+    padding-top: 4%;
     display:flex;
     flex-direction: column;
   }
