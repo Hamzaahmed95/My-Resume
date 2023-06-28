@@ -7,9 +7,9 @@ import TwitterLight from '../images/day/twitter.png'
 import LinkedInLight from '../images/day/linkedin.png'
 import MediumLight from '../images/day/medium.png'
 
-import Achievement1 from '../images/achievement1.jpeg'
-import Achievement2 from '../images/achievement2.jpeg'
-import Achievement3 from '../images/achievement3.jpeg'
+import Achievement1 from '../images/achievement1.png'
+import Achievement2 from '../images/achievement2.png'
+import Achievement3 from '../images/achievement3.png'
 
 import Blog1 from '../images/blog11.png'
 import Blog2 from '../images/blog22.png'
@@ -74,7 +74,7 @@ export const Achievements_Main_Heading = "Achievements"
 export const Achievement_1_Heading = "Winner of PROCOM 2018"
 export const Achievement_1_Content = "I won national level mobile development competition held in 2018. Our team consist of three and we are top among 20 teams"
 export const Achievement_2_Heading = "Awarded for Creating League App"
-export const Achievement_2_Content = "I was awarded by sportics society for creating an android app which has been downloaded by 2k people from playstore. The purpose of this app is to digitalised the sports league. All the scores, team records, points table, man of the match and live scores can be foundd in the app"
+export const Achievement_2_Content = "I was awarded by sportics society for creating an android app which has been downloaded by 2k people from playstore."
 export const Achievement_3_Heading = "App head award in DevDay 2018"
 export const Achievement_3_Content = "It was honoured for me to design question set for National level competition and also I was given award of appreciation by ACM society for becoming head of mobile development competition at DEV DAY 2018"
 

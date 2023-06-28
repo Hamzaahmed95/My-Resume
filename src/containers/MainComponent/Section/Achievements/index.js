@@ -14,7 +14,7 @@ export const Achievements = () => {
                     <div key={index} align="left" className={`block_background_${theme.theme} blog1`} >
                         <img src={achievement.img_url} />
                         <div>
-                            <h2 className={`about_me_heading_${theme.theme}`} >{achievement.heading}</h2>
+                            <h3 className={`about_me_heading_${theme.theme}`} >{achievement.heading}</h3>
                             <p className={`about_me_content_${theme.theme}`}>{achievement.content}</p>
                         </div>
                     </div>
