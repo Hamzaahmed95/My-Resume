@@ -1,5 +1,5 @@
-import React, { useContext } from 'react'
-import { blogs,projects, PROJECTS } from '../../../../utils/constants'
+import React from 'react'
+import { projects, PROJECTS } from '../../../../utils/constants'
 
 import { useThemeContext } from '../../../../hooks/useThemeContext'
 

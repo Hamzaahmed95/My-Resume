@@ -1,8 +1,15 @@
 .main_intro {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
     max-width: 100%;
+}
+
+
+.main_intro.show {
+    opacity: 1;
 }
 
 .ProfileImage {
@@ -25,12 +32,13 @@
 
 @media all and (max-width: 900px) {
 
-    .subgraph1{
+    .subgraph1 {
         font-size: 15px;
         padding: 0%;
         margin-right: 3%;
 
     }
+
     .main_intro {
         display: flex;
         justify-content: center;
@@ -38,6 +46,7 @@
         max-width: 100%;
 
     }
+
     .name {
         display: none;
     }

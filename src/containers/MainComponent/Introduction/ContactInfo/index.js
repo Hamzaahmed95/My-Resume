@@ -17,17 +17,17 @@ export const ContactInfo = () => {
       <h4 className={`content_${theme.theme}`}>
         {CONTACT_DETAILS} {' '}
         <span className={`highlight_${theme.theme} rainbow`}>
-         {PROFESSION}
+          {PROFESSION}
         </span>
         {' '} at {COMPANY}
       </h4>
       <p className={`content_${theme.theme}`}>
         <img src={theme.theme === "dark" ? email_dark : email_light} width={20} height={14} />
-        {EMAIL}
+        {' '}{' '}{EMAIL}
       </p>
       <p className={`content_${theme.theme}`}>
         <img src={theme.theme === "dark" ? phone_dark : phone_light} width={20} height={20} />
-        {CONTACT_NUMBER}
+        {' '}{' '}{CONTACT_NUMBER}
       </p>
     </div>
   )

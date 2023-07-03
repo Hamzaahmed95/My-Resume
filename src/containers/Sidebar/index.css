@@ -47,12 +47,6 @@
   height: 34px;
 }
 
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
 .slider {
   position: absolute;
   cursor: pointer;
@@ -60,7 +54,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #FFA7C3;
+  background-color: #ffffff;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -72,13 +66,14 @@
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
+  background-color: green;
   -webkit-transition: .4s;
   transition: .4s;
 }
 
+
 input:checked+.slider {
-  background-color: #D33668;
+  background-color: #081229;
 }
 
 input:focus+.slider {
@@ -92,12 +87,19 @@ input:checked+.slider:before {
 }
 
 /* Rounded sliders */
-.slider.round {
+.slider.round_light {
   border-radius: 34px;
 }
-
-.slider.round:before {
+.slider.round_dark {
+  border-radius: 34px;
+}
+.slider.round_light:before {
   border-radius: 50%;
+  background-color:#081229
+}
+.slider.round_dark:before {
+  border-radius: 50%;
+  background-color:#ffffff
 }
 
 .sidebar_component {

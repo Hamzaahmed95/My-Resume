@@ -22,12 +22,26 @@ import Project1 from '../images/project1.png'
 import Project2 from '../images/project2.png'
 import Project3 from '../images/project3.png'
 import Project4 from '../images/project4.png'
-// import Project5 from '../images/project4.png'
+import Project5 from '../images/project5.png'
 
+
+//PROJECTS CONSTANTS
+
+export const Project_1_Heading = "UOB Project";
+export const Project_1_Content = "UOB infinity is my current project that I am working on. It's a core app for big giant customers to check their transactions, activities and many more.";
+export const Project_2_Heading = "DIGI Project";
+export const Project_2_Content = "Digi is a telecommunication app that enables customers to check the updates of their sim card management";
+export const Project_3_Heading = "S2B Project";
+export const Project_3_Content = "S2B is a security service platform to enable users for taking care of their assets";
+export const Project_4_Heading = "EPF Project";
+export const Project_4_Content = "EPF is the government level project that enables user to active and participate in provident funds";
+export const Project_5_Heading = "HLB Project";
+export const Project_5_Content = "Its a core banking project where User can perform their daily life activities like, transactions, payments etc..";
 export const Project_1_URL = 'https://my.infinity.uobgroup.com/'
 export const Project_2_URL = 'https://www.digi.com.my/'
 export const Project_3_URL = 'https://s2b.standardchartered.com/'
 export const Project_4_URL = 'https://www.kwsp.gov.my/'
+export const Project_5_URL = 'https://www.hlb.com.my/'
 
 
 
@@ -296,34 +310,34 @@ export const blogs = [
 
 export const projects = [
     {
-        name: "UOB Project",
-        description: "This is the description of UOB Project.This is the description of UOB Project.This is the description of UOB Project",
+        name: Project_1_Heading,
+        description: Project_1_Content,
         img_url: Project1,
         link: Project_1_URL,
     },
     {
-        name: 'DIGI Project',
-        description: "This is the description of DIGI Project.This is the description of DIGI Project.This is the description of DIGI Project",
+        name: Project_2_Heading,
+        description: Project_2_Content,
         img_url: Project2,
         link: Project_2_URL,
     },
     {
-        name: 'S2b Project',
-        description: "This is the description of S2b Project.This is the description of S2b Project.This is the description of S2b Project",
+        name: Project_3_Heading,
+        description: Project_3_Content,
         img_url: Project3,
         link: Project_3_URL,
     },
     {
-        name: 'EPF Project',
-        description: "This is the description of EPF Project.This is the description of EPF Project.This is the description of EPF Project",
+        name: Project_4_Heading,
+        description: Project_4_Content,
         img_url: Project4,
         link: Project_4_URL,
     },
     {
-        name: Blog_5_Heading,
-        description: Blog_5_Content,
-        img_url: Blog5,
-        link: Blog_5_URL,
+        name: Project_5_Heading,
+        description:Project_5_Content,
+        img_url: Project5,
+        link: Project_5_URL,
     },
 ]
 
