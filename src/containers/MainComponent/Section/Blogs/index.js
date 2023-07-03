@@ -9,7 +9,10 @@ export const Blogs = () => {
 
     return (
         <div className='achievements_container'>
-            <h1 className={`about_me_heading_${theme.theme}`} >{Blogs_Main_Heading}</h1>
+            <div style={{ paddingBottom: "10px" }}>
+                <h1 className={`about_me_heading_${theme.theme}`} >{Blogs_Main_Heading}</h1>
+                <hr className={`line_general_${theme.theme} blogs`} />
+            </div>
             <div className="achievements_content" >
                 {blogs.map((blog, index) => (
                     <div key={index} className={`block_background_${theme.theme} blog1`}>
@@ -23,6 +26,6 @@ export const Blogs = () => {
                     </div>
                 ))}
             </div>
-        </div>
+        </div >
     )
 }

@@ -1,9 +1,9 @@
 import React from 'react'
 import './index.css'
-import email_light from '../../../../images/day/email.png'
-import email_dark from '../../../../images/night/email.png'
-import phone_light from '../../../../images/day/phone.png'
-import phone_dark from '../../../../images/night/phone.png'
+import email_light from '../../../../images/email_light.png'
+import email_dark from '../../../../images/email_dark.png'
+import phone_light from '../../../../images/phone_light.png'
+import phone_dark from '../../../../images/phone_dark.png'
 import { COMPANY, CONTACT_DETAILS, CONTACT_NUMBER, EMAIL, PROFESSION } from '../../../../utils/constants.js'
 
 import { useThemeContext } from '../../../../hooks/useThemeContext'
@@ -22,12 +22,12 @@ export const ContactInfo = () => {
         {' '} at {COMPANY}
       </h4>
       <p className={`content_${theme.theme}`}>
-        <img src={theme.theme === "dark" ? email_dark : email_light} width={20} height={14} />
-        {' '}{' '}{EMAIL}
+        <img src={theme.theme === "dark" ? email_dark : email_light} width={20} height={20} />
+        <span>{' '}{' '}{EMAIL}</span>
       </p>
       <p className={`content_${theme.theme}`}>
         <img src={theme.theme === "dark" ? phone_dark : phone_light} width={20} height={20} />
-        {' '}{' '}{CONTACT_NUMBER}
+        <span>{' '}{' '}{CONTACT_NUMBER}</span>
       </p>
     </div>
   )

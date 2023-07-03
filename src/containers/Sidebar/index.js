@@ -7,7 +7,7 @@ import { DisplayIcons, ToggleButton, DisplaySections, DisplayProfilePicture } fr
 export const Sidebar = () => {
     const theme = useThemeContext()
     return (
-        <div className={`sidebar_component sidebar_background_${theme.theme} `} >
+        <div className="sidebar_component" >
             <div align="center" className='sidebar_position'>
                 <div className='sidebar_items'>
                     <DisplayProfilePicture />

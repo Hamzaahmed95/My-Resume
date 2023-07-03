@@ -4,8 +4,8 @@ import { ThemeContext } from '../App/index'
 const colors = {
   black: '#081229',
   white: '#ffffff',
-  light_pink: '#FFA7C3',
-  dark_pink: '#D33668',
+  light_pink: '#D33668',
+  dark_pink: '#FFA7C3',
   shades_light: '#191D3A',
   shades_dark: '#f5f5f5'
 }
@@ -18,13 +18,13 @@ const themes = {
     pink: {
       color: colors.white,
       borderBottom: `0.2px solid ${colors.light_pink}`,
-      paddingBottom:'2.5px',
-      
+      paddingBottom: '2.5px',
+
     },
     normal: {
       color: colors.white,
     },
-    shades:{
+    shades: {
       background: colors.shades_light,
     }
   },
@@ -35,12 +35,12 @@ const themes = {
     pink: {
       color: colors.dark_pink,
       borderBottom: `0.2px solid ${colors.dark_pink}`,
-      paddingBottom:'2.5px'
+      paddingBottom: '2.5px'
     },
     normal: {
       color: colors.black,
     },
-    shades:{
+    shades: {
       background: colors.shades_dark,
     }
   }

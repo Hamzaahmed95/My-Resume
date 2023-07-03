@@ -1,11 +1,11 @@
-import Github from '../images/night/github.png'
-import Twitter from '../images/night/twitter.png'
-import LinkedIn from '../images/night/linkedin.png'
-import Medium from '../images/night/medium.png'
-import GithubLight from '../images/day/github.png'
-import TwitterLight from '../images/day/twitter.png'
-import LinkedInLight from '../images/day/linkedin.png'
-import MediumLight from '../images/day/medium.png'
+import GithubLight from '../images/github_light.png'
+import GithubDark from '../images/github_dark.png'
+import TwitterLight from '../images/twitter_light.png'
+import TwitterDark from '../images/twitter_dark.png'
+import LinkedInLight from '../images/linkedIn_light.png'
+import LinkedInDark from '../images/linkedIn_dark.png'
+import MediumLight from '../images/medium_light.png'
+import MediumDark from '../images/medium_dark.png'
 
 import Achievement1 from '../images/achievement1.png'
 import Achievement2 from '../images/achievement2.png'
@@ -99,11 +99,11 @@ export const CONTACT_DETAILS = "Currently working as a"
 
 export const Achievements_Main_Heading = "Achievements"
 export const Achievement_1_Heading = "Winner of PROCOM 2018"
-export const Achievement_1_Content = "I won national level mobile development competition held in 2018. Our team consist of three and we are top among 20 teams"
+export const Achievement_1_Content = "In 2018, I achieved victory in a prestigious national-level mobile development competition. Our team, composed of three talented individuals, emerged as the top-performing team among a competitive pool of 20 participants"
 export const Achievement_2_Heading = "Awarded for Creating League App"
-export const Achievement_2_Content = "I was awarded by sportics society for creating an android app which has been downloaded by 2k people from playstore."
+export const Achievement_2_Content = "I was honored by the Sportics Society for my exceptional work in creating an Android app that garnered a remarkable 2,000 downloads from the Play Store. The recognition highlights the positive impact and widespread popularity of the app among users."
 export const Achievement_3_Heading = "App head award in DevDay 2018"
-export const Achievement_3_Content = "It was honoured for me to design question set for National level competition and also I was given award of appreciation by ACM society for becoming head of mobile development competition at DEV DAY 2018"
+export const Achievement_3_Content = "I take great pride in having the opportunity to design the question set for a prestigious National level competition. It was a privilege to contribute to the academic and intellectual growth of the participants through the competition. "
 
 
 //MY PROJECTS
@@ -219,19 +219,19 @@ export const heading_background_night = {
 //Utilities
 export const icons = [
     {
-        name: { dark: Twitter, light: TwitterLight },
+        name: { dark: TwitterDark, light: TwitterLight },
         url: TWITTER_URL
     },
     {
-        name: { dark: Github, light: GithubLight },
+        name: { dark: GithubDark, light: GithubLight },
         url: GITHUB_URL
     },
     {
-        name: { dark: LinkedIn, light: LinkedInLight },
+        name: { dark: LinkedInDark, light: LinkedInLight },
         url: LINKEDIN_URL
     },
     {
-        name: { dark: Medium, light: MediumLight },
+        name: { dark: MediumDark, light: MediumLight },
         url: MEDIUM_URL
     }
 ]
@@ -335,7 +335,7 @@ export const projects = [
     },
     {
         name: Project_5_Heading,
-        description:Project_5_Content,
+        description: Project_5_Content,
         img_url: Project5,
         link: Project_5_URL,
     },

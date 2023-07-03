@@ -1,6 +1,7 @@
-.overview_container{
- flex-basis: 60%;
+.overview_container {
+  flex-basis: 60%;
 }
+
 .rainbow {
   color: black;
   background-color: orange;
@@ -8,7 +9,7 @@
 }
 
 .highlight_dark {
-  background: #D33668;
+  background: #FFA7C3;
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
@@ -18,16 +19,17 @@
 
 .highlight_light {
   background: #0E0F1C;
-  color: #FFA7C3;
+  color: #D33668;
   border: 1px solid #516391;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 600;
   line-height: 26.4px;
 }
+
 @media all and (max-width: 900px) {
-  .overview_container{
+  .overview_container {
     flex-basis: 100%;
     align-items: center;
-   }
+  }
 }

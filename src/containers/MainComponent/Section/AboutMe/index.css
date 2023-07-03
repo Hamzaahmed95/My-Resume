@@ -1,21 +1,106 @@
  .about_me_container {
    width: 60%;
-   display:flex;
+   display: flex;
    flex-direction: column;
-   justify-content: center;
  }
 
+ .line_general_light.intro {
+   height: 3.5px;
+   margin: 0;
+   width: 18%;
+   border: none;
+   background-color: #D33668;
+ }
+
+ .line_general_dark.intro {
+   height: 1px;
+   margin: 15% 0% 15% 0%;
+   width: 18%;
+   border: none;
+   background-color: #FFA7C3;
+ }
+
+ .line_general_light.skills {
+   height: 3.5px;
+   margin: 0;
+   width: 10%;
+   border: none;
+   background-color: #D33668;
+ }
+
+ .line_general_dark.skills {
+   height: 1px;
+   margin: 15% 0% 15% 0%;
+   width: 10%;
+   border: none;
+   background-color: #FFA7C3;
+ }
+
+ .line_general_light.achievements {
+   height: 3.5px;
+   margin: 0;
+   width: 15%;
+   border: none;
+   background-color: #D33668;
+ }
+
+ .line_general_dark.achievements {
+   height: 1px;
+   margin: 15% 0% 15% 0%;
+   width: 15%;
+   border: none;
+   background-color: #FFA7C3;
+ }
+
+ .line_general_light.blogs {
+   height: 3.5px;
+   margin: 0;
+   width: 7%;
+   border: none;
+   background-color: #D33668;
+ }
+
+ .line_general_dark.projects {
+   height: 1px;
+   margin: 15% 0% 15% 0%;
+   width: 10%;
+   border: none;
+   background-color: #FFA7C3;
+ }
+
+ .line_general_light.projects {
+   height: 3.5px;
+   margin: 0;
+   width: 9%;
+   border: none;
+   background-color: #D33668;
+ }
+
+ .line_general_dark.blogs {
+   height: 1px;
+   margin: 15% 0% 15% 0%;
+   width: 9%;
+   border: none;
+   background-color: #FFA7C3;
+ }
+
+
+
  .about_me_heading_dark {
-   color: #D33668;
+   margin: 15px 0 2.5px 0;
+   color: #FFA7C3;
    font-family: Montserrat, sans-serif;
    font-weight: 900;
  }
 
  .about_me_heading_light {
-   color: #FFA7C3;
+   color: #ffffff;
+   margin: 15px 0 2.5px 0;
    font-family: Montserrat, sans-serif;
    font-weight: 900
  }
+
+
 
  .about_me_content_dark {
    color: #000000;
@@ -30,38 +115,40 @@
    font-size: 16;
    font-weight: 40;
  }
+
  @media all and (max-width: 900px) {
-  .about_me_container {
-    width: 100%;
-    padding-top: 4%;
-    display:flex;
-    flex-direction: column;
-  }
-  .about_me_heading_dark {
-    color: #D33668;
-    font-family: Montserrat, sans-serif;
-    font-size: 18px;
-    font-weight: 900;
-  }
- 
-  .about_me_heading_light {
-    color: #FFA7C3;
-    font-family: Montserrat, sans-serif;
-    font-size: 18px;
-    font-weight: 900
-  }
- 
-  .about_me_content_dark {
-    color: #000000;
-    font-family: Merriweather, Georgia, serif;
-    font-size: 12px;
-    font-weight: 40
-  }
- 
-  .about_me_content_light {
-    color: #ffffff;
-    font-family: Merriweather, Georgia, serif;
-    font-size: 12px;
-    font-weight: 40;
-  }
-}
+   .about_me_container {
+     width: 100%;
+     padding-top: 4%;
+     display: flex;
+     flex-direction: column;
+   }
+
+   .about_me_heading_dark {
+     color: #FFA7C3;
+     font-family: Montserrat, sans-serif;
+     font-size: 18px;
+     font-weight: 900;
+   }
+
+   .about_me_heading_light {
+     color: #D33668;
+     font-family: Montserrat, sans-serif;
+     font-size: 18px;
+     font-weight: 900
+   }
+
+   .about_me_content_dark {
+     color: #000000;
+     font-family: Merriweather, Georgia, serif;
+     font-size: 12px;
+     font-weight: 40
+   }
+
+   .about_me_content_light {
+     color: #ffffff;
+     font-family: Merriweather, Georgia, serif;
+     font-size: 12px;
+     font-weight: 40;
+   }
+ }

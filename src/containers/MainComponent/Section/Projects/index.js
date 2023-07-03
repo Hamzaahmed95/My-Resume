@@ -9,7 +9,10 @@ export const Projects = () => {
 
     return (
         <div className='achievements_container'>
-            <h1 className={`about_me_heading_${theme.theme}`} >{PROJECTS}</h1>
+            <div style={{ paddingBottom: "10px" }}>
+                <h1 className={`about_me_heading_${theme.theme}`} >{PROJECTS}</h1>
+                <hr className={`line_general_${theme.theme} projects`} />
+            </div>
             <div className="achievements_content" >
                 {projects.map((project, index) => (
                     <div key={index} className={`block_background_${theme.theme} blog1`}>
