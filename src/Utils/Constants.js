@@ -18,6 +18,19 @@ import Blog4 from '../images/blog44.png'
 import Blog5 from '../images/blog55.png'
 
 
+import Project1 from '../images/project1.png'
+import Project2 from '../images/project2.png'
+import Project3 from '../images/project3.png'
+import Project4 from '../images/project4.png'
+// import Project5 from '../images/project4.png'
+
+export const Project_1_URL = 'https://my.infinity.uobgroup.com/'
+export const Project_2_URL = 'https://www.digi.com.my/'
+export const Project_3_URL = 'https://s2b.standardchartered.com/'
+export const Project_4_URL = 'https://www.kwsp.gov.my/'
+
+
+
 //BLOGS CONSTANTS
 
 export const Blogs_Main_Heading = "Blogs";
@@ -279,6 +292,41 @@ export const blogs = [
         link: Blog_5_URL,
     },
 ]
+
+
+export const projects = [
+    {
+        name: "UOB Project",
+        description: "This is the description of UOB Project.This is the description of UOB Project.This is the description of UOB Project",
+        img_url: Project1,
+        link: Project_1_URL,
+    },
+    {
+        name: 'DIGI Project',
+        description: "This is the description of DIGI Project.This is the description of DIGI Project.This is the description of DIGI Project",
+        img_url: Project2,
+        link: Project_2_URL,
+    },
+    {
+        name: 'S2b Project',
+        description: "This is the description of S2b Project.This is the description of S2b Project.This is the description of S2b Project",
+        img_url: Project3,
+        link: Project_3_URL,
+    },
+    {
+        name: 'EPF Project',
+        description: "This is the description of EPF Project.This is the description of EPF Project.This is the description of EPF Project",
+        img_url: Project4,
+        link: Project_4_URL,
+    },
+    {
+        name: Blog_5_Heading,
+        description: Blog_5_Content,
+        img_url: Blog5,
+        link: Blog_5_URL,
+    },
+]
+
 
 
 

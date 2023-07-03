@@ -36,7 +36,7 @@
 
 .blog1 {
     padding: 2% 0 2% 0;
-    margin: 1%;
+    margin: 1% 2% 1% 0;
     box-shadow: 0 4px 8px 8px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
@@ -44,6 +44,7 @@
     flex-shrink: 0;
 
 }
+ 
 
 .blog1>img {
     width: 200px;
