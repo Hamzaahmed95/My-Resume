@@ -12,13 +12,7 @@
   background-color: #D33668;
 }
 
-.line_dark {
-  height: 2.5px;
-  margin: 15% 0% 15% 0%;
-  width: 100%;
-  border: none;
-  background-color: #FFA7C3;
-}
+
 
 .list {
   display: flex;
@@ -26,7 +20,10 @@
   justify-content: center;
   font-size: 14px;
   cursor: pointer;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  border: 1px solid #191D3A;
+  background: #ffffff;
+  border-radius: 10px;
+  border-color: #191D3A;
   padding-left: 2em;
   padding-right: 2em;
 }
@@ -192,14 +189,6 @@ input:checked+.slider:before {
     background-color: #D33668;
   }
 
-  .line_dark {
-    height: 0.5px;
-    margin-top: 10%;
-    margin: 7.5% 0% 7.5% 0%;
-    width: 55%;
-    border: none;
-    background-color: #FFA7C3;
-  }
 
   .sidebar_position {
     position: relative;

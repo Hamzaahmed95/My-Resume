@@ -1,9 +1,8 @@
 .block_background_dark {
 
-    border: 1px solid grey;
-    background: #FEFAE1;
+    border: 1px solid #516391;
     border-radius: 10px;
-    border-color: #d3d3d3;
+    background-color: #ffffff
 
 }
 

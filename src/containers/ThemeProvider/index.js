@@ -7,7 +7,7 @@ const colors = {
   light_pink: '#D33668',
   dark_pink: '#FFA7C3',
   shades_light: '#191D3A',
-  shades_dark: '#f5f5f5'
+  shades_dark: '#ffffff'
 }
 
 const themes = {
@@ -25,6 +25,7 @@ const themes = {
       color: colors.white,
     },
     shades: {
+      border: `0.1px solid ${colors.black}`,
       background: colors.shades_light,
     }
   },
@@ -33,14 +34,15 @@ const themes = {
     color: colors.black,
     fontFamily: 'Merriweather, Georgia, serif',
     pink: {
-      color: colors.dark_pink,
-      borderBottom: `0.2px solid ${colors.dark_pink}`,
-      paddingBottom: '2.5px'
+      color: colors.black,
+      borderBottom: `0.2px solid ${colors.light_pink}`,
+      paddingBottom: '2.5px',
     },
     normal: {
       color: colors.black,
     },
     shades: {
+      border: `0.1px solid ${colors.black}`,
       background: colors.shades_dark,
     }
   }

@@ -13,11 +13,11 @@
  }
 
  .line_general_dark.intro {
-   height: 1px;
-   margin: 15% 0% 15% 0%;
+   height: 3.5px;
+   margin: 0;
    width: 18%;
    border: none;
-   background-color: #FFA7C3;
+   background-color: #D33668;
  }
 
  .line_general_light.skills {
@@ -29,11 +29,11 @@
  }
 
  .line_general_dark.skills {
-   height: 1px;
-   margin: 15% 0% 15% 0%;
+   height: 3.5px;
+   margin: 0;
    width: 10%;
    border: none;
-   background-color: #FFA7C3;
+   background-color: #D33668;
  }
 
  .line_general_light.achievements {
@@ -45,11 +45,11 @@
  }
 
  .line_general_dark.achievements {
-   height: 1px;
-   margin: 15% 0% 15% 0%;
+   height: 3.5px;
+   margin: 0;
    width: 15%;
    border: none;
-   background-color: #FFA7C3;
+   background-color: #D33668;
  }
 
  .line_general_light.blogs {
@@ -61,11 +61,11 @@
  }
 
  .line_general_dark.projects {
-   height: 1px;
-   margin: 15% 0% 15% 0%;
+   height: 3.5px;
+   margin: 0;
    width: 10%;
    border: none;
-   background-color: #FFA7C3;
+   background-color: #D33668;
  }
 
  .line_general_light.projects {
@@ -77,18 +77,18 @@
  }
 
  .line_general_dark.blogs {
-   height: 1px;
-   margin: 15% 0% 15% 0%;
+   height: 3.5px;
+   margin: 0;
    width: 9%;
    border: none;
-   background-color: #FFA7C3;
+   background-color: #D33668;
  }
 
 
 
  .about_me_heading_dark {
    margin: 15px 0 2.5px 0;
-   color: #FFA7C3;
+   color: #000000;
    font-family: Montserrat, sans-serif;
    font-weight: 900;
  }

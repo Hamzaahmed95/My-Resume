@@ -12,7 +12,7 @@ export const Sidebar = () => {
                 <div className='sidebar_items'>
                     <DisplayProfilePicture />
                     <DisplayIcons />
-                    <hr className={`line_${theme.theme}`} />
+                    <hr className={`line_light`} />
                     <DisplaySections />
                 </div>
                 <div>

@@ -4,10 +4,10 @@
 }
 
 .overview_dark {
-  border: 1px solid grey;
-  background: #FEFAE1;
+  border: 1px solid #191D3A;
+  background: #ffffff;
   border-radius: 10px;
-  border-color: #d3d3d3;
+  border-color: #191D3A;
 }
 
 .overview_light {
