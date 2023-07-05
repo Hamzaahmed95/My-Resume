@@ -7,6 +7,7 @@
 @font-face {
   font-family: 'Segoe UI';
   src: local('Segoe UI'), local('SegoeUI'),
-    url('./fonts/Segoe UI.ttf') format('truetype');
+    url('./fonts/Segoe UI.ttf') format('truetype'),
+    url('./fonts/Segoe UI Bold.ttf') format('truetype');
   /* Add other font file formats if available, e.g., woff, woff2 */
 }

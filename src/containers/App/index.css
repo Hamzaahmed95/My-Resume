@@ -31,4 +31,10 @@
     justify-content: center;
     width: 100%;
   }
+  .main_component {
+    flex: 4;
+    max-width: 2000px;
+    padding:2.2%;
+    padding-bottom: 15%;
+  }
 }

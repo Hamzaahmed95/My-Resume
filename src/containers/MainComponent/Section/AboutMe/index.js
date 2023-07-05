@@ -23,10 +23,10 @@ export const AboutMe = () => {
             {skills.map((skill, index) => {
                 let final_skill = " " + skill;
                 return (
-                    <h2 key={index} className={`about_me_content_${theme.theme}`}>
+                    <div style={{ display: "flex", marginTop: "15px" }} key={index} className={`about_me_content_${theme.theme}`}>
                         <img src={theme.theme === "dark" ? Bullets_Dark : Bullets_Light} width="15" height="19" />
-                        {final_skill}
-                    </h2>
+                        <span style={{ marginLeft: "5px" }}>{final_skill}</span>
+                    </div>
                 )
             })}
         </div>

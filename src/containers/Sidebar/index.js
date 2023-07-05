@@ -11,7 +11,7 @@ export const Sidebar = () => {
         <div className="sidebar_component" >
 
             <div className='sidebar_position'>
-                <div style={{ display: "flex", justifyContent: "flex-start", width: "100%", padding: "4px" }}>
+                <div style={{ display: "flex", justifyContent: "flex-start", width: "100%" }}>
                     <ToggleButton align="left" className="mobile_view_toggle" />
                     <DisplayIcons className="mobile_view_icons" />
                 </div>

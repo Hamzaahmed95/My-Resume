@@ -146,6 +146,7 @@ input:checked+.slider:before {
   padding: 50px 0px 50px 0px;
   border-radius: 50%;
 }
+
 .web_view_toggle {
   padding-bottom: 50%;
 }
@@ -200,7 +201,7 @@ input:checked+.slider:before {
   .each_icon {
     width: 20px;
     height: 18px;
-    padding: 0 4px 0 0; 
+    padding: 0 4px 0 0;
   }
 
   .icons {
@@ -240,10 +241,12 @@ input:checked+.slider:before {
 
   .mobile_view_toggle {
     display: inline;
+    padding: 12px;
   }
 
   .mobile_view_icons {
     justify-content: flex-end;
+    padding: 12px;
   }
 
   .web_view_icons {
@@ -251,6 +254,7 @@ input:checked+.slider:before {
   }
 
   .web_view_name {
-    display: inline
+    display: inline;
+    font-family: 'Segoe UI', sans-serif;
   }
 }
