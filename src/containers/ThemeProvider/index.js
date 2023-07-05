@@ -43,7 +43,7 @@ const themes = {
     },
     shades: {
       border: `0.1px solid ${colors.black}`,
-      background: colors.shades_dark,
+      background: colors.shades_dark
     }
   }
 }
