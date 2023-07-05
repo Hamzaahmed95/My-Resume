@@ -87,4 +87,17 @@
   .contact_info_content_container {
     padding-top: 25px;
   }
+  .contact_info_header_light {
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+  }
+  
+  .contact_info_header_dark {
+    color: #000000;
+    font-family: 'Segoe UI', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+  }
 }

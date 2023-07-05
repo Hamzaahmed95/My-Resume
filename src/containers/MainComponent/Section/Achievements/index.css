@@ -88,6 +88,12 @@ a {
         flex-wrap: wrap;
         justify-content: center;
     }
+    .achievements_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
 
     .blog1 {
         margin: 2% 0 2% 0;

@@ -30,6 +30,6 @@
 @media all and (max-width: 900px) {
   .overview_container {
     flex-basis: 100%;
-    align-items: center;
+    align-self: center;
   }
 }

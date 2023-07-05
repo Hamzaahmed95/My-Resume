@@ -13,8 +13,10 @@ export const AboutMe = () => {
 
     return (
         <div className="about_me_container">
-            <h1 className={`about_me_heading_${theme.theme}`}>What I do</h1>
-            <hr className={`line_general_${theme.theme} intro`} />
+            <div className="section_heading">
+                <h1 className={`about_me_heading_${theme.theme}`}>What I do</h1>
+                <hr className={`line_general_${theme.theme} intro`} />
+            </div>
             <p className={`about_me_content_${theme.theme}`} >{details}</p>
             <h1 className={`about_me_heading_${theme.theme}`} >Skills</h1>
             <hr className={`line_general_${theme.theme} skills`} />

@@ -125,30 +125,96 @@
    }
 
    .about_me_heading_dark {
-     color: #FFA7C3;
+     color: #000000;
      font-family: Montserrat, sans-serif;
-     font-size: 18px;
+     font-size: 22px;
      font-weight: 900;
    }
 
    .about_me_heading_light {
-     color: #D33668;
+     color: #ffffff;
      font-family: Montserrat, sans-serif;
-     font-size: 18px;
+     font-size: 22px;
      font-weight: 900
    }
 
    .about_me_content_dark {
      color: #000000;
-     font-family: Merriweather, Georgia, serif;
-     font-size: 12px;
-     font-weight: 40
+     font-family: 'Segoe UI', sans-serif;
+     font-size: 15px;
    }
 
    .about_me_content_light {
      color: #ffffff;
-     font-family: Merriweather, Georgia, serif;
-     font-size: 12px;
-     font-weight: 40;
+     font-family:'Segoe UI', sans-serif;
+     font-size: 15px;
+   }
+
+   .line_general_dark.intro {
+     height: 5.5px;
+     margin: 0;
+     width: 100px;
+     border: none;
+     background-color: #D33668;
+   }
+
+   .line_general_light.intro {
+     height: 5.5px;
+     margin: 0;
+     width: 100px;
+     border: none;
+     background-color: #D33668;
+   }
+
+   .line_general_light.achievements {
+     height: 5px;
+     margin: 0;
+     width: 150px;
+     border: none;
+     background-color: #D33668;
+   }
+
+   .line_general_dark.achievements {
+     height: 5px;
+     margin: 0;
+     width: 150px;
+     border: none;
+     background-color: #D33668;
+   }
+
+   .line_general_light.blogs {
+     height: 5px;
+     margin: 0;
+     width: 60px;
+     border: none;
+     background-color: #D33668;
+   }
+
+   .line_general_dark.blogs {
+     height: 5px;
+     margin: 0;
+     width: 60px;
+     border: none;
+     background-color: #D33668;
+   }
+
+   .line_general_light.projects {
+     height: 5px;
+     margin: 0;
+     width: 85px;
+     border: none;
+     background-color: #D33668;
+   }
+
+   .line_general_dark.projects {
+     height: 5px;
+     margin: 0;
+     width: 85px;
+     border: none;
+     background-color: #D33668;
+   }
+
+   .section_heading {
+     align-self: center;
    }
  }
