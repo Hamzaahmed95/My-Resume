@@ -24,6 +24,14 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+.name_mobile {
+    font-size: 36px;
+    margin-bottom: auto;
+    margin-top: auto;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 
 .subgraph1 {
     font-size: 24px;
