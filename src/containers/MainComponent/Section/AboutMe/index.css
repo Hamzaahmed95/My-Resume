@@ -89,14 +89,16 @@
  .about_me_heading_dark {
    margin: 15px 0 2.5px 0;
    color: #000000;
-   font-family: Montserrat, sans-serif;
+
+   font-family: 'Segoe UI', sans-serif;
    font-weight: 900;
  }
 
  .about_me_heading_light {
    color: #ffffff;
    margin: 15px 0 2.5px 0;
-   font-family: Montserrat, sans-serif;
+
+   font-family: 'Segoe UI', sans-serif;
    font-weight: 900
  }
 
@@ -127,16 +129,14 @@
 
    .about_me_heading_dark {
      color: #000000;
-     font-family: Montserrat, sans-serif;
+     font-family: 'Segoe UI', sans-serif;
      font-size: 22px;
-     font-weight: 900;
    }
 
    .about_me_heading_light {
      color: #ffffff;
-     font-family: Montserrat, sans-serif;
+     font-family: 'Segoe UI', sans-serif;
      font-size: 22px;
-     font-weight: 900
    }
 
    .about_me_content_dark {
@@ -218,19 +218,20 @@
    .section_heading {
      align-self: center;
    }
+
    .line_general_light.skills {
-    height: 3.5px;
-    margin: 0;
-    width: 60px;
-    border: none;
-    background-color: #D33668;
-  }
- 
-  .line_general_dark.skills {
-    height: 3.5px;
-    margin: 0;
-    width: 60px;
-    border: none;
-    background-color: #D33668;
-  }
+     height: 3.5px;
+     margin: 0;
+     width: 60px;
+     border: none;
+     background-color: #D33668;
+   }
+
+   .line_general_dark.skills {
+     height: 3.5px;
+     margin: 0;
+     width: 60px;
+     border: none;
+     background-color: #D33668;
+   }
  }
