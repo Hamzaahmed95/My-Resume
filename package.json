@@ -28,6 +28,7 @@
     "typeface-montserrat": "0.0.75"
   },
   "scripts": {
-    "start": "webpack serve --port 3000"
+    "start": "webpack serve --port 3000",
+    "build": "NODE_ENV=production webpack"
   }
 }

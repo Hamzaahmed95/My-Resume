@@ -1,0 +1,1020 @@
+/*!********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/containers/App/index.css ***!
+  \********************************************************************************/
+.app {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.app_container {
+  display: flex;
+}
+
+.main_component {
+  flex: 4;
+  max-width: 2000px;
+  padding:2.2%
+}
+.light-theme {
+  background-color: #ffffff; /* Light theme background color */
+}
+
+.dark-theme {
+  background-color: #000000; /* Dark theme background color */
+}
+
+@media all and (max-width: 900px) {
+  .app_container {
+    flex-direction: column;
+  }
+  .app {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .main_component {
+    flex: 4;
+    max-width: 2000px;
+    padding:2.2%;
+    padding-bottom: 15%;
+  }
+}
+/*!************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/containers/Sidebar/index.css ***!
+  \************************************************************************************/
+.icons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.line_light {
+  height: 2.5px;
+  margin: 5% 0% 15% 0%;
+  width: 100%;
+  border: none;
+  background-color: #D33668;
+}
+
+.mobile_view_toggle {
+  display: none;
+}
+
+.mobile_view_icons {
+  display: none;
+}
+
+.web_view_name {
+  display: none
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid #191D3A;
+  background: #ffffff;
+  border-radius: 10px;
+  border-color: #191D3A;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.each_icon {
+  width: 20px;
+  height: 20px;
+}
+
+.toggle_button {
+  padding-bottom: 50%;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: green;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+
+input:checked+.slider {
+  background-color: #081229;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round_light {
+  border-radius: 34px;
+}
+
+.slider.round_dark {
+  border-radius: 34px;
+}
+
+.slider.round_light:before {
+  border-radius: 50%;
+  background-color: #081229
+}
+
+.slider.round_dark:before {
+  border-radius: 50%;
+  background-color: #ffffff
+}
+
+.sidebar_component {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar_items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1
+}
+
+.sidebar_items>* {
+  flex-shrink: 2;
+  /* Allows the boxes to shrink if needed */
+}
+
+.sidebar_position {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.profile_picture {
+  height: 150px;
+  width: 150px;
+  padding: 50px 0px 50px 0px;
+  border-radius: 50%;
+}
+
+.web_view_toggle {
+  padding-bottom: 50%;
+}
+
+@media all and (max-width: 900px) {
+
+  .profile_picture {
+    width: 120px;
+    height: 120px;
+    padding: 30px 0px 30px 0px;
+    border-radius: 50%;
+  }
+
+  .slider {
+    height: 20px;
+    width: 50px;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  .list {
+    background-color: yellow;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    /* Adjust the height as per your design */
+    background-color: #333;
+    /* Change the background color as needed */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* Adjust the alignment of the navbar items */
+    align-items: center;
+    z-index: 100;
+    padding: 0px
+      /* Ensure the navbar is on top of other elements */
+  }
+
+  .each_icon {
+    width: 20px;
+    height: 18px;
+    padding: 0 4px 0 0;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .line_light {
+    height: 0.5px;
+    margin: 3.5% 0% 0%;
+    width: 55%;
+    border: none;
+    background-color: #D33668;
+  }
+
+
+  .sidebar_position {
+    position: relative;
+    width: 100%;
+  }
+
+  .web_view_toggle {
+    display: none;
+  }
+
+  .toggle_button2 {
+    display: none;
+  }
+
+  .sidebar_items {
+    width: 100%;
+  }
+
+  .list_item {
+    font-size: 9px;
+  }
+
+  .mobile_view_toggle {
+    display: inline;
+    padding: 12px;
+  }
+
+  .mobile_view_icons {
+    justify-content: flex-end;
+    padding: 12px;
+  }
+
+  .web_view_icons {
+    display: none
+  }
+
+  .web_view_name {
+    display: inline;
+    font-family: 'Segoe UI', sans-serif;
+  }
+}
+/*!************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/typeface-merriweather/index.css ***!
+  \************************************************************************************************/
+/* merriweather-300normal - latin */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src:
+    local('Merriweather Light '),
+    local('Merriweather-Light'),
+    url(fc117160c69a8ea0851b.woff2) format('woff2'), /* Super Modern Browsers */
+    url(58b18067ebbd21fda77b.woff) format('woff'); /* Modern Browsers */
+}
+
+/* merriweather-300italic - latin */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 300;
+  src:
+    local('Merriweather Light italic'),
+    local('Merriweather-Lightitalic'),
+    url(fe29961474f8dbf77c0a.woff2) format('woff2'), /* Super Modern Browsers */
+    url(23c3f1f88683618a4fb8.woff) format('woff'); /* Modern Browsers */
+}
+
+/* merriweather-400normal - latin */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src:
+    local('Merriweather Regular '),
+    local('Merriweather-Regular'),
+    url(d9479e8023bef9cbd9bf.woff2) format('woff2'), /* Super Modern Browsers */
+    url(040426f99ff6e00b8650.woff) format('woff'); /* Modern Browsers */
+}
+
+/* merriweather-400italic - latin */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+  src:
+    local('Merriweather Regular italic'),
+    local('Merriweather-Regularitalic'),
+    url(2de7bfeaf08fb03d4315.woff2) format('woff2'), /* Super Modern Browsers */
+    url(79db67aca65f5285964a.woff) format('woff'); /* Modern Browsers */
+}
+
+/* merriweather-700normal - latin */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src:
+    local('Merriweather Bold '),
+    local('Merriweather-Bold'),
+    url(4b08e01d805fa35d7bf7.woff2) format('woff2'), /* Super Modern Browsers */
+    url(22fb8afba4ab1f093b6e.woff) format('woff'); /* Modern Browsers */
+}
+
+/* merriweather-700italic - latin */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 700;
+  src:
+    local('Merriweather Bold italic'),
+    local('Merriweather-Bolditalic'),
+    url(cd92541b177652fffb6e.woff2) format('woff2'), /* Super Modern Browsers */
+    url(f87f3d87cea0dd0979bf.woff) format('woff'); /* Modern Browsers */
+}
+
+/* merriweather-900normal - latin */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 900;
+  src:
+    local('Merriweather Black '),
+    local('Merriweather-Black'),
+    url(f813fc6a4bee46eda522.woff2) format('woff2'), /* Super Modern Browsers */
+    url(5d4e42cb44410674acd9.woff) format('woff'); /* Modern Browsers */
+}
+
+/* merriweather-900italic - latin */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 900;
+  src:
+    local('Merriweather Black italic'),
+    local('Merriweather-Blackitalic'),
+    url(b7901d85486871c1779c.woff2) format('woff2'), /* Super Modern Browsers */
+    url(9647f9fdab98756989a8.woff) format('woff'); /* Modern Browsers */
+}
+
+
+/*!*******************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/containers/MainComponent/Introduction/ContactInfo/index.css ***!
+  \*******************************************************************************************************************/
+.contact_info_container {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  flex-basis: 30%;
+}
+
+.overview_dark {
+  border: 1px solid #191D3A;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.overview_light {
+  border: 1px solid #516391;
+  border-radius: 10px;
+  background: #0E0F1C;
+}
+
+.contact_info_content_container {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.contact_info_header_light {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.contact_info_header_dark {
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.contact_info_content_dark {
+  padding: 6px 0 6px 0;
+  display: flex;
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.contact_info_content_light {
+  padding: 6px 0 6px 0;
+  display: flex;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+
+.contact_info_email_image {
+  width: 25px;
+  height: 25px;
+}
+
+.contact_info_phone_image {
+  width: 25px;
+  height: 25px;
+}
+
+@media all and (max-width: 900px) {
+  .contact_info_container {
+    flex-basis: 89%;
+    font-size: 12px;
+    padding: 16px;
+  }
+
+  .contact_info_email_image {
+    width: 20px;
+    height: 20px;
+  }
+
+  .contact_info_phone_image {
+    width: 20px;
+    height: 20px;
+  }
+
+  .contact_info_content_container {
+    padding-top: 25px;
+  }
+  .contact_info_header_light {
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+  }
+  
+  .contact_info_header_dark {
+    color: #000000;
+    font-family: 'Segoe UI', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+  }
+}
+/*!*******************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/containers/MainComponent/Introduction/index.css ***!
+  \*******************************************************************************************************/
+.main_intro {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    max-width: 100%;
+}
+
+
+.main_intro.show {
+    opacity: 1;
+}
+
+.ProfileImage {
+    flex: 1 0 600px;
+
+}
+
+.name {
+    font-size: 45px;
+    margin-bottom: auto;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.name_mobile {
+    font-size: 36px;
+    margin-bottom: auto;
+    margin-top: auto;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.subgraph1 {
+    font-size: 24px;
+    font-family: 'Merriweather, Georgia, serif';
+}
+
+@media all and (max-width: 900px) {
+
+    .subgraph1 {
+        font-size: 15px;
+        padding-left: 2%;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    .main_intro {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 100%;
+
+    }
+
+    .name {
+        display: none;
+    }
+
+    .name_mobile {
+        font-size: 38px;
+        margin-bottom: auto;
+        margin-top: auto;
+        font-family: 'Segoe UI Bold', sans-serif;
+    }
+}
+/*!****************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/containers/MainComponent/Introduction/Overview/index.css ***!
+  \****************************************************************************************************************/
+.overview_container {
+  flex-basis: 60%;
+}
+
+.rainbow {
+  color: black;
+  background-color: orange;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.highlight_dark {
+  background: #D33668;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26.4px;
+}
+
+.highlight_light {
+  background: #0E0F1C;
+  color: #D33668;
+  border: 1px solid #516391;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26.4px;
+}
+
+@media all and (max-width: 900px) {
+  .overview_container {
+    flex-basis: 100%;
+    align-self: center;
+  }
+}
+/*!**************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/containers/MainComponent/Section/index.css ***!
+  \**************************************************************************************************/
+
+/*!**********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/containers/MainComponent/Section/AboutMe/index.css ***!
+  \**********************************************************************************************************/
+ .about_me_container {
+   width: 60%;
+   display: flex;
+   flex-direction: column;
+ }
+
+ .line_general_light.intro {
+   height: 3.5px;
+   margin: 0;
+   width: 18%;
+   border: none;
+   background-color: #D33668;
+ }
+
+ .line_general_dark.intro {
+   height: 3.5px;
+   margin: 0;
+   width: 18%;
+   border: none;
+   background-color: #D33668;
+ }
+
+ .line_general_light.skills {
+   height: 3.5px;
+   margin: 0;
+   width: 10%;
+   border: none;
+   background-color: #D33668;
+ }
+
+ .line_general_dark.skills {
+   height: 3.5px;
+   margin: 0;
+   width: 10%;
+   border: none;
+   background-color: #D33668;
+ }
+
+ .line_general_light.achievements {
+   height: 3.5px;
+   margin: 0;
+   width: 15%;
+   border: none;
+   background-color: #D33668;
+ }
+
+ .line_general_dark.achievements {
+   height: 3.5px;
+   margin: 0;
+   width: 15%;
+   border: none;
+   background-color: #D33668;
+ }
+
+ .line_general_light.blogs {
+   height: 3.5px;
+   margin: 0;
+   width: 7%;
+   border: none;
+   background-color: #D33668;
+ }
+
+ .line_general_dark.projects {
+   height: 3.5px;
+   margin: 0;
+   width: 10%;
+   border: none;
+   background-color: #D33668;
+ }
+
+ .line_general_light.projects {
+   height: 3.5px;
+   margin: 0;
+   width: 9%;
+   border: none;
+   background-color: #D33668;
+ }
+
+ .line_general_dark.blogs {
+   height: 3.5px;
+   margin: 0;
+   width: 9%;
+   border: none;
+   background-color: #D33668;
+ }
+
+
+
+ .about_me_heading_dark {
+   margin: 15px 0 2.5px 0;
+   color: #000000;
+
+   font-family: 'Segoe UI', sans-serif;
+   font-weight: 900;
+ }
+
+ .about_me_heading_light {
+   color: #ffffff;
+   margin: 15px 0 2.5px 0;
+
+   font-family: 'Segoe UI', sans-serif;
+   font-weight: 900
+ }
+
+
+
+ .about_me_content_dark {
+   color: #000000;
+   font-family: Merriweather, Georgia, serif;
+   font-size: 16;
+   font-weight: 40
+ }
+
+ .about_me_content_light {
+   color: #ffffff;
+   font-family: Merriweather, Georgia, serif;
+   font-size: 16;
+   font-weight: 40;
+ }
+
+ @media all and (max-width: 900px) {
+   .about_me_container {
+     width: 98%;
+     padding-top: 4%;
+     padding-left: 1.8%;
+     display: flex;
+     flex-direction: column;
+   }
+
+   .about_me_heading_dark {
+     color: #000000;
+     font-family: 'Segoe UI', sans-serif;
+     font-size: 22px;
+   }
+
+   .about_me_heading_light {
+     color: #ffffff;
+     font-family: 'Segoe UI', sans-serif;
+     font-size: 22px;
+   }
+
+   .about_me_content_dark {
+     color: #000000;
+     font-family: 'Segoe UI', sans-serif;
+     font-size: 15px;
+   }
+
+   .about_me_content_light {
+     color: #ffffff;
+     font-family: 'Segoe UI', sans-serif;
+     font-size: 15px;
+   }
+
+   .line_general_dark.intro {
+     height: 5.5px;
+     margin: 0;
+     width: 100px;
+     border: none;
+     background-color: #D33668;
+   }
+
+   .line_general_light.intro {
+     height: 5.5px;
+     margin: 0;
+     width: 100px;
+     border: none;
+     background-color: #D33668;
+   }
+
+   .line_general_light.achievements {
+     height: 5px;
+     margin: 0;
+     width: 150px;
+     border: none;
+     background-color: #D33668;
+   }
+
+   .line_general_dark.achievements {
+     height: 5px;
+     margin: 0;
+     width: 150px;
+     border: none;
+     background-color: #D33668;
+   }
+
+   .line_general_light.blogs {
+     height: 5px;
+     margin: 0;
+     width: 60px;
+     border: none;
+     background-color: #D33668;
+   }
+
+   .line_general_dark.blogs {
+     height: 5px;
+     margin: 0;
+     width: 60px;
+     border: none;
+     background-color: #D33668;
+   }
+
+   .line_general_light.projects {
+     height: 5px;
+     margin: 0;
+     width: 85px;
+     border: none;
+     background-color: #D33668;
+   }
+
+   .line_general_dark.projects {
+     height: 5px;
+     margin: 0;
+     width: 85px;
+     border: none;
+     background-color: #D33668;
+   }
+
+   .section_heading {
+     align-self: center;
+   }
+
+   .line_general_light.skills {
+     height: 3.5px;
+     margin: 0;
+     width: 60px;
+     border: none;
+     background-color: #D33668;
+   }
+
+   .line_general_dark.skills {
+     height: 3.5px;
+     margin: 0;
+     width: 60px;
+     border: none;
+     background-color: #D33668;
+   }
+ }
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/containers/MainComponent/Section/Achievements/index.css ***!
+  \***************************************************************************************************************/
+.block_background_dark {
+
+    border: 1px solid #516391;
+    border-radius: 10px;
+    background-color: #ffffff
+
+}
+
+.block_background_light {
+    border: 1px solid #516391;
+    border-radius: 10px;
+    background-color: #0E0F1C
+}
+
+
+.name2 {
+    font-size: 25px;
+    color: #b0b3b8;
+    margin-bottom: auto;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.achievements_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.achievements_content {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.blog1 {
+    padding: 2% 0 2% 0;
+    margin: 1% 2% 1% 0;
+    box-shadow: 0 4px 8px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    flex-shrink: 0;
+
+}
+ 
+
+.blog1>img {
+    width: 200px;
+    height: 200px;
+    align-self: center;
+}
+
+
+.blog1>a>img {
+    width: 300px;
+    height: 171px;
+    align-self: center;
+}
+
+.blog1>a {
+    align-self: center;
+}
+
+
+.blog1>div {
+    text-align: center;
+    padding: 0 10% 0 10%;
+}
+
+.blog1>div>p {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 250;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 150%;
+}
+
+
+a {
+    color: transparent
+}
+
+
+@media all and (max-width: 900px) {
+    .achievements_content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-family: 'Segoe UI', sans-serif;
+    }
+    .achievements_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+    .blog1 {
+        margin: 2% 0 2% 0;
+        padding: 5% 0 5% 0;
+        box-shadow: 0 4px 8px 8px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex-shrink: 0;
+    }
+
+    .sub_style {
+        font-size: 12px;
+    }
+
+    .blog1>div>p {
+        font-size: 12px;
+        text-align: center;
+        font-weight: 150;
+        font-family: 'Segoe UI', sans-serif;
+        line-height: 150%;
+    }
+
+    .blog1>div>h3 {
+        font-size: 14px;
+        text-align: center;
+        padding: 0 10% 0 10%;
+    }
+}
+/*!*****************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/index.css ***!
+  \*****************************************************************/
+ body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: local('Segoe UI'), local('SegoeUI'),
+    url(45472284dc36b2486ce2.ttf) format('truetype'),
+    url(b00928e669b804136004.ttf) format('truetype');
+  /* Add other font file formats if available, e.g., woff, woff2 */
+}
+
+
+/*# sourceMappingURL=main.css.map*/
