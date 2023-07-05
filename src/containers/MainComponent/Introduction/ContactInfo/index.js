@@ -13,22 +13,24 @@ export const ContactInfo = () => {
   const theme = useThemeContext()
 
   return (
-    <div className={`contactInfo_container overview_${theme.theme}`}>
-      <h4 className={`content_${theme.theme}`}>
+    <div className={`contact_info_container overview_${theme.theme}`}>
+      <div className={`contact_info_header_${theme.theme}`}>
         {CONTACT_DETAILS} {' '}
         <span className={`highlight_${theme.theme} rainbow`}>
           {PROFESSION}
         </span>
         {' '} at {COMPANY}
-      </h4>
-      <p className={`content_${theme.theme}`}>
-        <img src={theme.theme === "dark" ? email_dark : email_light} width={20} height={20} />
-        <span>{' '}{' '}{EMAIL}</span>
-      </p>
-      <p className={`content_${theme.theme}`}>
-        <img src={theme.theme === "dark" ? phone_dark : phone_light} width={20} height={20} />
-        <span>{' '}{' '}{CONTACT_NUMBER}</span>
-      </p>
-    </div>
+      </div>
+      <div className='contact_info_content_container'>
+        <div className={`contact_info_content_${theme.theme}`}>
+          <img className="contact_info_email_image" src={theme.theme === "dark" ? email_dark : email_light} />
+          <span style={{ paddingLeft: "8px", paddingTop: "2px" }} >{' '}{' '}{EMAIL}</span>
+        </div>
+        <div className={`contact_info_content_${theme.theme}`}>
+          <img className="contact_info_phone_image" src={theme.theme === "dark" ? phone_dark : phone_light} />
+          <span style={{ paddingLeft: "8px", paddingTop: "2px" }}>{' '}{' '}{CONTACT_NUMBER}</span>
+        </div>
+      </div>
+    </div >
   )
 }

@@ -1,5 +1,7 @@
-.contactInfo_container {
-  padding: 0 2% 0 2%;
+.contact_info_container {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
   flex-basis: 30%;
 }
 
@@ -7,7 +9,6 @@
   border: 1px solid #191D3A;
   background: #ffffff;
   border-radius: 10px;
-  border-color: #191D3A;
 }
 
 .overview_light {
@@ -16,24 +17,74 @@
   background: #0E0F1C;
 }
 
-.content_light {
+.contact_info_content_container {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.contact_info_header_light {
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 300;
-  line-height: 26.4px;
 }
 
-.content_dark {
+.contact_info_header_dark {
   color: #000000;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 300;
-  line-height: 26.4px;
 }
+
+.contact_info_content_dark {
+  padding: 6px 0 6px 0;
+  display: flex;
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.contact_info_content_light {
+  padding: 6px 0 6px 0;
+  display: flex;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+
+.contact_info_email_image {
+  width: 25px;
+  height: 25px;
+}
+
+.contact_info_phone_image {
+  width: 25px;
+  height: 25px;
+}
+
 @media all and (max-width: 900px) {
-  .contactInfo_container {
+  .contact_info_container {
     flex-basis: 100%;
     font-size: 12px;
+    padding: 16px;
+  }
+
+  .contact_info_email_image {
+    width: 20px;
+    height: 20px;
+  }
+
+  .contact_info_phone_image {
+    width: 20px;
+    height: 20px;
+  }
+
+  .contact_info_content_container {
+    padding-top: 25px;
   }
 }
